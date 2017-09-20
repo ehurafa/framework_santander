@@ -1,0 +1,133 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Calendário</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheets/app.css" />
+  <link rel="stylesheet" href="stylesheets/fonts.css" />
+  <link href="stylesheets/responsive-calendar.css" rel="stylesheet">
+  <script src="bower_components/modernizr/modernizr.js"></script> 
+
+</head>
+
+<body>
+
+
+  <div class="row">
+  	<div class="column small-12">
+  		<h2>Calendário</h2>
+  	</div>
+  </div>
+
+  <div class="row">
+    <div class="column small-12 medium-5 ">
+		
+		<!-- calendario -->
+    	<div class="responsive-calendar modelo-1">
+        <div class="controls">
+        	<div>
+        		<a class="pull-left" data-go="prev"><div class="btn btn-primary"><</div></a>
+	            <h4><span data-head-month></span> <span data-head-year></span> </h4>
+	            <a class="pull-right" data-go="next"><div class="btn btn-primary">></div></a>
+        	</div>            
+        </div>
+        <div class="cldr-divider">
+        	<span></span>
+        </div>
+        <div class="day-headers">
+          <div class="day header">Seg</div>
+          <div class="day header">Ter</div>
+          <div class="day header">Qua</div>
+          <div class="day header">Qui</div>
+          <div class="day header">Sex</div>
+          <div class="day header">Sáb</div>
+          <div class="day header">Dom</div>
+        </div>
+        <div class="days" data-group="days">
+          
+        </div>
+      </div>
+      <!-- /calendario -->
+	</div>
+
+	<div class="column small-12 medium-5 end">
+		
+		<!-- calendario -->
+    	<div class="responsive-calendar modelo-2">
+        <div class="controls">
+        	<div>
+        		<a class="pull-left" data-go="prev"><div class="btn btn-primary"><</div></a>
+	            <h4><span data-head-month></span> <span data-head-year></span> </h4>
+	            <a class="pull-right" data-go="next"><div class="btn btn-primary">></div></a>
+        	</div>            
+        </div>
+        <div class="cldr-divider">
+        	<span></span>
+        </div>
+        <div class="day-headers">
+          <div class="day header">Seg</div>
+          <div class="day header">Ter</div>
+          <div class="day header">Qua</div>
+          <div class="day header">Qui</div>
+          <div class="day header">Sex</div>
+          <div class="day header">Sáb</div>
+          <div class="day header">Dom</div>
+        </div>
+        <div class="days" data-group="days">
+          
+        </div>
+      </div>
+      <!-- /calendario -->
+	</div>
+	
+	
+
+  </div>
+ 
+
+
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/foundation/js/foundation.min.js"></script>
+  <script src="js/responsive-calendar.js"></script>	
+  <script type="text/javascript">
+      $(document).ready(function () {
+
+	      	// modelo 1
+	        $(".responsive-calendar.modelo-1").responsiveCalendar({
+	          time: '2016-07'
+	        });
+
+
+	        // modelo 2
+	        $(".responsive-calendar.modelo-2").responsiveCalendar({
+	          time: '2015-05',
+	          events: {
+	            "2015-05-30": {"number": 5, "url": "http://urbansummer.com.br/Demo/fw_santander/panels.html"},
+	             "2015-05-12": {}}
+	        });
+	     
+
+
+
+
+	    });
+
+
+    </script>
+
+ 
+</body>
+
+</html>

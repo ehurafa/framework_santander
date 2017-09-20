@@ -1,0 +1,520 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Inputs</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">  
+  <link rel="stylesheet" href="stylesheets/fonts.css" />
+  <link rel="stylesheet" href="stylesheets/jquery-ui.css" />
+  <link rel="stylesheet" href="stylesheets/jquery-ui.structure.min.css" />
+  <link rel="stylesheet" href="stylesheets/jquery-ui.theme.min.css" />  
+  <link rel="stylesheet" href="stylesheets/jquery.selectBoxIt.css" />
+  <link rel="stylesheet" href="stylesheets/app.css" />
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  
+  <style>
+
+    body {
+      padding-top: 20px;
+      background: #fff;
+    }
+    .form-control {
+      position: relative;
+    }
+    .bloco{
+      width:100%;
+      float:left;
+      border-bottom:1px dotted #999;
+      margin-bottom:50px;
+      padding-bottom:40px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="bloco">
+    <div class="row">
+      <h3>Inputs</h3>
+    </div>
+    <div class="row">
+      <div class="medium-12 columns">
+        <div class="form-control input-label">
+          <label for="" class="transition">Digite seu nome:</label>
+          <input type="text" id="" placeholder="">
+          <span class="false-border"></span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-12 columns">
+        <div class="form-control input-label disabled">
+          <label for="" class="transition">Campo de texto desabilitado:</label>
+          <input type="text" id="" placeholder="" disabled>
+          <span class="false-border"></span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-8 columns">
+        <div class="form-control input-label">
+          <label for="" class="transition">E-mail:</label>
+          <input type="email"  id="" placeholder="" >
+          <span class="false-border"></span>
+        </div>
+      </div>
+      <div class="medium-4 columns">
+        <div class="form-control input-label">
+          <label for="" class="transition">Telefone:</label>
+          <input type="email" id="" placeholder="" class="mascara-telefone" >
+          <span class="false-border"></span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-4 columns ">
+        <div class="form-control input-label">
+          <label for="" class="transition">Data:</label>
+          <input type="text" id="" placeholder="" class="mascara-data" >
+          <span class="false-border"></span>
+        </div>
+      </div>
+      <div class="medium-4 columns ">
+        <div class="form-control input-label">
+          <label for="" class="transition">Cep:</label>
+          <input type="email" id="" placeholder="" class="mascara-cep" >
+          <span class="false-border"></span>
+        </div>
+      </div>
+      <div class="medium-4 columns ">
+        <div class="form-control input-label">
+          <label for="" class="transition">CNPJ:</label>
+          <input type="email" id="" placeholder="" class="mascara-cnpj" >
+          <span class="false-border"></span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-8 columns ">
+        <div class="form-control input-label">
+          <label for="" >Digite seu nome:</label>
+          <input type="text" id="" class=" error">
+          <span class="false-border"></span>
+        </div>
+      </div>
+      <div class="medium-4 columns">
+        <div class="form-control input-label">
+
+          <select>
+            <option value="Selecione">Selecione</option>
+            <option value="opcao1">Opção 1</option>
+            <option value="opcao2">Opção 2</option>
+            <option value="opcao3">Opção 3</option>
+            <option value="opcao1">Opção 1</option>
+            <option value="opcao2">Opção 2</option>
+            <option value="opcao3">Opção 3</option>
+            <option value="opcao1">Opção 1</option>
+            <option value="opcao2">Opção 2</option>
+            <option value="opcao3">Opção 3</option>
+            <option value="opcao1">Opção 1</option>
+            <option value="opcao2">Opção 2</option>
+            <option value="opcao3">Opção 3</option>
+          </select>
+          <span class="false-border"></span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-8 columns ">
+        <div class="form-control input-label">
+          <label for="" class="transition">Digite seu nome:</label>
+          <input type="text" id="">
+          <span class="false-border"></span>
+        </div>
+      </div>
+      <div class="medium-4 columns">
+        <div class="form-control input-label">
+
+          <select disabled>
+            <option value="Selecione">Selecione</option>
+            <option value="opcao1">Opção 1</option>
+            <option value="opcao2">Opção 2</option>
+            <option value="opcao3">Opção 3</option>
+          </select>
+          <span class="false-border"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bloco">
+    <div class="row">
+      <h3>Radios</h3>
+    </div>
+
+    <div class="row">
+      <div class="medium-12 columns">
+        <h6>Radio estilo 1</h6>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="medium-5 columns">
+
+        <!-- radio estilo 1 -->
+        <div class="form-control radio-button-e-1 float-left mgn-right-10">
+          <input  name="radio1" value="" checked  type="radio">
+          <label>Radio 1</label>
+        </div>
+        <!-- /radio -->
+        <!-- radio estilo 1 -->
+        <div class="form-control radio-button-e-1 float-left mgn-right-10">
+          <input  name="radio1" value=""   type="radio">
+          <label>Radio 1</label>
+        </div>
+        <!-- /radio -->
+        <!-- radio estilo 1 -->
+        <div class="form-control radio-button-e-1 float-left">
+          <input  name="radio1" value=""   type="radio">
+          <label>Radio 1</label>
+        </div>
+        <!-- /radio -->
+      </div>
+
+       <div class="medium-5 columns float-left">
+
+        <!-- radio estilo 1 -->
+        <div class="form-control radio-button-e-1 float-left mgn-right-10">
+          <input  name="radio2" value="" checked  type="radio">
+          <label>Radio 1</label>
+        </div>
+        <!-- /radio -->
+        <!-- radio estilo 1 -->
+        <div class="form-control radio-button-e-1 float-left mgn-right-10">
+          <input  name="radio2" value=""   type="radio">
+          <label>Radio 1</label>
+        </div>
+        <!-- /radio -->
+        <!-- radio estilo 1 -->
+        <div class="form-control radio-button-e-1 float-left mgn-right-10">
+          <input  name="radio2" value=""  type="radio">
+          <label>Radio 1</label>
+        </div>
+        <!-- /radio -->
+        <!-- radio estilo 1 -->
+        <div class="form-control radio-button-e-1 error float-left">
+          <input  name="radio2" value=""  type="radio">
+          <label>Radio 1</label>
+        </div>
+        <!-- /radio -->
+
+      </div>
+
+    </div>
+
+    <div class="row mgn-top-10">
+      <div class="medium-5 columns" >
+
+        <!-- radio estilo 1 -->
+        <div class="form-control radio-button-e-1 float-left mgn-right-10">
+          <input  name="radio3" value=""  type="radio">
+          <label>Radio 1</label>
+        </div>
+        <!-- /radio -->
+        <!-- radio estilo 1 -->
+        <div class="form-control radio-button-e-1 float-left mgn-right-10">
+          <input  name="radio3" value=""   type="radio">
+          <label>Radio 1</label>
+        </div>
+        <!-- /radio -->
+        <!-- radio estilo 2 -->
+        <div class="radio-button-e-1 form-control float-left">
+
+            <input  name="radio3" value=""   type="radio">
+            <label>Radio 1</label>
+
+        </div>
+        <!-- /radio -->
+      </div>
+
+       <div class="medium-5 columns float-left">
+
+        <!-- radio estilo 1 -->
+        <div class="form-control radio-button-e-1 float-left mgn-right-10">
+          <input  name="radio4" value="" checked=""  type="radio">
+          <label>Radio 1</label>
+        </div>
+        <!-- /radio -->
+        <!-- radio estilo 1 -->
+        <div class="form-control radio-button-e-1 float-left mgn-right-10">
+          <input  name="radio4" value=""   type="radio">
+          <label>Radio 1</label>
+        </div>
+        <!-- /radio -->
+        <!-- radio estilo 1 -->
+        <div class="form-control radio-button-e-1 float-left">
+          <input  name="radio4" value=""   type="radio">
+          <label>Radio 1</label>
+        </div>
+        <!-- /radio -->
+      </div>
+
+    </div>
+
+    <div class="row mgn-top-20">
+      <div class="medium-12 columns">
+        <h6>Radio estilo 1 com borda</h6>
+      </div>
+    </div>
+
+
+    <div class="row mgn-top-10">
+      <div class="medium-5 columns" >
+
+        <!-- box -->
+        <div class="input-boxes">
+
+          <div class="input-boxes-inner">
+            <!-- radio estilo 1 -->
+            <div class=" radio-button-e-1">
+              <input  name="radio3" value=""  type="radio">
+              <label>Radio 1</label>
+            </div>
+            <!-- /radio -->
+          </div>
+          <div class="input-boxes-inner">
+            <!-- radio estilo 1 -->
+            <div class=" radio-button-e-1">
+              <input  name="radio3" value=""   type="radio">
+              <label>Radio 1</label>
+            </div>
+            <!-- /radio -->
+          </div>
+          <div class="input-boxes-inner">
+            <!-- radio estilo 2 -->
+            <div class="radio-button-e-1 ">
+                <input  name="radio3" value=""   type="radio">
+                <label>Radio 1</label>
+            </div>
+            <!-- /radio -->
+          </div>
+
+        </div>
+        <!-- /box -->
+
+
+      </div>
+
+       <div class="medium-5 columns float-left">
+          <!-- box -->
+          <div class="input-boxes">
+
+            <div class="input-boxes-inner">
+              <!-- radio estilo 1 -->
+              <div class=" radio-button-e-1">
+                <input  name="radio3" value=""  type="radio">
+                <label>Radio 1</label>
+              </div>
+              <!-- /radio -->
+            </div>
+            <div class="input-boxes-inner">
+              <!-- radio estilo 1 -->
+              <div class=" radio-button-e-1">
+                <input  name="radio3" value=""   type="radio">
+                <label>Radio 1</label>
+              </div>
+              <!-- /radio -->
+            </div>
+            <div class="input-boxes-inner">
+              <!-- radio estilo 2 -->
+              <div class="radio-button-e-1 ">
+                  <input  name="radio3" value=""   type="radio">
+                  <label>Radio 1</label>
+              </div>
+              <!-- /radio -->
+            </div>
+
+          </div>
+          <!-- /box -->
+       </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="bloco">
+    <div class="row">
+      <h3>Checkbox</h3>
+    </div>
+
+    <div class="row">
+        <!-- checkbox estilo 1 -->
+            <div class="form-control checkbox checkbox-e-1 float-left mgn-right-10">
+              <input type="checkbox" value="" name="checkbox1">
+              <label>Checkbox 1</label>
+            </div>
+            <!-- /checkbox -->
+            <!-- checkbox estilo 1 -->
+            <div class="form-control checkbox checkbox-e-1 float-left mgn-right-10">
+              <input type="checkbox" value="" name="checkbox1">
+              <label>Checkbox 2</label>
+            </div>
+            <!-- /checkbox -->
+            <!-- checkbox estilo 1 -->
+            <div class="form-control checkbox  checkbox-e-1 float-left">
+              <input type="checkbox" value="" name="checkbox1">
+              <label>Checkbox 3</label>
+            </div>
+            <!-- /checkbox -->
+    </div>
+
+  </div>
+
+  <div class="bloco">
+    <div class="row">
+      <h3>Switch</h3>
+    </div>
+
+    <div class="row">
+        <div class="wrap-switch mgn-right-10"> <label class="checkbox-switch"> <input type="checkbox"> <div class="slider round"></div> </label> <span>Switch 1</span> </div> 
+         <div class="wrap-switch mgn-right-10"> <label class="checkbox-switch"> <input type="checkbox"> <div class="slider round"></div> </label> <span>Switch 2</span> </div> 
+          <div class="wrap-switch mgn-right-10"> <label class="checkbox-switch"> <input type="checkbox"> <div class="slider round"></div> </label> <span>Switch 3</span> </div> 
+    </div>
+
+  </div>
+
+  <div class="bloco">
+    <div class="row">
+      <h3>Avatar</h3>
+    </div>
+
+    <div class="row">
+      <div class="medium-4 columns" >
+         <div class="row">
+          <div class="medium-12 columns">
+            <h6>Painel</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="menu-pessoal">
+            <div class="inner">
+              <figure>
+                <img src="img/avatar-1.jpg" class="img-responsive" alt="">
+              </figure>
+              <article>
+                <h3>Jeffrey Coleman</h3>
+                <p>Gerente de Relacionamentos</p>
+                <a href="#">jeffrey.coleman@santander.com.br</a>
+              </article>
+            </div>
+            <div class="foot">
+              <a href="#">Sair</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="medium-4 columns" >
+        <div class="row">
+          <div class="medium-12 columns">
+            <h6>Pessoa física</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box-avatar fisica">
+            <div class="inner">
+              <figure>
+                <img src="img/avatar-2.jpg" class="img-responsive" alt="">
+              </figure>
+              <article>
+                <h3><span></span>Carol Walters</h3>
+                <p>301.077.938-06<br>
+                17/06/1977 - 38 anos<br>
+                Fopa: Tiviti Terc.
+                </p>
+                
+              </article>
+            </div>    
+            <div class="tags">
+              <a class="transition tag clr-white bg-purple" href="javascript:void(0)">Prevenir</a>
+              <a class="transition tag clr-white bg-green" href="javascript:void(0)">Ativo Mov</a>
+              <a class="transition tag clr-white bg-blue" href="javascript:void(0)">Vinculado TRX</a>
+              <a class="transition tag clr-white bg-orange" href="javascript:void(0)">Rating 4</a>
+              <a class="transition tag clr-white bg-dark99" href="javascript:void(0)">Sócio</a>
+              <a class="transition tag tag-more clr-black bg-white" href="javascript:void(0)">...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="medium-4 columns" >
+        <div class="row">
+          <div class="medium-12 columns">
+            <h6>Pessoa jurídica</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box-avatar juridica">
+            <div class="inner">
+              <figure>
+                <img src="img/avatar-3.jpg" class="img-responsive" alt="">
+              </figure>
+              <article>
+                <h3><span></span>Dennis Walker</h3>
+                <p>301.077.938-06<br>
+                17/06/1977 - 38 anos<br>
+                Fopa: Tiviti Terc.
+                </p>
+                
+              </article>
+            </div>    
+            <div class="tags">
+              <a class="transition tag clr-white bg-purple" href="javascript:void(0)">Prevenir</a>
+              <a class="transition tag clr-white bg-green" href="javascript:void(0)">Ativo Mov</a>
+              <a class="transition tag clr-white bg-blue" href="javascript:void(0)">Vinculado TRX</a>
+              <a class="transition tag clr-white bg-orange" href="javascript:void(0)">Rating 4</a>
+              <a class="transition tag clr-white bg-dark99" href="javascript:void(0)">Sócio</a>
+              <a class="transition tag tag-more clr-black bg-white" href="javascript:void(0)">...</a>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </div>
+
+     
+    
+
+    
+
+
+  </div>
+
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/foundation/js/foundation.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.selectBoxIt.min.js"></script>
+          <script>
+            $(function() {
+
+              var selectBox = $("select").selectBoxIt();
+
+            });
+
+
+          </script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

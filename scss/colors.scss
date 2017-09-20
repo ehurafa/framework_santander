@@ -1,0 +1,500 @@
+$redLight: #ec0000;
+$redLightMedium: #e60000;
+$redMedium: #cc0000;
+$redDarkMedium: #b30000;
+$redDark: #990000;
+$red: #800000;
+
+$black: #000000;
+$dark22: #191919;
+$dark33: #333333;
+$dark44: #444444;
+$dark55: #5b5a5b;
+$dark66: #6d6d6d;
+$dark99: #999999;
+$darkCC: #c2c2c2;
+$darkDD: #dddddd;
+$darkFF: #f0f0f0;
+$white: #ffffff;
+
+$green: #abc111;
+$green75: #c4d358;
+$green40: #dde6a0;
+$green15: #f2f6dc;
+
+$orange: #e59d27;
+$orange75: #edba67;
+$orange40: #f5d8a9;
+$orange15: #fbf0df;
+
+$purple: #9e3667;
+$purple75: #bb7294;
+$purple40: #d8afc2;
+$purple15: #f1e1e8;
+
+$blue: #1bb3bc;
+$blue75: #5fcad0;
+$blue40: #a4e1e4;
+$blue15: #ddf4f5;
+
+$portalCertoLight: #30cbff;
+$portalCertoDark: #32a3d7;
+
+$advanceDark: #80715d;
+
+.bg-red-light {background-color:$redLight !important;}
+.tooltip-popover .inner.bg-red-light .nub {border-color:transparent transparent $redLight;}
+.tooltip.bg-red-light .nub {border-color:transparent transparent $redLight;}
+.clr-red-light {color:$redLight;}
+button.red-light, .button.red-light {
+  color: $redLight;
+  box-shadow: $redLightMedium 0 0px 0px 2px inset;
+}
+/*
+button.red-light:hover, .button.red-light:hover,
+button.red-light:active, .button.red-light:focus,
+button.red-light.active, .red-light.active {
+  box-shadow: $redLight 0 0px 0px 40px inset;
+}
+*/
+.bg-red-light-medium {background-color:$redLightMedium;}
+.clr-red-light-medium {color:$redLightMedium;}
+button.red-light-medium, .button.red-light-medium {  
+  box-shadow: $redLightMedium 0 0px 0px 40px inset;
+}
+button.dark-99, .button.dark-99 {  
+  box-shadow: $dark99 0 0px 0px 40px inset;
+}
+
+button.red-light-medium:hover, .button.red-light-medium:hover,
+ .button.red-light-medium:focus{
+  box-shadow: $redMedium 0 0px 0px 40px inset;
+}
+button.dark-99:hover, .button.dark-99:hover,
+button.dark-99:focus, .button.dark-99:focus {  
+  box-shadow: #c2c2c2 0 0px 0px 40px inset;
+}
+
+button.red-light-medium.active, .button.red-light-medium.active {
+  box-shadow: $redDarkMedium 0 0px 0px 40px inset;
+}
+button.dark99.active, .button.dark-99.active {
+  box-shadow: $dark66 0 0px 0px 40px inset;
+}
+
+button.dark99.active:hover, .button.dark-99.active:hover {
+  box-shadow: #c2c2c2  0 0px 0px 40px inset;
+}
+
+button.red-light-medium.border, .button.red-light-medium.border {
+  color: $redLightMedium;
+  box-shadow: $redLightMedium 0 0px 0px 2px inset;
+}
+button.red-light-medium.active:hover, .button.red-light-medium.active:hover,
+.button.red-light-medium.active:focus, {
+  box-shadow: $redMedium 0 0px 0px 40px inset;
+}
+
+button.button.red-light-medium.border:hover, .button.red-light-medium.border:hover,
+button.button.red-light-medium.border:focus, .button.red-light-medium.border:focus{
+  box-shadow: $redMedium 0 0px 0px 40px inset;
+  color:#fff;
+}
+button.disabled, .button.disabled,
+button.disabled:focus, .button.disabled:focus,
+button.disabled.active, .button.disabled.active,
+button.disabled:hover, .button.disabled:hover,
+button.disabled:active, .button.disabled:focus{
+  box-shadow: #c2c2c2 0 0px 0px 40px inset !important;
+}
+.bg-red-medium {background-color:$redMedium;}
+.clr-red-medium {color:$redMedium;}
+button.red-medium, .button.red-medium {
+  color: $redMedium;
+  box-shadow: $redMedium 0 0px 0px 2px inset;
+}
+button.red-medium:hover, .button.red-medium:hover,
+button.red-medium:active, .button.red-medium:focus,
+button.red-medium.active, .button.red-medium.active {
+  box-shadow: $redMedium 0 0px 0px 40px inset;
+}
+
+.bg-red-dark-medium {background-color:$redDarkMedium;}
+.clr-red-dark-medium {color:$redDarkMedium;}
+button.red-dark-medium, .button.red-dark-medium {
+  color: $redDarkMedium;
+  box-shadow: $redDarkMedium 0 0px 0px 2px inset;
+}
+button.red-dark-medium:hover, .button.red-dark-medium:hover,
+button.red-dark-medium:active, .button.red-dark-medium:focus,
+button.red-dark-medium.active, .button.red-dark-medium.active {
+  box-shadow: $redDarkMedium 0 0px 0px 40px inset;
+}
+
+.bg-red-dark {background-color:$redDark;}
+.clr-red-dark {color:$redDark;}
+button.red-dark, .button.red-dark {
+  color: $redDark;
+  box-shadow: $redDark 0 0px 0px 2px inset;
+}
+button.red-dark:hover, .button.red-dark:hover,
+button.red-dark:active, .button.red-dark:focus,
+button.red-dark.active, .button.red-dark.active {
+  box-shadow: $redDark 0 0px 0px 40px inset;
+}
+
+.bg-red {background-color:$red;}
+.clr-red {color:$red;}
+button.red, .button.red {
+  color: $red;
+  box-shadow: $red 0 0px 0px 2px inset;
+}
+button.red:hover, .button.red:hover,
+button.red:active, .button.red:focus,
+button.red.active, .button.red.active {
+  box-shadow: $red 0 0px 0px 40px inset;
+}
+
+.bg-black {background-color:$black;}
+.clr-black {color:$black;}
+button.black, .button.black {
+  color: $black;
+  box-shadow: $black 0 0px 0px 2px inset;
+}
+button.black:hover, .button.black:hover,
+button.black:active, .button.black:focus,
+button.black.active, .button.black.active {
+  box-shadow: $black 0 0px 0px 40px inset;
+}
+
+.bg-dark22 {background-color:$dark22; }
+.tooltip-popover .inner.bg-darkFF  {box-shadow:1px 1px 1px 0 rgba(0, 0, 0, 0.1);}
+.tooltip-popover .inner.bg-darkFF .nub {border-color:transparent transparent $darkFF;}
+.tooltip.bg-darkFF .nub {border-color:transparent transparent $darkFF;}
+.clr-dark22 {color:$dark22;}
+button.dark22, .button.dark22 {
+  color: $dark22;
+  box-shadow: $dark22 0 0px 0px 2px inset;
+}
+button.dark22:hover, .button.dark22:hover,
+button.dark22:active, .button.dark22:focus,
+button.dark22.active, .button.dark22.active {
+  box-shadow: $dark22 0 0px 0px 40px inset;
+}
+
+.bg-dark33 {background-color:$dark33;}
+.clr-dark33 {color:$dark33;}
+button.dark33, .button.dark33 {
+  color: $dark33;
+  box-shadow: $dark33 0 0px 0px 2px inset;
+}
+button.dark33:hover, .button.dark33:hover,
+button.red:active, .button.dark33:focus,
+button.red.active, .button.dark33.active {
+  box-shadow: $dark33 0 0px 0px 40px inset;
+}
+
+.bg-dark44 {background-color:$dark44;}
+.clr-dark44 {color:$dark44;}
+button.dark44, .button.dark44 {
+  color: $dark44;
+  box-shadow: $dark44 0 0px 0px 2px inset;
+}
+button.dark44:hover, .button.dark44:hover,
+button.dark44:active, .button.dark44:focus,
+button.dark44.active, .button.dark44.active {
+  box-shadow: $dark44 0 0px 0px 40px inset;
+}
+
+.bg-dark55 {background-color:$dark55;}
+.tooltip-popover .inner.bg-dark55 .nub {border-color:transparent transparent $dark55;}
+.tooltip.bg-dark55 .nub {border-color:transparent transparent $dark55;}
+.clr-dark55 {color:$dark55;}
+button.dark55, .button.dark55 {
+  color: $dark55;
+  box-shadow: $dark55 0 0px 0px 2px inset;
+}
+button.dark55:hover, .button.dark55:hover,
+button.dark55:active, .button.dark55:focus,
+button.dark55.active, .button.dark55.active {
+  box-shadow: $dark55 0 0px 0px 40px inset;
+}
+.bg-dark66 {background-color:$dark66;}
+.clr-dark66 {color:$dark66;}
+button.dark66, .button.dark66 {
+  color: $dark66;
+  box-shadow: $dark66 0 0px 0px 2px inset;
+}
+button.dark55:hover, .button.dark66:hover,
+button.dark55:active, .button.dark66:focus,
+button.dark55.active, .button.dark66.active {
+  box-shadow: $dark66 0 0px 0px 40px inset;
+}
+
+.bg-dark99 {background-color:$dark99;}
+.tooltip-popover .inner.bg-dark99 .nub {border-color:transparent transparent $dark99;}
+.tooltip.bg-dark99 .nub {border-color:transparent transparent $dark99;}
+.clr-dark99 {color:$dark99;}
+button.dark99, .button.dark99 {
+  color: $dark99;
+  box-shadow: $dark99 0 0px 0px 2px inset;
+}
+button.dark99:hover, .button.dark99:hover,
+button.dark99:active, .button.dark99:focus,
+button.dark99.active, .button.dark99.active {
+  box-shadow: $dark99 0 0px 0px 40px inset;
+}
+
+.bg-darkCC {background-color:$darkCC;}
+.clr-darkCC {color:$darkCC;}
+button.darkCC, .button.darkCC {
+  color: $darkCC;
+  box-shadow: $darkCC 0 0px 0px 2px inset;
+}
+button.darkCC:hover, .button.darkCC:hover,
+button.darkCC:active, .button.darkCC:focus,
+button.darkCC.active, .button.darkCC.active {
+  box-shadow: $darkCC 0 0px 0px 40px inset;
+}
+
+.bg-darkDD {background-color:$darkDD;}
+.tooltip-popover .inner.bg-darkDD .nub {border-color:transparent transparent $darkDD;}
+.tooltip.bg-darkDD .nub {border-color:transparent transparent $darkDD;}
+.clr-darkDD {color:$darkDD;}
+button.darkDD, .button.darkDD {
+  color: $darkDD;
+  box-shadow: $darkDD 0 0px 0px 2px inset;
+}
+button.darkDD:hover, .button.darkDD:hover,
+button.darkDD:active, .button.darkDD:focus,
+button.darkDD.active, .button.darkDD.active {
+  box-shadow: $darkDD 0 0px 0px 40px inset;
+}
+
+.bg-darkFF {background-color:$darkFF;}
+.clr-darkFF {color:$darkFF;}
+button.darkFF, .button.darkFF {
+  color: $darkFF;
+  box-shadow: $darkFF 0 0px 0px 2px inset;
+}
+button.darkFF:hover, .button.darkFF:hover,
+button.darkFF:active, .button.darkFF:focus,
+button.darkFF.active, .button.darkFF.active {
+  box-shadow: $darkFF 0 0px 0px 40px inset;
+}
+
+.bg-white {background-color:$white;}
+.tooltip-popover .inner.bg-white  {box-shadow:1px 1px 1px 0 rgba(0, 0, 0, 0.1);}
+.tooltip-popover .inner.bg-white .nub {border-color:transparent transparent $white;}
+.tooltip.bg-white .nub {border-color:transparent transparent $white;}
+.clr-white {color:$white;}
+button.white, .button.white {
+  color: $white;
+  box-shadow: $white 0 0px 0px 2px inset;
+}
+button.white:hover, .button.white:hover,
+button.white:active, .button.white:focus,
+button.white.active, .button.white.active {
+  box-shadow: $white 0 0px 0px 40px inset;
+}
+
+.bg-green {background-color:$green;}
+.clr-green {color:$green;}
+button.green, .button.green {
+  color: $green;
+  box-shadow: $green 0 0px 0px 2px inset;
+}
+button.green:hover, .button.green:hover,
+button.green:active, .button.green:focus,
+button.green.active, .button.green.active {
+  box-shadow: $green 0 0px 0px 40px inset;
+}
+
+.bg-green75 {background-color:$green75;}
+.clr-green75 {color:$green75;}
+button.green75, .button.green75 {
+  color: $green75;
+  box-shadow: $green75 0 0px 0px 2px inset;
+}
+button.green75:hover, .button.green75:hover,
+button.green75:active, .button.green75:focus,
+button.green75.active, .button.green75.active {
+  box-shadow: $green75 0 0px 0px 40px inset;
+}
+
+.bg-green40 {background-color:$green40;}
+.clr-green40 {color:$green40;}
+button.green40, .button.green40 {
+  color: $green40;
+  box-shadow: $green40 0 0px 0px 2px inset;
+}
+button.green40:hover, .button.green40:hover,
+button.green40:active, .button.green40:focus,
+button.green40.active, .button.green40.active {
+  box-shadow: $green40 0 0px 0px 40px inset;
+}
+
+.bg-green15 {background-color:$green15;}
+.clr-green15 {color:$green15;}
+button.green15, .button.green15 {
+  color: $green15;
+  box-shadow: $green15 0 0px 0px 2px inset;
+}
+button.green15:hover, .button.green15:hover,
+button.green15:active, .button.green15:focus,
+button.green15.active, .button.green15.active {
+  box-shadow: $green15 0 0px 0px 40px inset;
+}
+
+.bg-orange {background-color:$orange;}
+.clr-orange {color:$orange;}
+button.orange, .button.orange {
+  color: $orange;
+  box-shadow: $orange 0 0px 0px 2px inset;
+}
+button.orange:hover, .button.orange:hover,
+button.orange:active, .button.orange:focus,
+button.orange.active, .button.orange.active {
+  box-shadow: $orange 0 0px 0px 40px inset;
+}
+
+.bg-orange75 {background-color:$orange75;}
+.clr-orange75 {color:$orange75;}
+button.orange75, .button.orange75 {
+  color: $orange75;
+  box-shadow: $orange75 0 0px 0px 2px inset;
+}
+button.orange75:hover, .button.orange75:hover,
+button.orange75:active, .button.orange75:focus,
+button.orange75.active, .button.orange75.active {
+  box-shadow: $orange75 0 0px 0px 40px inset;
+}
+
+.bg-orange40 {background-color:$orange40;}
+.clr-orange40 {color:$orange40;}
+button.orange40, .button.orange40 {
+  color: $orange40;
+  box-shadow: $orange40 0 0px 0px 2px inset;
+}
+button.orange40:hover, .button.orange40:hover,
+button.orange40:active, .button.orange40:focus,
+button.orange40.active, .button.orange40.active {
+  box-shadow: $orange40 0 0px 0px 40px inset;
+}
+
+.bg-orange15 {background-color:$orange15;}
+.clr-orange15 {color:$orange15;}
+button.orange15, .button.orange15 {
+  color: $orange15;
+  box-shadow: $orange15 0 0px 0px 2px inset;
+}
+button.orange15:hover, .button.orange15:hover,
+button.orange15:active, .button.orange15:focus,
+button.orange15.active, .button.orange15.active {
+  box-shadow: $orange15 0 0px 0px 40px inset;
+}
+
+.bg-purple {background-color:$purple;}
+.clr-purple {color:$purple;}
+button.purple, .button.purple {
+  color: $purple;
+  box-shadow: $purple 0 0px 0px 2px inset;
+}
+button.purple:hover, .button.purple:hover,
+button.purple:active, .button.purple:focus,
+button.purple.active, .button.purple.active {
+  box-shadow: $purple 0 0px 0px 40px inset;
+}
+
+.bg-purple75 {background-color:$purple75;}
+.clr-purple75 {color:$purple75;}
+button.purple75, .button.purple75 {
+  color: $purple75;
+  box-shadow: $purple75 0 0px 0px 2px inset;
+}
+button.purple75:hover, .button.purple75:hover,
+button.purple75:active, .button.purple75:focus,
+button.purple75.active, .button.purple75.active {
+  box-shadow: $purple75 0 0px 0px 40px inset;
+}
+
+.bg-purple40 {background-color:$purple40;}
+.clr-purple40 {color:$purple40;}
+button.purple40, .button.purple40 {
+  color: $purple40;
+  box-shadow: $purple40 0 0px 0px 2px inset;
+}
+button.purple40:hover, .button.purple40:hover,
+button.purple40:active, .button.purple40:focus,
+button.purple40.active, .button.purple40.active {
+  box-shadow: $purple40 0 0px 0px 40px inset;
+}
+
+.bg-purple15 {background-color:$purple15;}
+.clr-purple15 {color:$purple15;}
+button.purple15, .button.purple15 {
+  color: $purple15;
+  box-shadow: $purple15 0 0px 0px 2px inset;
+}
+button.purple15:hover, .button.purple15:hover,
+button.purple15:active, .button.purple15:focus,
+button.purple15.active, .button.purple15.active {
+  box-shadow: $purple15 0 0px 0px 40px inset;
+}
+
+.bg-blue {background-color:$blue;}
+.clr-blue {color:$blue;}
+button.blue, .button.blue {
+  color: $blue;
+  box-shadow: $blue 0 0px 0px 2px inset;
+}
+button.blue:hover, .button.blue:hover,
+button.blue:active, .button.blue:focus,
+button.blue.active, .button.blue.active {
+  box-shadow: $blue 0 0px 0px 40px inset;
+}
+
+.bg-blue75 {background-color:$blue75;}
+.clr-blue75 {color:$blue75;}
+button.blue75, .button.blue75 {
+  color: $blue75;
+  box-shadow: $blue75 0 0px 0px 2px inset;
+}
+button.blue75:hover, .button.blue75:hover,
+button.blue75:active, .button.blue75:focus,
+button.blue75.active, .button.blue75.active {
+  box-shadow: $blue75 0 0px 0px 40px inset;
+}
+
+.bg-blue40 {background-color:$blue40;}
+.clr-blue40 {color:$blue40;}
+button.blue40, .button.blue40 {
+  color: $blue40;
+  box-shadow: $blue40 0 0px 0px 2px inset;
+}
+button.blue40:hover, .button.blue40:hover,
+button.blue40:active, .button.blue40:focus,
+button.blue40.active, .button.blue40.active {
+  box-shadow: $blue40 0 0px 0px 40px inset;
+}
+
+.bg-blue15 {background-color:$blue15;}
+.clr-blue15 {color:$blue15;}
+button.blue15, .button.blue15 {
+  color: $blue15;
+  box-shadow: $blue15 0 0px 0px 2px inset;
+}
+button.blue15:hover, .button.blue15:hover,
+button.blue15:active, .button.blue15:focus,
+button.blue15.active, .button.blue15.active {
+  box-shadow: $blue15 0 0px 0px 40px inset;
+}
+
+.bg-portal-certo-light {background-color:$portalCertoLight;}
+.clr-portal-certo-light {color:$portalCertoLight;}
+
+.bg-portal-certo-dark {background-color:$portalCertoDark;}
+.clr-portal-certo-dark {color:$portalCertoDark;}
+
+.bg-advance-dark {background-color:$advanceDark;}
+.clr-advance-dark {color:$advanceDark;}

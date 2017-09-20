@@ -1,0 +1,3713 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Documentação</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery.dataTables.min.css"> 
+  <link href="stylesheets/responsive-calendar.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="stylesheets/app.css" />
+  <link rel="stylesheet" href="stylesheets/fonts.css" />
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <style>
+
+    body {
+      padding-top: 20px;
+      background: #fff;
+    }
+    .form-control {
+      position: relative;
+    }
+    .bloco{
+      width:100%;
+      float:left;
+      border-bottom:1px dotted #999;
+      margin-bottom:50px;
+      padding-bottom:40px;
+    }
+
+    .paleta-codigo > .columns code{ 
+      min-height:50px;
+    }
+    .border{
+      border: 1px solid;      
+     }
+      
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+        .code-line{
+            font-size: 11px
+        }  
+    }
+      
+    .row.display {
+      background: #666;
+      font-size: 11px;
+      margin-bottom: 0px;
+      line-height: 2rem;
+    }
+    .row.display > div {
+      border: 1px solid #eee;
+    }
+      
+    .mgn-top-35{
+        margin-top: 35px !important;
+    }
+      
+    .pos-rel {
+        position: relative      
+    }
+      
+      aside {
+          position: static;
+      }
+      
+      .mgn-bottom {
+          margin-bottom: 0px !important;
+      }
+  </style>
+</head>
+
+<body>
+
+<div class="documentacao">
+   <div class="row">
+      <!-- coluna esquerda -->
+      <div class="medium-9 columns doc-coluna-esquerda">
+        <h2 class="doc-title" id="link-doc-forms">
+  Forms
+</h2>
+
+<div class="legend">
+  <p>
+     Input Text, Radio Button, Checkbox e Switch <br><br>
+
+     Cada item do formulário é composto por:<br><br>
+
+     Label<br><br>
+
+     Placeholder (Máscara)<br><br>
+
+     Indicação de Erros<br><br>
+
+     Indicação de Informação Adicional sobre o item<br><br>
+
+
+  </p>
+</div>
+
+<!-- input text -->
+<div class="bloco">
+  <h3 class="doc-title" id="link-doc-input-text">
+    Input text
+  </h3>
+  <div class="legend">
+     <p>Os inputs dão suporte para: texto, datas, senhas, local, e-mail, url, busca e telefone.<br><br>
+
+     Para cada input é utilizado um placeholder para indicar a função do campo.
+     </p>
+  </div>  
+
+  <div class="full mgn-zero">
+    <div class="form-control input-label ">
+      <label class="transition" for="">Digite seu nome:</label>
+      <input type="text" placeholder="" id="">
+      <span class="false-border"></span>
+    </div>
+  </div>
+
+  <code>     
+
+    <span class="code-line">&lt;div class="form-control input-label"></span>
+
+      <span class="indent-10 code-line">&lt;label class="transition" for="">Digite seu nome:&lt;/label></span>
+
+      <span class="indent-10 code-line">&lt;input type="text" placeholder="" id=""></span>
+
+      <span class="indent-10 code-line">&lt;span class="false-border">&lt;/span></span>
+
+    <span class="code-line">&lt;/div></span> 
+
+  </code>
+
+  <div class="full">
+     <em>Exemplo de implementação do campo de <span class="estilo">telefone</span></em>
+     
+  </div> 
+
+  <div class="full mgn-zero">
+    <div class="form-control input-label">
+      <label class="transition" for="">Telefone:</label>
+      <input type="tel" class="mascara-telefone" placeholder="" id="">
+      <span class="false-border"></span>
+    </div>
+  </div>
+
+  <code>           
+
+    <span class="code-line">&lt;div class="form-control input-label"></span>
+      <span class="indent-10 code-line">&lt;label class="transition" for="">Telefone:&lt;/label></span>
+      <span class="indent-10 code-line">&lt;input type="tel" <span class="cor-vermelho">class="mascara-telefone"</span> placeholder="" id=""></span>
+      <span class="indent-10 code-line">&lt;span class="false-border">&lt;/span></span>
+    <span class="code-line">&lt;/div></span>
+
+  </code>
+
+
+</div>        
+<!-- /input text -->
+
+<!-- radio -->
+<div class="bloco">
+  <h3 class="doc-title" id="link-doc-radio-button">
+    Radio Button
+  </h3>
+
+  <div class="legend">
+     <p>São usados para limitar a seleção a partir de uma lista com opções pré-definidas.</p>
+  </div>          
+
+  <div class="full">
+    <div class="form-control radio-button-e-1 ">
+      <input  name="radio1" value="" checked  type="radio">
+      <label>Manga</label>
+    </div>
+    <div class="form-control radio-button-e-1 ">
+      <input  name="radio1" value="" checked  type="radio">
+      <label>Laranja</label>
+    </div>
+    <div class="form-control radio-button-e-1 ">
+      <input  name="radio1" value="" checked  type="radio">
+      <label>Morango</label>
+    </div>
+  </div>  
+
+  <code>           
+   
+    <span class=" code-line">&lt;div class="form-control radio-button-e-1"></span>
+      <span class="indent-10 code-line">&lt;input  name="radio1" value="" type="radio"></span>
+      <span class="indent-10 code-line">&lt;label>Manga&lt;/label></span>
+    <span class=" code-line">&lt;/div></span>
+
+    <span class=" code-line">&lt;div class="form-control radio-button-e-1"></span>
+      <span class="indent-10 code-line">&lt;input  name="radio1" value="" type="radio"></span>
+      <span class="indent-10 code-line">&lt;label>Laranja&lt;/label></span>
+    <span class="indent-10 code-line">&lt;/div></span>
+
+    <span class=" code-line">&lt;div class="form-control radio-button-e-1"></span>
+      <span class="indent-10 code-line">&lt;input  name="radio1" value="" type="radio"></span>
+      <span class="indent-10 code-line">&lt;label>Morango&lt;/label></span>
+    <span class=" code-line">&lt;/div></span>
+
+  </code>
+
+  <div class="full">
+    <em >Exemplo de implementação do Radio Button estilo 1<span class="estilo"> em linha</span> (adicionar a classe 'float-left')</em>
+    
+  </div>
+
+  <div class="full">
+    <div class="form-control radio-button-e-1 mgn-right-10 float-left">
+      <input  name="radio2" value="" checked  type="radio">
+      <label>Manga</label>
+    </div>
+    <div class="form-control radio-button-e-1 mgn-right-10 float-left">
+      <input  name="radio2" value="" checked  type="radio">
+      <label>Laranja</label>
+    </div>
+    <div class="form-control radio-button-e-1 float-left">
+      <input  name="radio2" value="" checked  type="radio">
+      <label>Morango</label>
+    </div>
+  </div> 
+
+  <code>           
+
+    <span class="code-line">&lt;div class="form-control radio-button-e-1 mgn-right-10 <span class="cor-vermelho">float-left</span>"></span>
+      <span class="indent-10 code-line">&lt;input  name="radio1" value="" type="radio"></span>
+      <span class="indent-10 code-line">&lt;label>Manga&lt;/label></span>
+    <span class="code-line">&lt;/div></span>
+    <span class="code-line">&lt;div class="form-control radio-button-e-1 mgn-right-10 <span class="cor-vermelho">float-left</span>"></span>
+      <span class="indent-10 code-line">&lt;input  name="radio1" value="" type="radio"></span>
+      <span class="indent-10 code-line">&lt;label>Laranja&lt;/label></span>
+    <span class="code-line">&lt;/div></span>
+    <span class="code-line">&lt;div class="form-control radio-button-e-1 <span class="cor-vermelho">float-left</span>"></span>
+      <span class="indent-10 code-line">&lt;input  name="radio1" value="" type="radio"></span>
+      <span class="indent-10 code-line">&lt;label>Morango&lt;/label></span>
+    <span class="code-line">&lt;/div></span>
+   
+  </code>
+
+  <div class="full">
+     <em id="link-doc-radio-button-e-1-com-borda">Exemplo de implementação do Radio Button<span class="estilo"> com borda</span></em>
+     
+  </div> 
+
+  <div class="full">
+    <!-- box -->
+    <div class="input-boxes">
+
+      <div class="input-boxes-inner">
+        <!-- radio estilo 1 -->
+        <div class=" radio-button-e-1">
+          <input  name="radio3" value=""  type="radio">
+          <label>Radio 1</label>
+        </div>
+        <!-- /radio -->
+      </div>
+      <div class="input-boxes-inner">
+        <!-- radio estilo 1 -->
+        <div class=" radio-button-e-1">
+          <input  name="radio3" value=""   type="radio">
+          <label>Radio 2</label>
+        </div>
+        <!-- /radio -->
+      </div>
+      <div class="input-boxes-inner">
+        <!-- radio estilo 2 -->
+        <div class="radio-button-e-1 ">
+            <input  name="radio3" value=""   type="radio">
+            <label>Radio 3</label>
+        </div>
+        <!-- /radio -->
+      </div>
+
+    </div>
+    <!-- /box -->
+  </div>
+
+  <code>         
+
+    <span class=" code-line ">&lt;div <span class="cor-vermelho">class="input-boxes"</span>></span>
+
+      <span class="indent-10 code-line">&lt;div <span class="cor-vermelho">class="input-boxes-inner"></span></span>
+        <span class="indent-20 code-line">&lt;div class=" radio-button-e-1"></span>
+          <span class="indent-30 code-line">&lt;input  name="radio3" value=""  type="radio"></span>
+          <span class="indent-30 code-line">&lt;label>Radio 1&lt;/label></span>
+        <span class="indent-20 code-line">&lt;/div></span>
+      <span class="indent-10 code-line">&lt;/div></span>
+
+      <span class="indent-10 code-line">&lt;div class="input-boxes-inner"></span>
+        <span class="indent-20 code-line">&lt;div class=" radio-button-e-1"></span>
+          <span class="indent-30 code-line">&lt;input  name="radio3" value=""  type="radio"></span>
+          <span class="indent-30 code-line">&lt;label>Radio 2&lt;/label></span>
+        <span class="indent-20 code-line">&lt;/div></span>
+      <span class="indent-10 code-line">&lt;/div></span>
+
+      <span class="indent-10 code-line">&lt;div class="input-boxes-inner"></span>
+        <span class="indent-20 code-line">&lt;div class=" radio-button-e-1"></span>
+          <span class="indent-30 code-line">&lt;input  name="radio3" value=""  type="radio"></span>
+          <span class="indent-30 code-line">&lt;label>Radio 3&lt;/label></span>
+        <span class="indent-20 code-line">&lt;/div></span>
+      <span class="indent-10 code-line">&lt;/div></span>
+      
+
+    <span class=" code-line">&lt;/div></span>             
+   
+  </code>
+  
+</div>
+<!-- /radio -->
+
+<!-- checkbox -->
+<div class="bloco">
+
+  <h3 class="doc-title" id="link-doc-checkbox">
+    Checkbox
+  </h3>
+
+  <!-- estilo 1 -->
+  <div class="legend">
+     <p>São usados para permitir que o usuário selecione mais de um tipo de opção em uma lista pré-definida.</p>
+  </div>          
+
+  <div class="full">
+     <!-- checkbox estilo 1 -->
+    <div class="form-control checkbox checkbox-e-1 float-left mgn-right-10">
+      <input  name="checkbox1" value=""  type="checkbox">
+      <label>Checkbox 1</label>
+    </div>
+    <!-- /checkbox -->
+    <!-- checkbox estilo 1 -->
+    <div class="form-control checkbox checkbox-e-1 float-left mgn-right-10">
+      <input  name="checkbox1" value=""  type="checkbox">
+      <label>Checkbox 2</label>
+    </div>
+    <!-- /checkbox -->
+    <!-- checkbox estilo 1 -->
+    <div class="form-control checkbox  checkbox-e-1 float-left">
+      <input  name="checkbox1" value=""  type="checkbox">
+      <label>Checkbox 3</label>
+    </div>
+    <!-- /checkbox -->
+  </div>  
+
+  <code>         
+
+    <span class="code-line">&lt;div class="form-control checkbox checkbox-e-1 float-left mgn-right-10"></span>
+      <span class="code-line indent-10">&lt;input  name="checkbox1" value=""  type="checkbox"></span>
+      <span class="code-line indent-10">&lt;label>Checkbox 1&lt;/label></span>
+    <span class="code-line">&lt;/div></span>
+
+    <span class="code-line">&lt;div class="form-control checkbox checkbox-e-1 float-left mgn-right-10"></span>
+      <span class="code-line indent-10">&lt;input  name="checkbox1" value=""  type="checkbox"></span>
+      <span class="code-line indent-10">&lt;label>Checkbox 2&lt;/label></span>
+    <span class="code-line">&lt;/div></span>
+
+    <span class="code-line">&lt;div class="form-control checkbox checkbox-e-1 float-left mgn-right-10"></span>
+      <span class="code-line indent-10">&lt;input  name="checkbox1" value=""  type="checkbox"></span>
+      <span class="code-line indent-10">&lt;label>Checkbox 3&lt;/label></span>
+    <span class="code-line">&lt;/div></span>          
+   
+  </code>
+  <!-- / estilo 1 -->
+
+
+</div>
+<!-- /checkbox -->
+
+
+<!-- switch -->
+<div class="bloco">
+
+  <h3 class="doc-title" id="link-doc-switch">
+    Switch
+  </h3>
+
+ 
+  <div class="legend">
+     <p>São usados para limitar a opção de ativado/desativado do usuário, com opções pré-definidas.</p>
+  </div>          
+
+  <div class="full">
+   <!-- switch -->    
+    <div class="wrap-switch mgn-right-10">
+       <label class="checkbox-switch">
+        <input type="checkbox">
+        <div class="slider round"></div>
+      </label>
+      <span>
+        Switch 1
+      </span> 
+    </div>              
+    <!-- /switch -->
+
+    <!-- switch -->    
+    <div class="wrap-switch mgn-right-10">
+       <label class="checkbox-switch">
+        <input type="checkbox">
+        <div class="slider round"></div>
+      </label>
+      <span>
+        Switch 2
+      </span> 
+    </div>              
+    <!-- /switch -->
+
+    <!-- switch -->    
+    <div class="wrap-switch">
+       <label class="checkbox-switch">
+        <input type="checkbox">
+        <div class="slider round"></div>
+      </label>
+      <span>
+        Switch 3
+      </span> 
+    </div>              
+    <!-- /switch -->
+  </div>  
+
+  <code>         
+   
+
+    <span class="code-line">&lt;div class="wrap-switch"></span>
+      <span class="code-line indent-10">&lt;label class="checkbox-switch"></span>
+        <span class="code-line indent-20">&lt;input type="checkbox"></span>
+        <span class="code-line indent-20">&lt;div class="slider round">&lt;/div></span>
+      <span class="code-line indent-10">&lt;/label></span>
+      <span class="code-line indent-10">&lt;span>Switch 1&lt;/span> </span>
+    <span class="code-line">&lt;/div>  </span>
+          
+   
+  </code>
+
+
+
+</div>
+<!-- /switch -->
+
+<!-- switch -->
+
+<!-- /switch -->
+
+
+        <div class="bloco">
+<h2 class="doc-title" id="link-doc-cores">
+  Cores
+</h2>
+
+<div class="legend">
+  <p>
+    Dentro da plataforma incluímos todas as cores oficiais do guideline de marca do Santander. E incluímos as cores utilizadas no Portal Certo como uma nova paleta.
+  </p>
+</div>
+
+<!-- colors -->
+<div class="bloco">
+  <h3 class="doc-title" id="link-doc-corporate-palette">
+    Corporate palette
+  </h3>
+         
+
+  <!-- corporate palette -->
+  <div class="full corporate-palette paleta">
+    <div class="row">
+      <div class="small-4 columns block-colors bg-red-light clr-darkFF">#ec0000;</div>
+      <div class="small-4 columns block-colors bg-red-light-medium clr-darkFF">#e60000;</div>
+      <div class="small-4 columns block-colors bg-red-medium clr-darkFF">#cc0000;</div>              
+    </div>
+
+    <div class="row mgn-top-10 paleta-codigo">
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-red-light</span>">#ec0000;&lt;/div></span>
+        </code>
+      </div>
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-red-light-medium</span>">#e60000;&lt;/div></span>
+        </code>
+      </div>
+
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-red-medium</span>">#cc0000;&lt;/div></span>
+        </code>
+      </div>       
+      
+    </div>
+
+    <div class="row">
+      <div class="small-4 columns block-colors bg-red-dark-medium clr-darkFF">#b30000;</div>
+      <div class="small-4 columns block-colors bg-red-dark clr-darkFF">#990000;</div>
+      <div class="small-4 columns block-colors bg-red clr-darkFF">#800000;</div>
+    </div>
+    <div class="row mgn-top-10 paleta-codigo">
+      
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-red-dark-medium</span>">#b30000;&lt;/div></span>
+        </code>
+      </div>
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-red-dark</span>">#990000;&lt;/div></span>
+        </code>
+      </div>
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-red</span>">#800000;&lt;/div></span>
+        </code>
+      </div>
+      
+    </div>
+
+    <div class="row">
+      <div class="small-4 columns block-colors bg-black clr-darkFF">#000000</div>
+      <div class="small-4 columns block-colors bg-dark22 clr-darkFF">#191919;</div>
+      <div class="small-4 columns block-colors bg-red-medium clr-darkFF">#cc0000;</div>              
+    </div>
+
+    <div class="row mgn-top-10 paleta-codigo">
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-black</span>">#000000;&lt;/div></span>
+        </code>
+      </div>
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-dark22</span>">#191919;&lt;/div></span>
+        </code>
+      </div>
+
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-red-medium</span>">#cc0000;&lt;/div></span>
+        </code>
+      </div>       
+      
+    </div>
+
+    <div class="row">
+      <div class="small-4 columns block-colors bg-red-dark-medium clr-darkFF">#b30000;</div>
+      <div class="small-4 columns block-colors bg-red-dark clr-darkFF">#990000;</div>
+      <div class="small-4 columns block-colors bg-red clr-darkFF">#800000;</div>
+    </div>
+    <div class="row mgn-top-10 paleta-codigo">
+      
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-red-dark-medium</span>">#b30000;&lt;/div></span>
+        </code>
+      </div>
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-red-dark</span>">#990000;&lt;/div></span>
+        </code>
+      </div>
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-red</span>">#800000;&lt;/div></span>
+        </code>
+      </div>
+      
+    </div>
+      
+    <div class="row">
+      <div class="small-4 columns block-colors clr-darkFF bg-dark33">#333333;</div>
+      <div class="small-4 columns block-colors clr-darkFF bg-dark44">#444444;</div>
+      <div class="small-4 columns block-colors clr-darkFF bg-dark55">#5b5a5b;</div>
+    </div>
+    <div class="row mgn-top-10 paleta-codigo">
+      
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-dark33</span>">#333333;&lt;/div></span>
+        </code>
+      </div>
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-dark44</span>">#333333;&lt;/div></span>
+        </code>
+      </div>
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-dark55</span>">#5b5a5b;&lt;/div></span>
+        </code>
+      </div>
+      
+    </div>
+      
+    <div class="row">
+      <div class="small-4 columns block-colors clr-darkFF bg-dark66">#6d6d6d;</div>
+      <div class="small-4 columns block-colors clr-black bg-white"><div class="border">#FFFFFF;</div></div>
+      <div class="small-4 columns block-colors clr-black bg-darkFF">#F0F0F0;</div>
+    </div>
+    <div class="row mgn-top-10 paleta-codigo">
+      
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-dark66</span>">#6d6d6d;&lt;/div></span>
+        </code>
+      </div>
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-white</span>">#333333;&lt;/div></span>
+        </code>
+      </div>
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-darkFF</span>">#5b5a5b;&lt;/div></span>
+        </code>
+      </div>
+    </div>
+      
+    <div class="row">
+      <div class="small-4 columns block-colors clr-black bg-darkDD">#DDDDDD;</div>
+      <div class="small-4 columns block-colors clr-black bg-darkCC">#CCCCCC;</div>
+      <div class="small-4 columns block-colors clr-black bg-dark99">#999999;</div>
+    </div>
+    <div class="row mgn-top-10 paleta-codigo">
+      
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-darkDD</span>">#DDDDDD;&lt;/div></span>
+        </code>
+      </div>
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-darkCC</span>">#CCCCCC;&lt;/div></span>
+        </code>
+      </div>
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-dark99</span>">#999999;&lt;/div></span>
+        </code>
+      </div>
+    </div>
+      
+  </div>      
+  <!-- /corporate palette -->
+  </div>
+  <div class="bloco">
+  <!-- secondary palette -->
+  <h3 class="doc-title" id="link-doc-secondary-palette">
+    Secondary palette
+  </h3>
+           
+    
+  <div class="full corporate-palette paleta">
+    <div class="row">
+      <div class="small-3 columns block-colors bg-green clr-black">#abc111;</div>
+      <div class="small-3 columns block-colors bg-orange clr-black">#e59d27;</div>
+      <div class="small-3 columns block-colors bg-purple clr-black">#9e3667;</div>
+      <div class="small-3 columns block-colors bg-blue clr-black">#b30000;</div>
+    </div>
+
+    <div class="row mgn-top-10 paleta-codigo">
+      <div class="small-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-green</span>">#abc111;&lt;/div></span>
+        </code>
+      </div>
+      <div class="small-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-orange</span>">#e59d27;&lt;/div></span>
+        </code>
+      </div>
+
+      <div class="small-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-purple</span>">#9e3667;;&lt;/div></span>
+        </code>
+      </div>       
+      
+      <div class="small-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-blue</span>">#1bb3bc;&lt;/div></span>
+        </code>
+      </div>
+    </div>
+      
+    <div class="row">
+      <div class="small-3 columns block-colors bg-green75 clr-black">#c4d358;</div>
+      <div class="small-3 columns block-colors bg-orange75 clr-black">#edba67;</div>
+      <div class="small-3 columns block-colors bg-purple75 clr-black">#bb7294;</div>
+      <div class="small-3 columns block-colors bg-blue75 clr-black">#5fcad0;</div>
+    </div>
+
+    <div class="row mgn-top-10 paleta-codigo">
+      <div class="small-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-green75</span>">#c4d358;&lt;/div></span>
+        </code>
+      </div>
+      <div class="small-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-orange75</span>">#edba67;&lt;/div></span>
+        </code>
+      </div>
+
+      <div class="small-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-purple75</span>">#bb7294;&lt;/div></span>
+        </code>
+      </div>       
+      
+      <div class="small-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-blue75</span>">#5fcad0;&lt;/div></span>
+        </code>
+      </div>
+    </div>
+      
+    <div class="row">
+      <div class="small-3 columns block-colors bg-green40 clr-black">#dde6a0;</div>
+      <div class="small-3 columns block-colors bg-orange40 clr-black">#f5d8a9;</div>
+      <div class="small-3 columns block-colors bg-purple40 clr-black">#d8afc2;</div>
+      <div class="small-3 columns block-colors bg-blue40 clr-black">#a4e1e4;</div>
+    </div>
+
+    <div class="row mgn-top-10 paleta-codigo">
+      <div class="small-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-green40</span>">#dde6a0;&lt;/div></span>
+        </code>
+      </div>
+      <div class="small-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-orange40</span>">#f5d8a9;&lt;/div></span>
+        </code>
+      </div>
+
+      <div class="small-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-purple40</span>">#d8afc2;&lt;/div></span>
+        </code>
+      </div>       
+      
+      <div class="small-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-blue40</span>">#a4e1e4;&lt;/div></span>
+        </code>
+      </div>
+    </div>
+      
+    <div class="row">
+      <div class="small-3 columns block-colors bg-green15 clr-black">#f2f6dc;</div>
+      <div class="small-3 columns block-colors bg-orange15 clr-black">#fbf0df;</div>
+      <div class="small-3 columns block-colors bg-purple15 clr-black">#f1e1e8;</div>
+      <div class="small-3 columns block-colors bg-blue15 clr-black">#ddf4f5;</div>
+    </div>
+
+    <div class="row mgn-top-10 paleta-codigo">
+      <div class="small-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-green15</span>">#f2f6dc;&lt;/div></span>
+        </code>
+      </div>
+      <div class="small-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-orange15</span>">#fbf0df;&lt;/div></span>
+        </code>
+      </div>
+
+      <div class="small-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-purple15</span>">#f1e1e8;&lt;/div></span>
+        </code>
+      </div>       
+      
+      <div class="small-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-blue15</span>">#ddf4f5;&lt;/div></span>
+        </code>
+      </div>
+    </div>  
+   </div>
+  </div>
+  <!-- /secondary palette -->
+
+  <!-- Portal Certo palette -->
+  <div class="bloco">
+  <h3 class="doc-title" id="link-doc-portal-certo-palette">
+    Portal Certo palette
+  </h3>
+             
+  <div class="full corporate-palette paleta">
+    <div class="row">
+      <div class="small-4 columns block-colors bg-portal-certo-light clr-black">#30cbff;</div>
+      <div class="small-4 columns block-colors bg-portal-certo-dark clr-black end">#32a3d7;</div>
+    </div>
+
+    <div class="row mgn-top-10 paleta-codigo">
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-portal-certo-light</span>">#30cbff;&lt;/div></span>
+        </code>
+      </div>
+      <div class="small-4 columns block-colors end">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-portal-certo-dark</span>">#32a3d7;&lt;/div></span>
+        </code>
+      </div>    
+      
+    </div>
+
+  </div> 
+  </div>      
+  <!-- /Portal Certo palette -->
+    
+  <!-- Santander Advance palette -->
+  <div class="bloco">
+  <h3 class="doc-title" id="link-doc-advanced-palette">
+    Santander Advance palette
+  </h3>          
+    
+  <div class="full corporate-palette paleta">
+    <div class="row">
+      <div class="small-4 columns block-colors bg-red-light clr-black">#ec0000;</div>
+      <div class="small-4 columns block-colors bg-advance-dark clr-black end">#32a3d7;</div>
+    </div>
+
+    <div class="row mgn-top-10 paleta-codigo">
+      <div class="small-4 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-red-light</span>">#ec0000;&lt;/div></span>
+        </code>
+      </div>
+      <div class="small-4 columns block-colors end">
+        <code class="pdg-5">
+          <span class="code-line">&lt;div class="<span class="cor-vermelho">bg-advance-dark</span>">#32a3d7;&lt;/div></span>
+        </code>
+      </div>    
+      
+    </div>
+
+  </div>
+  </div>
+  <!-- /Santander Advance palette -->
+    
+  <!-- Santander Select palette -->
+  <div class="bloco">      
+      <h3 class="doc-title" id="link-doc-select-palette">
+        Santander Select palette
+      </h3>           
+
+      <div class="full corporate-palette paleta">
+        <div class="row">
+          <div class="small-4 columns block-colors bg-red-light clr-black">#ec0000;</div>
+          <div class="small-4 columns block-colors bg-dark66 clr-black end">#666666;</div>
+        </div>
+      </div>
+  </div>
+</div>
+
+        <div class="bloco">
+<h2 class="doc-title" id="link-doc-botao">
+Botões
+</h2>
+
+<div class="legend">
+   <p>Os botões utilizam as mesmas propriedades definidas como fonte e um outline para marcar a borda do botão. No hover o botão é preenchido. Utilizamos este recurso para deixar os botões mais leves e evitar muitos elementos vermelhos simultâneos na tela.</p><br>
+   <p>Em alguns casos serão necessários outros botões de apoio e ações na mesma tela. Então é permitido a utilização de cores de apoio para equilibrar o visual e ações na tela.</p>
+</div>
+
+<!-- Botões 1-->
+<div class="bloco">
+<h3 class="doc-title" id="link-doc-x-large">
+  X Large
+</h3>
+        
+
+<div class="full">
+  <div class="row">
+    <div class="button btn-x-large red-light-medium">Continue</div>
+    <div class="button btn-x-large red-light-medium active">Continue</div>
+  </div>
+  <div class="row mgn-top-10">
+    <div class="large-3 columns block-colors">
+      <code class="pdg-5">
+
+        <span class="code-line">&lt;div class="<span class="cor">button btn-x-large red-light-medium</span>">Continue&lt;/div></span>
+
+      </code>
+    </div>
+    <div class="large-3 columns block-colors end">
+      <code class="pdg-5">
+        <span class="code-line">&lt;div class="button btn-x-large red-light-medium <span class="cor-vermelho">active</span>">Continue&lt;/div></span>
+      </code>
+    </div>
+    
+  </div>
+</div>      
+
+<!-- /Botões 1-->
+<hr>
+<!-- Botões 2-->
+<h3 class="doc-title" id="link-doc-large">
+  Large
+</h3>       
+
+<div class="full">
+  <div class="row">
+    <div class="button btn-large red-light-medium">Continue</div>
+    <div class="button btn-large red-light-medium active">Continue</div>
+  </div>
+  <div class="row mgn-top-10">
+    <div class="large-3 columns block-colors">
+      <code class="pdg-5">
+
+        <span class="code-line">&lt;div class="button btn-large red-light-medium">Continue&lt;/div></span>
+
+      </code>
+    </div>
+    <div class="large-3 columns block-colors end">
+      <code class="pdg-5">
+        <span class="code-line">&lt;div class="button btn-large red-light-medium <span class="cor-vermelho">active</span>">Share&lt;/div></span>
+      </code>
+    </div>
+    
+  </div>
+</div>      
+<!-- /Botões 2-->
+<hr>    
+<!-- Botões 3-->
+<h3 class="doc-title" id="link-doc-medium">
+  Medium
+</h3>      
+
+<div class="full">
+  <div class="row">
+    <div class="large-3 columns block-colors">    
+      <div class="button btn-medium red-light-medium">Continue</div>
+    </div>
+    <div class="large-3 columns block-colors end">
+      <div class="button btn-medium red-light-medium active">Continue</div>
+    </div>      
+  </div>
+  <div class="row mgn-top-10">
+    <div class="large-3 columns block-colors">
+      <code class="pdg-5">
+
+        <span class="code-line">&lt;div class="button btn-medium red-light-medium">Continue&lt;/div></span>
+
+      </code>
+    </div>
+    <div class="large-3 columns block-colors end">
+      <code class="pdg-5">
+        <span class="code-line">&lt;div class="button btn-medium red-light-medium <span class="cor-vermelho">active</span>">Share&lt;/div></span>
+      </code>
+    </div>
+    
+  </div>
+</div>  
+<!-- /Botões 3-->
+<hr>
+<!-- Botões 4-->
+<h3 class="doc-title" id="link-doc-small">
+  Small
+</h3>
+     
+
+<div class="full">
+  <div class="row">
+    <div class="large-3 columns block-colors">
+      <div class="button btn-small red-light-medium">Continue</div>
+    </div>
+    <div class="large-3 columns block-colors end">
+      <div class="button btn-small red-light-medium active">Continue</div>
+    </div>    
+  </div>
+  <div class="row mgn-top-10">
+    <div class="large-3 columns block-colors">
+      <code class="pdg-5">
+
+        <span class="code-line">&lt;div class="button btn-small red-light-medium">Continue&lt;/div></span>
+
+      </code>
+    </div>
+    <div class="large-3 columns block-colors end">
+      <code class="pdg-5">
+        <span class="code-line">&lt;div class="button btn-small red-light-medium <span class="cor-vermelho">active</span>">Share&lt;/div></span>
+      </code>
+    </div>
+    
+  </div>
+</div>  
+ <!-- /Botões 4-->  
+  
+</div>
+<!-- /Botões -->
+</div>
+        <div class="bloco">
+<h2 class="doc-title" id="link-doc-tags">
+  Tags
+</h2>
+
+<!-- Tags-->
+<div class="bloco">
+  <div class="legend">
+     <p>Serão utilizadas nas fichas para classificar o cliente. Algumas poderão ter ação de clique e trazer um resultado. Não usaremos a cor vermelho nas tags, pois essas são cores utilizadas nos botões.</p>
+  </div>        
+
+  <div class="full">
+    <div class="row">
+      <div class="large-3 columns block-colors">
+        <a href="javascript:void(0)" class="transition tag default">Label</a>
+      </div>
+      <div class="large-3 columns block-colors end">
+        <a href="javascript:void(0)" class="transition tag bg-red-light clr-white">Label</a>
+      </div>
+      <div class="large-3 columns block-colors end">
+        <a href="javascript:void(0)" class="transition tag clr-white bg-red-medium">Label</a>
+      </div>
+    </div>
+    <div class="row mgn-top-10">
+      <div class="large-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;a href="javascript:void(0)" class="transition tag default">Label&lt;/a></span>
+        </code>
+      </div>
+      <div class="large-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;a href="javascript:void(0)" class="transition tag <span class="cor-vermelho">bg-red-light clr-white</span>">Label&lt;/a></span>
+        </code>
+      </div>
+
+      <div class="large-3 columns block-colors end">
+        <code class="pdg-5">
+          <span class="code-line">&lt;a href="javascript:void(0)" class="transition tag <span class="cor-vermelho">clr-white bg-red-medium</span>">Label&lt;/a></span>
+        </code>
+      </div>
+    </div>
+      
+    <hr>  
+      
+    <div class="row">
+      <div class="large-3 columns block-colors">
+        <a href="javascript:void(0)" class="transition tag clr-white bg-red-dark-medium">Label</a>
+      </div>
+      <div class="large-3 columns block-colors end">
+        <a href="javascript:void(0)" class="transition tag clr-white bg-green">Label</a>
+      </div>
+      <div class="large-3 columns block-colors end">
+        <a href="javascript:void(0)" class="transition tag clr-white bg-orange">Label</a>
+      </div>
+    </div>
+    <div class="row mgn-top-10">
+      <div class="large-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;a href="javascript:void(0)" class="transition tag <span class="cor-vermelho">clr-white bg-red-dark-medium </span>">Label&lt;/a></span>
+        </code>
+      </div>
+      <div class="large-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;a href="javascript:void(0)" class="transition tag clr-white<span class="cor-vermelho"> bg-green</span>">Label&lt;/a></span>
+        </code>
+      </div>
+
+      <div class="large-3 columns block-colors end">
+        <code class="pdg-5">
+          <span class="code-line">&lt;a href="javascript:void(0)" class="transition tag clr-white <span class="cor-vermelho">bg-orange</span>">Label&lt;/a></span>
+        </code>
+      </div>
+    </div>
+      
+    <hr>  
+      
+    <div class="row">
+      <div class="large-3 columns block-colors">
+        <a href="javascript:void(0)" class="transition tag clr-white bg-purple">Label</a>
+      </div>
+      <div class="large-3 columns block-colors end">
+        <a href="javascript:void(0)" class="transition tag clr-white bg-blue">Label</a>
+      </div>
+      <div class="large-3 columns block-colors end">
+        <a href="javascript:void(0)" class="transition tag clr-black bg-white border">Label</a>
+      </div>
+    </div>
+    <div class="row mgn-top-10">
+      <div class="large-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;a href="javascript:void(0)" class="transition tag clr-white <span class="cor-vermelho">bg-purple</span>">Label&lt;/a></span>
+        </code>
+      </div>
+      <div class="large-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;a href="javascript:void(0)" class="transition tag clr-white <span class="cor-vermelho">bg-blue</span>">Label&lt;/a></span>
+        </code>
+      </div>
+
+      <div class="large-3 columns block-colors end">
+        <code class="pdg-5">
+          <span class="code-line">&lt;a href="javascript:void(0)" class="transition tag clr-black <span class="cor-vermelho">bg-white</span>">Label&lt;/a></span>
+        </code>
+      </div>
+    </div>
+      
+    <hr>
+    
+    <div class="row">
+      <div class="large-3 columns block-colors">
+        <a href="javascript:void(0)" class="transition tag clr-white bg-black">Label</a>
+      </div>
+      <div class="large-3 columns block-colors end">
+        <a href="javascript:void(0)" class="transition tag clr-white bg-dark66">...</a>
+      </div>
+    </div>
+    <div class="row mgn-top-10">
+      <div class="large-3 columns block-colors">
+        <code class="pdg-5">
+          <span class="code-line">&lt;a href="javascript:void(0)" class="transition tag clr-white <span class="cor-vermelho">bg-black</span>">Label&lt;/a></span>
+        </code>
+      </div>
+      <div class="large-3 columns block-colors end">
+        <code class="pdg-5">
+          <span class="code-line">&lt;a href="javascript:void(0)" class="transition tag clr-white <span class="cor-vermelho">bg-dark66</span>">...&lt;/a></span>
+        </code>
+      </div>
+    </div>
+      
+  </div>
+    
+</div>
+</div>
+        <div class="bloco">
+<h2 class="doc-title" id="link-doc-grid">
+  Grid
+</h2>
+
+<div class="legend">
+  <p>
+    Utilizaremos os grids para possibilitar a distribuição do conteúdo de forma uniforme. Sendo flexível, facilita a construção do design responsivo.
+  </p>
+</div>
+
+  <h4 class="doc-title" id="link-doc-basico">
+    Básico
+  </h4>      
+  <div class="legend">
+      <p>
+        Comece adicionando um elemento com uma classe de <strong>row</strong> . Isto irá criar um bloco horizontal para conter colunas verticais. Em seguida, adicione elementos com um <strong>column</strong> classe dentro dessa linha. Você pode usar ou <strong>columns</strong> a única diferença é gramática. Especificar as larguras de cada coluna com o <strong>small- #</strong> , <strong>medium- #</strong> , e <strong>large- #</strong> classes.
+      </p>       
+  </div>
+
+   <div class="bloco">    
+      <div class="full">
+        <div class="row display">
+              <div class="small-2 large-4 columns"><span class="hide-for-large">2</span><span class="show-for-large">4</span></div>
+              <div class="small-4 large-4 columns">4</div>
+              <div class="small-6 large-4 columns"><span class="hide-for-large">6</span><span class="show-for-large">4</span></div>
+        </div>
+        <div class="row mgn-top-10 paleta-codigo">
+            <code class="pdg-5">
+                  <span class="code-line">
+                      &lt;div class="<span class="cor-vermelho">row</span>"><br>
+                      
+                        <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">small-2 large-4 columns</span>">4&lt;/div>
+                        </span><br>
+                      
+                        <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">small-4 large-4 columns</span>">4&lt;/div>
+                        </span><br>
+                      
+                        <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">small-6 large-4 columns</span>">4&lt;/div>
+                        </span><br>
+                      
+                      &lt;/div>
+                  </span>
+            </code>
+        </div>
+
+        <hr>  
+
+        <div class="row display mgn-top-35">
+              <div class="large-3 columns"><span class="hide-for-large">full</span><span class="show-for-large">3</span></div>
+              <div class="large-6 columns"><span class="hide-for-large">full</span><span class="show-for-large">6</span></div>
+              <div class="large-3 columns"><span class="hide-for-large">full</span><span class="show-for-large">3</span></div>
+        </div>
+
+        <div class="row mgn-top-10 paleta-codigo">
+            <code class="pdg-5">
+                  <span class="code-line">
+                      &lt;div class="<span class="cor-vermelho">row</span>"><br>
+                      
+                        <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">large-3 columns</span>">3&lt;/div>
+                        </span><br>
+                      
+                        <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">large-6 columns</span>">6&lt;/div>
+                        </span><br>
+                      
+                        <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">large-3 columns</span>">3/div>
+                        </span><br>
+                      
+                      &lt;/div>
+                  </span>
+            </code>
+        </div>
+
+        <hr>
+
+        <div class="row display mgn-top-35">
+              <div class="small-6 large-2 columns"><span class="hide-for-large">6</span><span class="show-for-large">2</span></div>
+              <div class="small-6 large-8 columns"><span class="hide-for-large">6</span><span class="show-for-large">8</span></div>
+              <div class="small-12 large-2 columns"><span class="hide-for-large">full</span><span class="show-for-large">2</span></div>
+        </div>
+
+        <div class="row mgn-top-10 paleta-codigo">
+            <code class="pdg-5">
+                  <span class="code-line">
+                      &lt;div class="<span class="cor-vermelho">row</span>"><br>
+                      
+                        <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">small-6 large-2 columns</span>">2&lt;/div>
+                        </span><br>
+                      
+                        <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">small-6 large-8 columns</span>">8&lt;/div>
+                        </span><br>
+                      
+                        <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">small-12 large-2 columns</span>">2&lt;/div>
+                        </span><br>
+                      
+                      &lt;/div>
+                  </span>
+            </code>
+        </div>
+
+        <hr>
+
+        <div class="row display mgn-top-35">
+              <div class="small-3 columns">3</div>
+              <div class="small-9 columns">9</div>
+        </div>
+
+        <div class="row mgn-top-10 paleta-codigo">
+            <code class="pdg-5">
+                  <span class="code-line">
+                      &lt;div class="<span class="cor-vermelho">row</span>"><br>
+                      
+                        <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">small-3 columns</span>">3&lt;/div>
+                        </span><br>
+                      
+                        <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">small-9 columns</span>">9&lt;/div>
+                        </span><br>
+                      
+                      &lt;/div>
+
+                  </span>
+            </code>
+        </div>
+
+        <hr>  
+
+        <div class="row display mgn-top-35">
+              <div class="large-4 columns"><span class="hide-for-large">full</span><span class="show-for-large">4</span></div>
+              <div class="large-8 columns"><span class="hide-for-large">full</span><span class="show-for-large">8</span></div>
+        </div>
+
+        <div class="row mgn-top-10 paleta-codigo">
+            <code class="pdg-5">
+                  <span class="code-line">
+                     &lt;div class="<span class="cor-vermelho">row</span>"><br>
+                      
+                        <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">large-4 columns</span>">4&lt;/div>
+                        </span><br>
+                      
+                        <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">large-8 columns</span>">8&lt;/div>
+                        </span><br>
+                      
+                     &lt;/div>
+                  </span>
+            </code>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="row display mgn-top-35">
+              <div class="small-6 large-5 columns"><span class="hide-for-large">6</span><span class="show-for-large">5</span></div>
+              <div class="small-6 large-7 columns"><span class="hide-for-large">6</span><span class="show-for-large">7</span></div>
+      </div>
+
+        <div class="row mgn-top-10 paleta-codigo">
+            <code class="pdg-5">
+                  <span class="code-line">
+                     &lt;div class="<span class="cor-vermelho">row</span>"><br>
+                      
+                        <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">small-6 large-5 columns</span>">5&lt;/div>
+                        </span><br>
+                      
+                        <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">small-6 large-7 columns</span>">7&lt;/div>
+                        </span><br>
+                      
+                     &lt;/div>
+                  </span>
+            </code>
+        </div>
+
+       <hr>
+
+         <div class="row display mgn-top-35">
+              <div class="large-6 columns"><span class="hide-for-large">full</span><span class="show-for-large">6</span></div>
+              <div class="large-6 columns"><span class="hide-for-large">full</span><span class="show-for-large">6</span></div>
+         </div> 
+
+        <div class="row mgn-top-10 paleta-codigo">
+            <code class="pdg-5">
+                  <span class="code-line">
+                     &lt;div class="<span class="cor-vermelho">row</span>"><br>
+                      
+                        <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">large-6 columns</span>">6&lt;/div>
+                        </span><br>
+                      
+                        <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">large-6 columns</span>">6&lt;/div>
+                        </span><br>
+                      
+                     &lt;/div>
+                  </span>
+            </code>
+        </div>  
+    </div>
+<!-- Grids -->
+  
+<!-- small grid -->
+<div class="bloco">
+    <h3 class="doc-title" id="link-doc-small-grid">
+        Small Grid
+    </h3>      
+    <div class="legend">
+      <p>
+        Small grid se ajusta de uma maneira fácil à telas menores.
+      </p>
+    </div>
+    <div class="row display mgn-top-35">
+        <div class="small-2 columns">2</div>
+        <div class="small-10 columns">10</div>
+    </div>
+    
+    <div class="row mgn-top-10 paleta-codigo">
+        <code class="pdg-5">
+            <span class="code-line">
+                &lt;div class="<span class="cor-vermelho">row</span>"><br>
+                
+                    <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">small-2 columns</span>">2&lt;/div>
+                    </span><br>
+                
+                    <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">small-10 columns</span>">10&lt;/div>
+                    </span><br>
+                
+                &lt;/div>
+            </span>
+        </code>
+    </div>
+    
+    <hr>
+    
+    <div class="row display mgn-top-35">
+        <div class="small-3 columns">3</div>
+        <div class="small-9 columns">9</div>
+    </div>
+    
+    <div class="row mgn-top-10 paleta-codigo">
+        <code class="pdg-5">
+            <span class="code-line">
+                &lt;div class="<span class="cor-vermelho">row</span>"><br>
+                
+                    <span class="indent-20 code-line">&lt;div class="><span class="cor-vermelho">small-3 columns</span>">3&lt;/div>
+                    </span><br>
+                
+                    <span class="indent-20 code-line">&lt;div class="><span class="cor-vermelho">small-9 columns</span>">9&lt;/div>
+                    </span><br>
+                
+                &lt;/div>
+            </span>
+        </code>
+    </div>
+</div>
+<!-- /small grid -->
+  
+<!-- Medium Grid -->
+<div class="bloco">
+  <h3 class="doc-title" id="link-doc-medium-grid">
+    Medium Grid
+  </h3>      
+  <div class="legend">
+      <p>
+        Telas de tamanho médio vão herdar o estilo de tela menor, a menos que você especifique um layout diferente usando a classe <strong>medium</strong>.
+      </p>
+  </div>
+    
+  <div class="row display mgn-top-35">
+      <div class="medium-2 columns">2</div>
+      <div class="medium-10 columns">10</div>
+  </div>
+    
+   <div class="row mgn-top-10 paleta-codigo">
+        <code class="pdg-5">
+            <span class="code-line">
+                &lt;div class="<span class="cor-vermelho">row</span>"><br>
+                
+                    <span class="indent-20 code-line">&lt;div class="><span class="cor-vermelho">medium-2 columns</span>">3&lt;/div>
+                    </span><br>
+                
+                    <span class="indent-20 code-line">&lt;div class="><span class="cor-vermelho">medium-10 columns</span>">9&lt;/div>
+                    </span><br>
+                
+                &lt;/div>
+            </span>
+        </code>
+    </div>
+    
+    <hr>
+    
+  <div class="row display mgn-top-35">
+      <div class="medium-3 columns">3</div>
+      <div class="medium-9 columns">9</div>
+  </div>
+    
+  <div class="row mgn-top-10 paleta-codigo">
+        <code class="pdg-5">
+            <span class="code-line">
+                &lt;div class="<span class="cor-vermelho">row</span>"><br>
+                
+                    <span class="indent-20 code-line">&lt;div class="><span class="cor-vermelho">medium-3 columns</span>">3&lt;/div>
+                    </span><br>
+                
+                    <span class="indent-20 code-line">&lt;div class="><span class="cor-vermelho">medium-9 columns</span>">9&lt;/div>
+                    </span><br>
+                &lt;/div>
+            </span>
+        </code>
+    </div>    
+</div>
+<!-- Medium Grid -->
+
+</div>
+                <div class="bloco">
+        <h2 class="doc-title" id="link-doc-menu">
+          Menu
+        </h2>
+
+        <div class="legend">
+          <p>
+            Cada menu tem os itens relativos ao seu “space” onde cada área pode definir cada página e o agrupamento destas páginas no menu para facilitar a navegação.
+          </p>
+        </div>
+
+           <div class="bloco">    
+              <div class="full">
+                <div class="pos-rel">
+                    <aside>
+                      <ul class="menu icon-left">
+                        <li><a href="javascript:void(0)" class="transition"><span class="transition">Menu Item</span></a></li>
+                        <li><a href="javascript:void(0)" class="transition"><span class="transition">Menu Item</span></a></li>
+                        <li><a href="javascript:void(0)" class="transition"><span class="transition">Menu Item</span></a></li>
+                      </ul>
+                    </aside>  
+                </div>
+                <div class="row mgn-top-10 paleta-codigo">
+                    <code class="pdg-5">
+                        &lt;aside><br>
+                        
+                          <span class="indent-20 code-line">&lt;ul class="<span class="cor-vermelho">menu icon-left</span>"></span><br>
+                        
+                          <span class="indent-30 code-line">&lt;li>&lt;a href="javascript:void(0)" class="transition">&lt;span class="transition">Menu Item&lt;/span>&lt;/a>&lt;/li>
+                          </span><br>
+                        
+                          <span class="indent-30 code-line">&lt;li>&lt;a href="javascript:void(0)" class="transition">&lt;span class="transition">Menu Item&lt;/span>&lt;/a>&lt;/li>
+                          </span><br>
+                        
+                          <span class="indent-30 code-line">&lt;li>&lt;a href="javascript:void(0)" class="transition">&lt;span class="transition">Menu Item&lt;/span>&lt;/a>&lt;/li>
+                          </span><br>
+                        
+                          <span class="indent-20 code-line">&lt;/ul></span><br>
+                        
+                        &lt;/aside>    
+                    </code>
+                </div>
+             </div>
+          </div>
+       <!-- submenu -->
+        <div class="bloco">
+            <h3 class="doc-title" id="link-doc-submenu">
+                Submenu
+            </h3>      
+            <div class="legend">
+              <p>
+                Adicione subníveis ao menu utilizando as classes <strong>dropdown</strong> e <strong>menu-drop</strong>
+              </p>
+            </div>
+            <div class="pos-rel">
+                <aside>
+                    <ul class="menu icon-left">
+                        <li class="dropdown">
+                          <a href="javascript:void(0)" class="transition">
+                            <span class="transition">Menu Item</span>
+                            <span class="notification">3</span>
+                          </a>
+                          <div class="menu-drop">
+                            <ul>
+                              <li><a href="javascript:void(0)" class="transition">Submenu item</a></li>
+                              <li><a href="javascript:void(0)" class="transition">Submenu item</a></li>
+                              <li><a href="javascript:void(0)" class="transition">Submenu item</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            
+            <div class="row mgn-top-10 paleta-codigo">
+                <code class="pdg-5">
+                    <span class="code-line">
+                        &lt;ul class="<span class="cor-vermelho">menu icon-left</span>"><br>
+                        
+                        <span class="indent-10 code-line">&lt;li class="<span class="cor-vermelho">dropdown</span>"></span><br>
+                        
+                        <span class="indent-20 code-line">&lt;a href="javascript:void(0)" class="transition"></span><br>
+                        
+                        <span class="indent-30 code-line">&lt;span class="transition">Menu Item&lt;/span></span><br>
+                        
+                        <span class="indent-30 code-line">&lt;span class="<span class="cor-vermelho">notification</span>">3&lt;/span></span>
+                        
+                        <span class="indent-20 code-line">&lt;/a></span><br>
+                        
+                        <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">menu-drop</span>"></span><br>
+                        
+                        <span class="indent-30 code-line">&lt;ul></span><br>
+                        
+                        <span class="indent-40 code-line">&lt;li>&lt;a href="javascript:void(0)" class="transition">Submenu item&lt;/a>&lt;/li>
+                        </span><br>
+                        
+                        <span class="indent-40 code-line">&lt;li>&lt;a href="javascript:void(0)" class="transition">Submenu item&lt;/a>&lt;/li>
+                        </span><br>
+                        
+                        <span class="indent-40 code-line">&lt;li>&lt;a href="javascript:void(0)" class="transition">Submenu item&lt;/a>&lt;/li>
+                        </span><br>
+                        
+                        <span class="indent-30 code-line">&lt;/ul></span><br>
+                        
+                        <span class="indent-20 code-line">&lt;/div></span><br>
+                        
+                        <span class="indent-10 code-line">&lt;/li></span><br>
+                      &lt;/ul>
+                    </span>
+                </code>
+            </div>
+        </div>
+        <!-- /submenu -->
+          
+ </div>     
+        <div class="bloco">
+<h2 class="doc-title" id="link-doc-tipografia">
+  Tipografia
+</h2>
+
+<div class="legend">
+  <p>
+    Será utilizado a Open Sans, feita para internet da família de fontes do guide Santander. Teremos 6 tamanhos padrões de peso, cada um com um padrão de aplicação a ser respeitado.
+  </p>
+</div>
+
+<!-- H1 -->
+<div class="bloco">
+  <h3 class="doc-title" id="link-doc-h1">
+    Tag H1
+  </h3>      
+  <div class="full corporate-palette paleta">
+    <div class="row">
+      <h1>h1. This is a very large header.</h1>
+    </div>
+    <div class="row mgn-top-10 paleta-codigo">
+        <code class="pdg-5">
+          <span class="code-line">&lt;h1>h1. This is a very large header.&lt;/h1></span>
+        </code>
+    </div>
+  </div>      
+    
+</div>
+<!-- /H1 -->
+
+<!-- H2 -->
+<div class="bloco">
+  <h3 class="doc-title" id="link-doc-h2">
+    Tag H2
+  </h3>      
+  <div class="full corporate-palette paleta">
+    <div class="row">
+      <h2>h2. This is a large header.</h2>
+    </div>
+    <div class="row mgn-top-10 paleta-codigo">
+        <code class="pdg-5">
+          <span class="code-line">&lt;h2>h2. This is a large header.&lt;/h2></span>
+        </code>
+     
+    </div>
+  </div>      
+</div>
+<!-- /H2 -->
+  
+<!-- H3 -->
+<div class="bloco">
+  <h3 class="doc-title" id="link-doc-h3">
+    Tag H3
+  </h3>      
+  <div class="full corporate-palette paleta">
+    <div class="row">
+      <h3>h3. This is a medium header.</h3>
+    </div>
+    <div class="row mgn-top-10 paleta-codigo">
+        <code class="pdg-5">
+          <span class="code-line">&lt;h3>h3. This is a medium header.&lt;/h3></span>
+        </code>
+     
+    </div>
+  </div>      
+</div>
+<!-- /H3 -->
+  
+<!-- h4 -->
+<div class="bloco">
+  <h3 class="doc-title" id="link-doc-h4">
+    Tag H4
+  </h3>      
+  <div class="full corporate-palette paleta">
+    <div class="row">
+      <h4>h4. This is a moderate header.</h4>
+    </div>
+    <div class="row mgn-top-10 paleta-codigo">
+        <code class="pdg-5">
+          <span class="code-line">&lt;h4>h4. This is a moderate header.&lt;/h4></span>
+        </code>
+     
+    </div>
+  </div>      
+</div>
+<!-- /H4 -->
+  
+<!-- H5 -->
+<div class="bloco">
+  <h3 class="doc-title" id="link-doc-h5">
+    Tag H5
+  </h3>      
+  <div class="full corporate-palette paleta">
+    <div class="row">
+      <h5>h5. This is a small header.</h5>
+    </div>
+    <div class="row mgn-top-10 paleta-codigo">
+        <code class="pdg-5">
+          <span class="code-line">&lt;h5>h5. This is a small header.&lt;/h5></span>
+        </code>
+     
+    </div>
+  </div>      
+</div>
+<!-- /H5 -->
+  
+<!-- H6 -->
+<div class="bloco">
+  <h3 class="doc-title" id="link-doc-h6">
+    Tag H6
+  </h3>      
+  <div class="full corporate-palette paleta">
+    <div class="row">
+      <h6>h6. This is a tiny header.</h6>
+    </div>
+    <div class="row mgn-top-10 paleta-codigo">
+        <code class="pdg-5">
+          <span class="code-line">&lt;h6>h6. This is a tiny header.&lt;/h6></span>
+        </code>
+     
+    </div>
+  </div>      
+</div>
+<!-- /H6 -->
+  
+<!-- Strong -->
+<div class="bloco">
+  <h3 class="doc-title" id="link-doc-strong">
+    Tag Strong
+  </h3>      
+  <div class="full corporate-palette paleta">
+    <div class="row">
+      <h2>Our <strong>Agency</strong>, our selves.</h2>
+    </div>
+    <div class="row mgn-top-10 paleta-codigo">
+        <code class="pdg-5">
+          <span class="code-line">&lt;h2>Our <span class="cor-vermelho">&lt;strong>Agency&lt;/strong></span>, our selves.&lt;/h2></span>
+        </code>
+     
+    </div>
+  </div>      
+</div>
+<!-- /Strong -->
+  
+<!-- P -->
+<div class="bloco">
+  <h3 class="doc-title" id="link-doc-p">
+    Tag P
+  </h3>      
+  <div class="full corporate-palette paleta">
+    <div class="row">
+      <p>Vivamus luctus urna sed urna ultricies ac <strong>tempor dui sagittis.</strong> In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum
+mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor.</p>
+    </div>
+    <div class="row mgn-top-10 paleta-codigo">
+        <code class="pdg-5">
+          <span class="code-line">&lt;p><br>Vivamus luctus urna sed urna ultricies ac <strong>tempor dui sagittis.</strong> In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum
+mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor.<br>&lt;/p></span>
+        </code>
+     
+    </div>
+  </div>      
+</div>
+<!-- /P -->  
+
+</div>        <div class="bloco">
+    <h2 class="doc-title" id="link-doc-tabs">
+      Tabs
+    </h2>
+
+    <div class="legend">
+      <p>
+       Todos os painéis disponíveis podem ser utilizados dentro e fora dos cards.<br><br>
+       A linha de apoio deve estar 100% entre a borda esquerda até a borda direita.<br><br>
+       Os tabs podem ser horizontais e podem ser utilizados de forma vertical, tanto na lateral esquerda como na lateral direita.<br><br>
+       Em alguns casos a parte inferior pode conter uma separação para outros links de apoio.<br><br>
+
+      </p>
+    </div>
+
+    <!-- colors -->
+    <div class="bloco">
+      <h3 class="doc-title" id="link-doc-tab-horizaontal">
+        Tab Horizontal
+      </h3>
+      <div class="full">
+         <em>Como usar o <span class="estilo">guide de tabs</span></em>
+         
+      </div>        
+
+      <!-- tab horizontal -->
+      <div class="full corporate-palette paleta">
+        <div class="row">
+          <div class="panels" id="tab1" data-component="panel">
+          <div class="panel-header">
+            <span class="transition active" data-panel-indice="" data-target="#panelContent1">Título do panel</span>
+            <span class="transition" data-panel-indice="" data-target="#panelContent2">Título do panel</span>
+          </div>
+          <div class="panel-content active" id="panelContent1">
+            <div class="panel-body">
+              <strong>Lorem ipsum dolor sit amet 1</strong>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!</p>
+            </div>
+            <div class="panel-footer">
+              <a href="">Link</a>
+            </div>
+          </div>
+          <div class="panel-content" id="panelContent2">
+            <div class="panel-body">
+              <strong>Lorem ipsum dolor sit amet 2</strong>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!</p>
+            </div>
+            <div class="panel-footer">
+              <a href="">Link</a>
+            </div>
+          </div>
+        </div>              
+        </div>
+
+        <div class="row mgn-top-10 paleta-codigo">
+          <div class="small-12 columns block-colors">
+            <code class="pdg-5">
+              <span class="code-line">
+                  &lt;div class="<span class="cor-vermelho">panels</span>" id="tab1" data-component="<span class="cor-vermelho">panel</span>"><br>
+                  
+                  <span class="indent-10 code-line">&lt;div class="<span class="cor-vermelho">panel-header</span>"></span><br>
+                  
+                  <span class="indent-20 code-line">&lt;span class="<span class="cor-vermelho">transition active</span>" data-panel-indice="" data-target="<span class="cor-vermelho">#panelContent1</span>">Título do panel&lt;/span>
+                  </span><br>
+                  
+                  <span class="indent-20 code-line">&lt;span class="<span class="cor-vermelho">transition</span>" data-panel-indice="" data-target="<span class="cor-vermelho">#panelContent2</span>">Título do panel&lt;/span>
+                  </span><br>
+                  
+                  <span class="indent-20 code-line">&lt;/div></span><br>
+                  
+                  <span class="indent-10 code-line">&lt;div class="<span class="cor-vermelho">panel-content active</span>" id="<span class="cor-vermelho">panelContent1</span>"></span><br>
+                  
+                  <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">panel-body</span>"></span><br>
+                  
+                  <span class="indent-30 code-line">&lt;strong>Lorem ipsum dolor sit amet 1&lt;/strong></span><br>
+                  
+                  <span class="indent-30 code-line">&lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!&lt;/p>
+                  </span><br>
+                  
+                  <span class="indent-30 code-line">&lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!&lt;/p>
+                  </span><br>
+                  
+                  <span class="indent-30 code-line">&lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!&lt;/p>
+                  </span><br>
+                  
+                  <span class="indent-30 code-line">&lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!&lt;/p>
+                  </span><br>
+                  
+                  <span class="indent-20 code-line">&lt;/div></span><br>
+                  
+                  <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">panel-footer</span>"></span><br>
+                  
+                  <span class="indent-30 code-line">&lt;a href="">Link&lt;/a></span><br>
+                  
+                  <span class="indent-20 code-line">&lt;/div></span><br>
+                  
+                  <span class="indent-10 code-line"> &lt;/div></span><br>
+                  
+                  <span class="indent-10 code-line">&lt;div class="<span class="cor-vermelho">panel-content</span>" id="<span class="cor-vermelho">panelContent2</span>"></span><br>
+                  
+                  <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">panel-body</span>"></span><br>
+                  
+                  <span class="indent-30 code-line">&lt;strong>Lorem ipsum dolor sit amet 2 &lt;/strong></span><br>
+                  
+                  <span class="indent-30 code-line">&lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!&lt;/p>
+                  </span><br>
+                  
+                  <span class="indent-30 code-line">&lt;/div></span><br>
+                  
+                  <span class="indent-30 code-line">&lt;div class="<span class="cor-vermelho">panel-footer</span>"></span><br>
+                  
+                  <span class="indent-30 code-line">&lt;a href="">Link&lt;/a></span><br>
+                  
+                  <span class="indent-20 code-line">&lt;/div></span><br>
+                  
+                  <span class="indent-10 code-line">&lt;/div></span><br>
+                    &lt;/div><br>
+                </span>
+            </code>
+          </div>       
+        </div>
+        <hr>
+      </div>      
+      <!-- /corporate palette -->
+      </div>
+      <div class="bloco">
+      <!-- secondary palette -->
+      <h3 class="doc-title" id="link-doc-tab-vertical">
+        Tab Vertical
+      </h3>
+      <div class="full">
+         <em>Como usar o <span class="estilo">guide de tabs</span></em>
+         
+      </div>            
+
+      <div class="full corporate-palette paleta">
+        <div class="row">
+            <div class="panels side-left side" id="tab2" data-component="panel">
+              <div class="panel-header">
+                <span class="transition active" data-panel-indice="" data-target="#panelContent1">Título do panel</span>
+                <span class="transition" data-panel-indice="" data-target="#panelContent2">Título do panel</span>
+              </div>
+              <div class="panel-content active" id="panelContent1">
+                <div class="panel-body">
+                  <strong>Lorem ipsum dolor sit amet 1</strong>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!</p>
+                </div>
+                <div class="panel-footer">
+                  <a href="">Link</a>
+                </div>
+              </div>
+              <div class="panel-content" id="panelContent2">
+                <div class="panel-body">
+                  <strong>Lorem ipsum dolor sit amet 2</strong>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!</p>
+                </div>
+                <div class="panel-footer">
+                  <a href="">Link</a>
+                </div>
+              </div>
+
+            </div>            
+        </div>
+
+        <div class="row mgn-top-10 paleta-codigo">
+          <div class="small-12 columns block-colors">
+            <code class="pdg-5">
+              <span class="code-line">
+                  &lt;div class="<span class="cor-vermelho">panels side-left side</span>" id="tab1" data-component="<span class="cor-vermelho">panel</span>"><br>
+                  
+                  <span class="indent-10 code-line">&lt;div class="<span class="cor-vermelho">panel-header</span>"></span><br>
+                  
+                  <span class="indent-20 code-line">&lt;span class="<span class="cor-vermelho">transition active</span>" data-panel-indice="" data-target="<span class="cor-vermelho">#panelContent1</span>">Título do panel&lt;/span>
+                  </span><br>
+                  
+                  <span class="indent-20 code-line">&lt;span class="<span class="cor-vermelho">transition</span>" data-panel-indice="" data-target="<span class="cor-vermelho">#panelContent2</span>">Título do panel&lt;/span>
+                  </span><br>
+                  
+                  <span class="indent-20 code-line">&lt;/div></span><br>
+                  
+                  <span class="indent-10 code-line">&lt;div class="<span class="cor-vermelho">panel-content active</span>" id="<span class="cor-vermelho">panelContent1</span>"></span><br>
+                  
+                  <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">panel-body</span>"></span><br>
+                  
+                  <span class="indent-30 code-line">&lt;strong>Lorem ipsum dolor sit amet 1&lt;/strong></span><br>
+                  
+                  <span class="indent-30 code-line">&lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!&lt;/p>
+                  </span><br>
+                  
+                  <span class="indent-30 code-line">&lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!&lt;/p>
+                  </span><br>
+                  
+                  <span class="indent-30 code-line">&lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!&lt;/p>
+                  </span><br>
+                  
+                  <span class="indent-30 code-line">&lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!&lt;/p>
+                  </span><br>
+                  
+                  <span class="indent-20 code-line">&lt;/div></span><br>
+                  
+                  <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">panel-footer</span>"></span><br>
+                  
+                  <span class="indent-30 code-line">&lt;a href="">Link&lt;/a></span><br>
+                  
+                  <span class="indent-20 code-line">&lt;/div></span><br>
+                  
+                  <span class="indent-10 code-line"> &lt;/div></span><br>
+                  
+                  <span class="indent-10 code-line">&lt;div class="<span class="cor-vermelho">panel-content</span>" id="<span class="cor-vermelho">panelContent2</span>"></span><br>
+                  
+                  <span class="indent-20 code-line">&lt;div class="<span class="cor-vermelho">panel-body</span>"></span><br>
+                  
+                  <span class="indent-30 code-line">&lt;strong>Lorem ipsum dolor sit amet 2 &lt;/strong></span><br>
+                  
+                  <span class="indent-30 code-line">&lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas obcaecati dolorum, labore blanditiis. Nulla iusto laboriosam nesciunt dolorum id sunt nisi? Molestiae excepturi, earum nesciunt nobis repellendus hic distinctio consectetur!&lt;/p>
+                  </span><br>
+                  
+                  <span class="indent-30 code-line">&lt;/div></span><br>
+                  
+                  <span class="indent-30 code-line">&lt;div class="<span class="cor-vermelho">panel-footer</span>"></span><br>
+                  
+                  <span class="indent-30 code-line">&lt;a href="">Link&lt;/a></span><br>
+                  
+                  <span class="indent-20 code-line">&lt;/div></span><br>
+                  
+                  <span class="indent-10 code-line">&lt;/div></span><br>
+                    &lt;/div><br>
+                </span>
+            </code>
+          </div>       
+        </div>
+       </div>
+      </div>
+      <!-- /secondary palette -->
+      </div>
+              <div class="bloco">
+    <h2 class="doc-title" id="link-doc-panels">
+      Panels
+    </h2>
+
+    <div class="legend">
+      <p>
+        Os painéis são as estruturas básicas para compor o conteúdo de uma área. <br><br>
+        São espaços que podem delimitar cada seção e deixar mais harmônico as informações expostas.<br><br>
+        Pode ser aplicado de forma fixa e com acordeões internos para separar a navegação dentro do painel.<br><br>
+        Botões de ação devem estar localizados na barra superior ou inferior do painel.<br><br>
+
+      </p>
+    </div>
+    
+    <hr>
+    
+    <h3 class="doc-title" id="link-doc-panel">
+        Panel 
+      </h3>
+    <div class="full corporate-palette paleta">
+        <div class="row">
+          <div class="fs-panel">
+            <div class="fs-panel-head">
+              <div class="column small-8">
+                <h3>Lorem Ipsum</h3>
+              </div> 
+            </div>
+            <div class="fs-panel-inner"></div>
+            <div class="fs-panel-foot"></div>
+          </div>          
+        </div>
+
+        <div class="row mgn-top-10 paleta-codigo">
+          <div class="small-12 columns block-colors">
+            <code class="pdg-5">
+              <span class="code-line">
+                  
+                  &lt;div class="<span class="cor-vermelho">fs-panel</span>"><br>
+                  
+                    <span class="indent-10 code-line">&lt;div class="<span class="cor-vermelho">fs-panel-head</span>"></span><br>
+                  
+                  <span class="indent-20 code-line">&lt;div class="column small-8"></span><br>
+                  
+                  <span class="indent-20 code-line">&lt;h3>Lorem Ipsum&lt;/h3></span><br>
+                  
+                  <span class="indent-10 code-line">&lt;/div></span><br>
+                  
+                  
+                  
+                    &lt;/div><br>
+                  
+                  <span class="indent-10 code-line">&lt;div class="<span class="cor-vermelho">fs-panel-inner</span>">&lt;/div></span><br>
+                  
+                  <span class="indent-10 code-line">&lt;div class="<span class="cor-vermelho">fs-panel-foot</span>                                                                                                                  ">&lt;/div></span><br>
+                  
+                 &lt;/div>  
+                </span>
+            </code>
+          </div>       
+        </div>
+      </div>
+    
+    <hr>
+    
+    <!-- colors -->
+    <div class="">
+      <h3 class="doc-title" id="link-doc-panel-com-botao">
+        Panel com Botão
+      </h3>
+      <div class="full">
+         <em>Como usar o <span class="estilo">guide de panels</span></em>
+      </div>        
+
+      <!-- tab horizontal -->
+      <div class="full corporate-palette paleta">
+        <div class="row">
+          <div class="fs-panel">
+            <div class="fs-panel-head">
+              <div class="column small-8">
+                <h3>Lorem Ipsum</h3>
+              </div> 
+              <div class="column small-4">
+                <a href="#" class="button active btn-medium red-light-medium right">Botão</a>
+              </div> 
+            </div>
+            <div class="fs-panel-inner"></div>
+            <div class="fs-panel-foot"></div>
+          </div>          
+        </div>
+
+        <div class="row mgn-top-10 paleta-codigo">
+          <div class="small-12 columns block-colors">
+            <code class="pdg-5">
+              <span class="code-line">
+                  
+                  &lt;div class="<span class="cor-vermelho">fs-panel</span>"><br>
+                  
+                    <span class="indent-10 code-line">&lt;div class="<span class="cor-vermelho">fs-panel-head</span>"></span><br>
+                  
+                  <span class="indent-20 code-line">&lt;div class="column small-8"></span><br>
+                  
+                  <span class="indent-20 code-line">&lt;h3>Lorem Ipsum&lt;/h3></span><br>
+                  
+                  <span class="indent-10 code-line">&lt;/div></span><br>
+                  
+                  <span class="indent-10 code-line">&lt;div class="column small-4"></span><br>
+                  
+                  <span class="indent-20 code-line">&lt;a href="#" class="button active btn-medium red-light-medium right">Botão&lt;/a></span><br>
+                  
+                  <span class="indent-10 code-line">&lt;/div></span><br>
+                  
+                    &lt;/div><br>
+                  
+                  <span class="indent-10 code-line">&lt;div class="<span class="cor-vermelho">fs-panel-inner</span>">&lt;/div></span><br>
+                  
+                  <span class="indent-10 code-line">&lt;div class="<span class="cor-vermelho">fs-panel-foot</span>                                                                                                                  ">&lt;/div></span><br>
+                  
+                 &lt;/div>  
+                </span>
+            </code>
+          </div>       
+        </div>
+      </div>      
+      <!-- /corporate palette -->
+      </div>
+      
+      <!-- /secondary palette -->
+      </div>
+              
+<!-- dropdowns -->
+<div class="bloco">
+
+<h2 class="doc-title" id="link-doc-dropdowns">
+  Dropdowns
+</h2>
+
+<div class="legend">
+  <p>
+     Para ser utilizado com as opções de Select em Headers, Widget e Formulários.<br>
+Tem a possibilidade de utilizar ícones para diferenciar de outros dropdowns.
+  </p>
+</div>
+
+ <div class="full mgn-zero">
+   <div class="row">
+     <div class="medium-3 small-12 columns">
+
+       <div class="full">
+         <p>Select </p>
+       </div>
+
+       <div class="fs-dropdown">
+          <div class="fs-dropdown-botao">
+             <figure>
+              <img src="img/icons/icone-1-dropdown.png"> 
+            </figure>
+             <span>Lorem ipsum </span>   
+             <div class="seta"></div>   
+           </div>
+           <ul class="fs-dropdown-menu">
+             <li><a href="javascript:;">Action</a></li>
+             <li><a href="javascript:;">Another action</a></li>
+             <li><a href="javascript:;">Something else here</a></li>
+             <li class="selected"><a href="javascript:;">Separated link</a></li>
+             <li><a href="javascript:;">Separated link</a></li>
+             <li><a href="javascript:;">Separated link</a></li>
+             <li><a href="javascript:;">Separated link</a></li>
+             <li><a href="javascript:;">Separated link</a></li>
+           </ul>
+        </div>
+
+      </div>
+
+
+      <div class="medium-3 small-12 columns">
+
+       <div class="full">
+         <p>Headers </p>
+       </div>
+       <div class="fs-dropdown headers">
+          <div class="fs-dropdown-botao">
+             <figure>
+              <img src="img/icons/icone-1-dropdown.png" > 
+            </figure>
+             <span>Lorem ipsum </span>   
+             <div class="seta"></div>   
+           </div>
+           <ul class="fs-dropdown-menu">
+             <li><a href="javascript:;">Action</a></li>
+             <li><a href="javascript:;">Another action</a></li>
+             <li><a href="javascript:;">Something else here</a></li>
+             <li class="selected"><a href="javascript:;">Lorem Ipsum</a></li>
+             <li><a href="javascript:;">Separated link</a></li>
+             <li><a href="javascript:;">Separated link</a></li>
+             <li><a href="javascript:;">Separated link</a></li>
+             <li><a href="javascript:;">Separated link</a></li>
+             </ul>
+        </div>
+
+      </div>
+
+      <div class="medium-3 small-12 columns">
+
+       <div class="full">
+         <p>Divider</p>
+       </div>
+       <div class="fs-dropdown">
+          <div class="fs-dropdown-botao">
+             <figure>
+              <img src="img/icons/icone-1-dropdown.png"> 
+            </figure>
+             <span>Lorem ipsum </span>   
+             <div class="seta"></div>   
+           </div>
+           <ul class="fs-dropdown-menu">
+             <li><a href="javascript:;">Action</a></li>
+             <li><a href="javascript:;">Another action</a></li>
+             <li><a href="javascript:;">Something else here</a></li>
+             <li class="divisor"></li>
+             <li><a href="javascript:;">Separated link</a></li>
+             <li><a href="javascript:;">Separated link</a></li>
+             <li><a href="javascript:;">Separated link</a></li>
+             <li><a href="javascript:;">Separated link</a></li>
+
+           </ul>
+        </div>
+
+      </div>
+
+      <div class="medium-3 small-12 columns">
+
+       <div class="full">
+         <p>Ícone alone</p>
+       </div>
+       <div class="fs-dropdown alone">
+          <div class="fs-dropdown-botao">
+            <figure>
+              <img src="img/icons/icone-1-dropdown.png"> 
+            </figure>                           
+           </div>
+           <ul class="fs-dropdown-menu">
+             <li><a href="javascript:;">Action</a></li>
+             <li><a href="javascript:;">Another action</a></li>
+             <li><a href="javascript:;">Something else here</a></li>
+             <li class="divisor"></li>
+             <li><a href="javascript:;">Separated link</a></li>
+             <li><a href="javascript:;">Separated link</a></li>
+             <li><a href="javascript:;">Separated link</a></li>
+             <li><a href="javascript:;">Separated link</a></li>
+             <li><a href="javascript:;">Separated link</a></li>
+             <li><a href="javascript:;">Separated link</a></li>
+           </ul>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <code>     
+
+  <p>Select </p>
+
+    <span class="code-line">&lt;div class="fs-dropdown"></span>
+
+      <span class="indent-10 code-line">&lt;div class="fs-dropdown-botao"</span>
+
+        <span class="indent-20 code-line">&lt;figure></span>
+
+          <span class="indent-30 code-line">&lt;img src="img/icons/icone-1-dropdown.png"></span>
+
+        <span class="indent-20 code-line">&lt;/figure></span>
+        <span class="indent-20 code-line">&lt;span>Lorem ipsum &lt;/span></span>
+        <span class="indent-20 code-line">&lt;div class="seta">&lt;/div></span>
+      <span class="indent-10 code-line">&lt;/div></span>
+      <span class="indent-10 code-line">&lt;ul class="fs-dropdown-menu"></span>
+        <span class="indent-20 code-line">&lt;li>&lt;a href="javascript:;">Action&lt;/a>&lt;/li></span>
+        <span class="indent-20 code-line">&lt;li>&lt;a href="javascript:;">Another action&lt;/a>&lt;/li></span>
+        <span class="indent-20 code-line">&lt;li>&lt;a href="javascript:;">Something else here&lt;/a>&lt;/li></span>
+        <span class="indent-20 code-line">&lt;li class="selected">&lt;a href="javascript:;">Separated link&lt;/a>&lt;/li></span>
+        <span class="indent-20 code-line">&lt;li>&lt;a href="javascript:;">Separated link&lt;/a>&lt;/li></span>
+        <span class="indent-20 code-line">&lt;li>&lt;a href="javascript:;">Separated link&lt;/a>&lt;/li></span>
+        <span class="indent-10 code-line">&lt;/ul></span>
+    <span class="code-line">&lt;/div></span>   
+
+  </code>
+
+
+  <code>  
+
+  <p>Headers</p>   
+
+    <span class="code-line">&lt;div class="fs-dropdown <span class="cor-vermelho">headers</span>"></span>
+
+      <span class="indent-10 code-line">&lt;div class="fs-dropdown-botao"</span>
+
+        <span class="indent-20 code-line">&lt;figure></span>
+
+          <span class="indent-30 code-line">&lt;img src="img/icons/icone-1-dropdown.png"></span>
+
+        <span class="indent-20 code-line">&lt;/figure></span>
+        <span class="indent-20 code-line">&lt;span>Lorem ipsum &lt;/span></span>
+        <span class="indent-20 code-line">&lt;div class="seta">&lt;/div></span>
+      <span class="indent-10 code-line">&lt;/div></span>
+      <span class="indent-10 code-line">&lt;ul class="fs-dropdown-menu"></span>
+        <span class="indent-20 code-line">&lt;li>&lt;a href="javascript:;">Action&lt;/a>&lt;/li></span>
+        <span class="indent-20 code-line">&lt;li>&lt;a href="javascript:;">Another action&lt;/a>&lt;/li></span>
+        <span class="indent-20 code-line">&lt;li>&lt;a href="javascript:;">Something else here&lt;/a>&lt;/li></span>
+        <span class="indent-20 code-line">&lt;li class="selected">&lt;a href="javascript:;">Separated link&lt;/a>&lt;/li></span>
+        <span class="indent-20 code-line">&lt;li>&lt;a href="javascript:;">Separated link&lt;/a>&lt;/li></span>
+        <span class="indent-20 code-line">&lt;li>&lt;a href="javascript:;">Separated link&lt;/a>&lt;/li></span>     
+      <span class="indent-10 code-line">&lt;/ul></span>
+    <span class="code-line">&lt;/div></span>  
+
+  </code>
+
+  <code>  
+
+    <p>Divider</p>   
+
+    <span class="code-line">&lt;div class="fs-dropdown"></span>
+
+      <span class="indent-10 code-line">&lt;div class="fs-dropdown-botao"</span>
+
+        <span class="indent-20 code-line">&lt;figure></span>
+
+          <span class="indent-30 code-line">&lt;img src="img/icons/icone-1-dropdown.png"></span>
+
+        <span class="indent-20 code-line">&lt;/figure></span>
+        <span class="indent-20 code-line">&lt;span>Lorem ipsum &lt;/span></span>
+        <span class="indent-20 code-line">&lt;div class="seta">&lt;/div></span>
+      <span class="indent-10 code-line">&lt;/div></span>
+      <span class="indent-10 code-line">&lt;ul class="fs-dropdown-menu"></span>
+        <span class="indent-20 code-line">&lt;li <span class="cor-vermelho">class="divisor"</span>>&lt;/li></span>
+        <span class="indent-20 code-line">&lt;li>&lt;a href="javascript:;">Another action&lt;/a>&lt;/li></span>
+        <span class="indent-20 code-line">&lt;li>&lt;a href="javascript:;">Something else here&lt;/a>&lt;/li></span>
+        <span class="indent-20 code-line">&lt;li class="selected">&lt;a href="javascript:;">Separated link&lt;/a>&lt;/li></span>
+        <span class="indent-20 code-line">&lt;li>&lt;a href="javascript:;">Separated link&lt;/a>&lt;/li></span>
+        <span class="indent-20 code-line">&lt;li>&lt;a href="javascript:;">Separated link&lt;/a>&lt;/li></span>     
+      <span class="indent-10 code-line">&lt;/ul></span>
+    <span class="code-line">&lt;/div></span>  
+
+  </code>
+
+  <code>  
+
+    <p>Ícone alone</p>  
+
+    <span class="code-line">&lt;div class="fs-dropdown"></span>
+
+      <span class="indent-10 code-line">&lt;div class="fs-dropdown-botao"</span>
+
+        <span class="indent-20 code-line">&lt;figure></span>
+
+          <span class="indent-30 code-line">&lt;img src="img/icons/icone-1-dropdown.png"></span>
+
+        <span class="indent-20 code-line">&lt;/figure></span>
+
+        <span class="indent-20 code-line"><span class="cor-vermelho">Não tem texto</span></span>
+       
+      <span class="indent-10 code-line">&lt;/div></span>
+      <span class="indent-10 code-line">&lt;ul class="fs-dropdown-menu"></span>
+        <span class="indent-20 code-line">&lt;li>&lt;a href="javascript:;">Another action&lt;/a>&lt;/li></span>
+        <span class="indent-20 code-line">&lt;li>&lt;a href="javascript:;">Something else here&lt;/a>&lt;/li></span>
+        <span class="indent-20 code-line">&lt;li class="selected">&lt;a href="javascript:;">Separated link&lt;/a>&lt;/li></span>
+        <span class="indent-20 code-line">&lt;li>&lt;a href="javascript:;">Separated link&lt;/a>&lt;/li></span>
+        <span class="indent-20 code-line">&lt;li>&lt;a href="javascript:;">Separated link&lt;/a>&lt;/li></span>     
+      <span class="indent-10 code-line">&lt;/ul></span>
+    <span class="code-line">&lt;/div></span>  
+
+  </code>
+
+ </div>        
+<!-- /dropdowns -->
+
+
+
+
+        <!-- tabelas -->
+<div class="bloco">
+
+<h2 class="doc-title" id="link-doc-tabela">
+  Tabela
+</h2>
+
+<div class="legend">
+  <p>
+    As tabelas podem possuir em seus campos componentes como Select, Check Box, Select List, e re organização por coluna.
+  </p><br><br>
+  <div>
+    <em><span class="estilo">Para deixar a tabela personalizada são necessários os arquivos:</span></em><br>
+    "stylesheets/jquery.dataTables.min.css"<br>
+    "js/dataTables.select.min.js"<br><br>
+    <em><span class="estilo"> Script utilizado no exemplo:</span></em><br>
+      $('#tabela').DataTable({<br>
+        columnDefs: [ {<br>
+            orderable: false,<br>
+            className: 'select-checkbox',<br>
+            targets:   0<br>
+        } ],<br>
+        select: {<br>
+            style:    'os',<br>
+            selector: 'td:first-child'<br>
+        },<br>
+        order: [[ 1, 'asc' ]]<br>
+      });
+  </div>
+</div>
+
+<div class="full">
+  <table id="tabela" class="display" width="100%" cellspacing="0">
+            <thead>
+                <tr>
+                    <th width="5%"></th>
+                    <th width="10%">Coluna 1</th>
+                    <th width="10%">Coluna 2</th>
+                    <th width="10%">Coluna 3</th>
+                    <th width="10%">Coluna 4</th>
+                    <th width="10%">Coluna 5</th>
+                    <th width="10%">Coluna 6</th>
+                    <th width="15%"><span class="has-overflow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, </span></th>
+                </tr>
+            </thead>
+          
+            <tbody>
+              <tr>
+                  <td></td>
+                  <td>Texto 1</td>
+                  <td>Texto 11</td>
+                  <td>Texto 1111</td>
+                  <td>Texto 1111</td>
+                  <td>Texto AAAA</td>
+                  <td>Texto BB</td>
+                  <td>Texto BBBB</td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td>Texto 1</td>
+                  <td>Texto 11</td>
+                  <td>Texto 1111</td>
+                  <td>Texto 1111</td>
+                  <td>Texto AAAA</td>
+                  <td>Texto BB</td>
+                  <td>Texto BBBB</td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td>Texto 1</td>
+                  <td>Texto 11</td>
+                  <td>Texto 1111</td>
+                  <td>Texto 1111</td>
+                  <td>Texto AAAA</td>
+                  <td>Texto BB</td>
+                  <td>Texto BBBB</td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td>Texto 1</td>
+                  <td>Texto 11</td>
+                  <td>Texto 1111</td>
+                  <td>Texto 1111</td>
+                  <td>Texto AAAA</td>
+                  <td>Texto BB</td>
+                  <td>Texto BBBB</td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td>Texto 1</td>
+                  <td>Texto 11</td>
+                  <td>Texto 1111</td>
+                  <td>Texto 1111</td>
+                  <td>Texto AAAA</td>
+                  <td>Texto BB</td>
+                  <td>Texto BBBB</td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td>Texto 1</td>
+                  <td>Texto 11</td>
+                  <td>Texto 1111</td>
+                  <td>Texto 1111</td>
+                  <td>Texto AAAA</td>
+                  <td>Texto BB</td>
+                  <td>Texto BBBB</td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td>Texto 1</td>
+                  <td>Texto 11</td>
+                  <td>Texto 1111</td>
+                  <td>Texto 1111</td>
+                  <td>Texto AAAA</td>
+                  <td>Texto BB</td>
+                  <td>Texto BBBB</td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td>Texto 1</td>
+                  <td>Texto 11</td>
+                  <td>Texto 1111</td>
+                  <td>Texto 1111</td>
+                  <td>Texto AAAA</td>
+                  <td>Texto BB</td>
+                  <td>Texto BBBB</td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td>Texto 1</td>
+                  <td>Texto 11</td>
+                  <td>Texto 1111</td>
+                  <td>Texto 1111</td>
+                  <td>Texto AAAA</td>
+                  <td>Texto BB</td>
+                  <td>Texto BBBB</td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td>Texto 1</td>
+                  <td>Texto 11</td>
+                  <td>Texto 1111</td>
+                  <td>Texto 1111</td>
+                  <td>Texto AAAA</td>
+                  <td>Texto BB</td>
+                  <td>Texto BBBB</td>
+              </tr>
+              
+              <tr>
+                  <td></td>
+                  <td>Texto 1</td>
+                  <td>Texto 11</td>
+                  <td>Texto 1111</td>
+                  <td>Texto 1111</td>
+                  <td>Texto AAAA</td>
+                  <td>Texto BB</td>
+                  <td>Texto BBBB</td>
+              </tr>
+
+                
+            </tbody>
+        </table>
+      </div>
+
+
+        <code>  
+       
+         <span class="code-line">&lt;table id="tabela" class="display" width="100%" cellspacing="0"&gt;</span>
+            <span class="indent-10 code-line">&lt;thead&gt;</span>
+            <span class="indent-20 code-line">  &lt;tr&gt;</span>
+            <span class="indent-30 code-line">  &lt;th width="5%"&gt;&lt;/th&gt;</span>
+            <span class="indent-30 code-line">  &lt;th width="10%"&gt;Coluna 1&lt;/th&gt;</span>
+            <span class="indent-30 code-line">  &lt;th width="10%"&gt;Coluna 2&lt;/th&gt;</span>
+            <span class="indent-30 code-line">  &lt;th width="10%"&gt;Coluna 3&lt;/th&gt;</span>
+            <span class="indent-30 code-line">  &lt;th width="10%"&gt;Coluna 4&lt;/th&gt;</span>
+            <span class="indent-30 code-line">  &lt;th width="10%"&gt;Coluna 5&lt;/th&gt;</span>
+            <span class="indent-30 code-line">  &lt;th width="10%"&gt;Coluna 6&lt;/th&gt;</span>
+            <span class="indent-30 code-line">  &lt;th width="15%"&gt;&lt;span class="has-overflow"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, &lt;/span&gt;&lt;/th&gt;</span>
+            <span class="indent-20 code-line">  &lt;/tr&gt;</span>
+            <span class="indent-10 code-line">&lt;/thead&gt;</span>
+              </span>
+            <span class="indent-10 code-line">&lt;tbody&gt;</span>
+            <span class="indent-20 code-line">&lt;tr&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 11&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1111&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1111&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto AAAA&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto BB&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto BBBB&lt;/td&gt;</span>
+            <span class="indent-20 code-line">&lt;/tr&gt;</span>
+            <span class="indent-20 code-line">&lt;tr&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 11&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1111&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1111&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto AAAA&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto BB&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto BBBB&lt;/td&gt;</span>
+            <span class="indent-20 code-line">&lt;/tr&gt;</span>
+            <span class="indent-20 code-line">&lt;tr&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 11&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1111&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1111&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto AAAA&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto BB&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto BBBB&lt;/td&gt;</span>
+            <span class="indent-20 code-line">&lt;/tr&gt;</span>
+            <span class="indent-20 code-line">&lt;tr&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 11&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1111&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1111&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto AAAA&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto BB&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto BBBB&lt;/td&gt;</span>
+            <span class="indent-20 code-line">&lt;/tr&gt;</span>
+            <span class="indent-20 code-line">&lt;tr&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 11&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1111&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1111&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto AAAA&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto BB&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto BBBB&lt;/td&gt;</span>
+            <span class="indent-20 code-line">&lt;/tr&gt;</span>
+            <span class="indent-20 code-line">&lt;tr&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 11&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1111&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1111&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto AAAA&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto BB&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto BBBB&lt;/td&gt;</span>
+            <span class="indent-20 code-line">&lt;/tr&gt;</span>
+
+
+            <span class="indent-20 code-line">&lt;tr&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 11&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1111&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1111&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto AAAA&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto BB&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto BBBB&lt;/td&gt;</span>
+            <span class="indent-20 code-line">&lt;/tr&gt;</span>
+            <span class="indent-20 code-line">&lt;tr&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 11&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1111&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto 1111&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto AAAA&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto BB&lt;/td&gt;</span>
+            <span class="indent-30 code-line">&lt;td&gt;Texto BBBB&lt;/td&gt;</span>
+            <span class="indent-20 code-line">&lt;/tr&gt;</span>
+
+            </span>
+            <span class="indent-20 code-line">  </span>
+            <span class="indent-10 code-line">&lt;/tbody&gt;</span>
+            <span class="code-line">&lt;/table&gt;
+
+        </code>
+
+
+</div>
+<!-- tabelas -->
+
+
+
+        
+<!-- dropdowns -->
+<div class="bloco">
+
+<h2 class="doc-title" id="link-doc-listas">
+  Listas
+</h2>
+
+<div class="legend">
+  <p>
+     Listas são componentes flexíveis capazes de exibir elementos complexos com conteúdo personalizado. O grupo mais básico é simplesmente uma lista ordenada, com itens e classes próprias.  Elas podem ser simples, em grupos, com ícones ou até grupos com ícones.
+  </p>
+</div>
+
+ <div class="full mgn-zero">
+   <div class="row">
+     <div class="medium-3 small-12 columns">
+
+       <div class="full">
+         <p>Lista simples</p>
+       </div>
+
+       <ul class="fs-lista">
+        <li>
+          Lorem ipsum dolor
+        </li>
+        <li>
+          Lorem ipsum dolor
+        </li>
+        <li class="sub">
+          <ul >
+            <li>
+              Ipsum dolor sit amet
+            </li>
+            <li>
+              Ipsum dolor sit amet
+            </li>
+           
+          </ul>
+        </li>
+        <li>
+          Lorem ipsum dolor
+        </li>  
+         <li>
+          Lorem ipsum dolor
+        </li>      
+      </ul>
+
+      </div>
+
+
+      <div class="medium-3 small-12 columns">
+
+       <div class="full">
+         <p>Lista com Ícones</p>
+       </div>
+       <ul class="fs-lista fs-lista-icone">
+        <li>
+          <img src="img/icons/icone-1-dropdown.png"> Lorem 
+        </li>
+        <li>
+          <img src="img/icons/icone-1-dropdown.png"> Lorem 
+        </li>
+        <li class="sub">
+          <ul >
+            <li>
+              <img src="img/icons/icone-1-dropdown.png"> Ipsumrem
+            </li>
+            <li>
+              <img src="img/icons/icone-1-dropdown.png"> Ipsumrem
+            </li>
+            <li>
+              <img src="img/icons/icone-1-dropdown.png"> Ipsumrem
+            </li>
+          </ul>
+        </li>
+        <li>
+          <img src="img/icons/icone-1-dropdown.png"> Lorem
+        </li>
+
+    
+      </ul>
+
+      </div>
+
+      <div class="medium-3 small-12 columns">
+
+       <div class="full">
+        <p>Lista grupo</p>
+       </div>
+       <ul class="fs-lista fs-lista-grupo">
+        <li>
+          <h2>Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna.</p>
+        </li>
+        <li>
+          <h2>Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna.</p>
+        </li>
+       
+      </ul>
+
+      </div>
+
+      <div class="medium-3 small-12 columns">
+
+       <div class="full">
+         <p>Lista grupo com Ícones</p>
+       </div>
+       <ul class="fs-lista fs-lista-grupo-icone">
+        <li>          
+            <img src="img/icons/icone-1-dropdown.png">       
+      
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna.</p>     
+        </li>
+
+        <li>          
+            <img src="img/icons/icone-1-dropdown.png">       
+      
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna.</p>     
+        </li>
+
+     
+      
+      </ul>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <code>     
+
+   <p>Lista simples</p>
+
+    <span class="code-line">&lt;ul class="fs-lista"&gt;</span>
+    <span class="indent-10 code-line">&lt;li&gt;</span>
+    <span class="indent-20 code-line">Lorem ipsum dolor</span>
+    <span class="indent-10 code-line">&lt;/li&gt;</span>
+    <span class="indent-10 code-line">&lt;li&gt;</span>
+    <span class="indent-20 code-line">Lorem ipsum dolor</span>
+    <span class="indent-10 code-line">&lt;/li&gt;</span>
+    <span class="indent-10 code-line">&lt;li class="sub"&gt;</span>
+    <span class="indent-20 code-line">&lt;ul&gt;</span>
+    <span class="indent-30 code-line">&lt;li&gt;</span>
+    <span class="indent-40 code-line">Ipsum dolor sit amet</span>
+    <span class="indent-30 code-line">&lt;/li&gt;</span>
+    <span class="indent-10 code-line">&lt;li&gt;</span>
+    <span class="indent-20 code-line">Lorem ipsum dolor</span>
+    <span class="indent-10 code-line">&lt;/li&gt;</span>
+    <span class="indent-10 code-line">&lt;li&gt;</span>
+    <span class="indent-20 code-line">Lorem ipsum dolor</span>
+    <span class="indent-10 code-line">&lt;/li&gt;</span>
+    <span class="code-line">&lt;/ul&gt;</span> 
+
+  </code>
+
+  <code>     
+
+   <p>Lista com Icones</p>
+
+
+ 
+    <span class="code-line">&lt;ul class="fs-lista <span class="cor-vermelho">fs-lista-icone</span>"&gt;</span>
+    <span class="indent-10 code-line">&lt;li&gt;</span>
+    <span class="indent-20 code-line">&lt;img src="img/icons/icone-1-dropdown.png"&gt; Lorem ipsum dolor</span>
+    <span class="indent-10 code-line">&lt;/li&gt;</span>
+    <span class="indent-10 code-line">&lt;li&gt;</span>
+    <span class="indent-20 code-line">&lt;img src="img/icons/icone-1-dropdown.png"&gt; Lorem ipsum dolor</span>
+    <span class="indent-10 code-line">&lt;/li&gt;</span>
+    <span class="indent-10 code-line">&lt;li class="sub"&gt;</span>
+    <span class="indent-20 code-line">&lt;ul&gt;</span>
+    <span class="indent-30 code-line">&lt;li&gt;</span>
+    <span class="indent-40 code-line">&lt;img src="img/icons/icone-1-dropdown.png"&gt; Ipsum dolor sit amet</span>
+    <span class="indent-30 code-line">&lt;/li&gt;</span>
+    <span class="indent-10 code-line">&lt;li&gt;</span>
+    <span class="indent-20 code-line">&lt;img src="img/icons/icone-1-dropdown.png"&gt; Lorem ipsum dolor</span>
+    <span class="indent-10 code-line">&lt;/li&gt;</span>
+    <span class="code-line">&lt;/ul&gt;</span>
+
+  </code>
+
+  <code>     
+
+   <p>Lista grupo</p>
+
+    <span class="code-line">&lt;ul class="fs-lista <span class="cor-vermelho">fs-lista-grupo</span>"&gt;</span>
+    <span class="indent-10 code-line">&lt;li&gt;</span>
+    <span class="indent-20 code-line">&lt;h2&gt;Lorem ipsum&lt;/h2&gt;</span>
+    <span class="indent-20 code-line">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
+    <span class="indent-30 code-line">tempor incididunt ut labore et dolore magna.&lt;/p&gt;</span>
+    <span class="indent-10 code-line">&lt;/li&gt;</span>
+    <span class="indent-10 code-line">&lt;li&gt;</span>
+    <span class="indent-20 code-line">&lt;h2&gt;Lorem ipsum&lt;/h2&gt;</span>
+    <span class="indent-20 code-line">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
+    <span class="indent-30 code-line">tempor incididunt ut labore et dolore magna.&lt;/p&gt;</span>
+    <span class="indent-10 code-line">&lt;/li&gt;</span>
+    <span class="code-line">&lt;/ul&gt;</span>
+
+  </code>
+
+  <code>     
+
+   <p>Lista grupo com Ícones</p>
+
+    <span class="code-line">&lt;ul class="fs-lista <span class="cor-vermelho">fs-lista-grupo-icone</span>"&gt;</span>
+    <span class="indent-10 code-line">&lt;li&gt;</span>
+    <span class="indent-20 code-line">&lt;img src="img/icons/icone-1-dropdown.png"&gt;</span>
+    <span class="indent-20 code-line">&lt;h2&gt;Lorem ipsum&lt;/h2&gt;</span>
+    <span class="indent-20 code-line">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    <span class="indent-30 code-line">tempor incididunt ut labore et dolore magna.&lt;/p&gt;</span>
+    <span class="indent-10 code-line">&lt;/li&gt;</span>
+    <span class="indent-10 code-line">&lt;li&gt;</span>
+    <span class="indent-20 code-line">&lt;img src="img/icons/icone-1-dropdown.png"&gt;</span>
+    <span class="indent-20 code-line">&lt;h2&gt;Lorem ipsum&lt;/h2&gt;</span>
+    <span class="indent-20 code-line">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    <span class="indent-30 code-line">tempor incididunt ut labore et dolore magna.&lt;/p&gt;</span>
+    <span class="indent-10 code-line">&lt;/li&gt;</span>
+    <span class="code-line">&lt;/ul&gt;</span>
+
+  </code>
+
+
+
+ </div>        
+<!-- /dropdowns -->
+
+
+
+
+        
+<!-- graficos  -->
+<div class="bloco">
+
+<h2 class="doc-title" id="link-doc-graficos">
+  Gráficos
+</h2>
+
+<div class="legend">
+  <p>
+    Os gráficos oferecem a maneira perfeita de visualizar dados em seu site. As opções vão desde modelos de linhas simples até os complexos mapas hierárquicos, a galeria fornece um grande número de gráficos para uso.
+  </p>
+</div>
+
+<div class="row">
+    <div class="column small-12">
+      <h2>Line Charts</h2>
+      <div id="line_top_x" class="fs-chart"></div>
+
+      <code>     
+         <p>HTML</p>
+         <span class="code-line">&lt;div id="line_top_x" class="fs-chart">&lt;/div></span>
+         <br><br>
+         <p>Javascript</p>
+         <span class="code-line">google.charts.load('current', {'packages':['line','bar', 'corechart']});</span> <br><br>
+         <span class="indent-10 code-line">drawChart();</span>
+        <br><br>
+         <span class="code-line">function drawChart() {<span class="indent-10 code-line"></span>
+          <span class="indent-10 code-line">var data = new google.visualization.DataTable();</span>
+          <span class="indent-10 code-line">data.addColumn('number', 'Dia');</span>
+          <span class="indent-10 code-line">data.addColumn('number', 'Item 1');</span>
+          <span class="indent-10 code-line">data.addColumn('number', 'Item 2');</span>
+          <span class="indent-10 code-line">data.addColumn('number', 'Item 3');</span>
+
+          <span class="indent-10 code-line">data.addRows([</span>
+          <span class="indent-20 code-line">[1,  37.8, 80.8, 41.8],</span>
+          <span class="indent-20 code-line">[2,  30.9, 69.5, 32.4],</span>
+          <span class="indent-20 code-line">[3,  25.4,   57, 25.7],</span>
+          <span class="indent-20 code-line">[4,  11.7, 18.8, 10.5],</span>
+          <span class="indent-20 code-line">[5,  11.9, 17.6, 10.4],</span>
+          <span class="indent-20 code-line">[6,   8.8, 13.6,  7.7],</span>
+          <span class="indent-20 code-line">[7,   7.6, 12.3,  9.6],</span>
+          <span class="indent-20 code-line">[8,  12.3, 29.2, 10.6],</span>
+          <span class="indent-20 code-line">[9,  16.9, 42.9, 14.8],</span>
+          <span class="indent-20 code-line">[10, 12.8, 30.9, 11.6],</span>
+          <span class="indent-20 code-line">[11,  5.3,  7.9,  4.7],</span>
+          <span class="indent-20 code-line">[12,  6.6,  8.4,  5.2],</span>
+          <span class="indent-20 code-line">[13,  4.8,  6.3,  3.6],</span>
+          <span class="indent-20 code-line">[14,  4.2,  6.2,  3.4]</span>
+          <span class="indent-10 code-line">]);</span>
+          <span class="indent-10 code-line">var options = {</span>
+          <span class="indent-20 code-line">chart: {</span>
+          <span class="indent-30 code-line">title: 'Título',</span>
+          <span class="indent-30 code-line">subtitle: 'Subtitulo'</span>
+          <span class="indent-20 code-line">},</span>
+          <span class="indent-10 code-line">// width: 1000,</span>
+          <span class="indent-20 code-line">height: 500,</span>
+          <span class="indent-20 code-line">colors: ['#cc0000', '#191919', '#80715d'],</span>
+          <span class="indent-20 code-line">axes: {</span>
+          <span class="indent-30 code-line">x: {</span>
+          <span class="indent-40 code-line">0: {side: 'top'}</span>
+          <span class="indent-30 code-line">}</span>
+          <span class="indent-20 code-line">}</span>
+          <span class="indent-10 code-line">};</span>
+          <span class="indent-10 code-line">var chart = new google.charts.Line(document.getElementById('line_top_x'));</span>
+          <span class="indent-10 code-line">chart.draw(data, options);</span>
+          <span class="code-line">}</span>
+      </code>
+    </div>
+  
+  <div class="column small-12">
+    <h2>Column Chart</h2>
+    <div id="dual_y_div" class="fs-chart"></div>
+
+
+    <code>     
+         <p>HTML</p>
+         <span class="code-line">&lt;div id="dual_y_div" class="fs-chart">&lt;/div></span>
+         <br><br>
+         <p>Javascript</p>
+         <span class="code-line">google.charts.load('current', {'packages':['line','bar', 'corechart']});</span> <br><br>
+         <span class="indent-10 code-line">drawStuff();</span>
+         <br><br>
+         <span class="code-line">//Column Chart</span>
+        <span class="code-line">function drawStuff() {</span>
+        <span class="code-line">var data = new google.visualization.arrayToDataTable([</span>
+        <span class="indent-10 code-line">['Cidade', 'Distância', 'População'],</span>
+        <span class="indent-10 code-line">['Cidade 1', 8000, 230.3],</span>
+        <span class="indent-10 code-line">['Cidade 2', 24000, 400.5],</span>
+        <span class="indent-10 code-line">['Cidade 3', 30000, 154.3],</span>
+        <span class="indent-10 code-line">['Cidade 4', 50000, 100.9],</span>
+        <span class="indent-10 code-line">['Cidade 5', 60000, 143.1]</span>
+        <span class="code-line">]);</span>
+        <span class="code-line">var options = {</span>
+        <span class="indent-10 code-line">chart: {</span>
+        <span class="indent-20 code-line">title: 'Título',</span>
+        <span class="indent-20 code-line">subtitle: 'Subtítulo'</span>
+        <span class="indent-10 code-line">},</span>
+        <span class="indent-10 code-line">series: {</span>
+        <span class="indent-20 code-line">0: { axis: 'Distância' }, // Bind series 0 to an axis named 'distance'.</span>
+        <span class="indent-20 code-line">1: { axis: 'População' } // Bind series 1 to an axis named 'brightness'.</span>
+        <span class="indent-10 code-line">},</span>
+        <span class="indent-10 code-line">colors: ['#cc0000', '#191919'],</span>
+        <span class="indent-10 code-line">axes: {</span>
+        <span class="indent-20 code-line">y: {</span>
+        <span class="indent-30 code-line">distance: {label: 'Distância'}, // Left y-axis.</span>
+        <span class="indent-30 code-line">brightness: {side: 'right', label: 'Escala'} // Right y-axis.</span>
+        <span class="indent-20 code-line">}</span>
+        <span class="indent-10 code-line">}</span>
+        <span class="code-line">};</span>
+        <span class="code-line">var chart = new google.charts.Bar(document.getElementById('dual_y_div'));</span>
+        <span class="code-line">chart.draw(data, options);</span>
+        <span class="code-line">};</span>
+    </code>
+  </div>
+  
+  <div class="column small-12">
+    <h2>Area Chart</h2>
+    <div id="area-chart" class="fs-chart"></div>
+
+    <code>     
+         <p>HTML</p>
+         <span class="code-line">&lt;div id="area-chart" class="fs-chart">&lt;/div></span>
+    </code>
+  </div>
+  
+  <div class="column small-12">
+    <h2>Combo Chart</h2>
+    <div id="combo-chart" class="fs-chart"></div>
+    <code>     
+         <p>HTML</p>
+         <span class="code-line">&lt;div id="combo-chart" class="fs-chart">&lt;/div></span>
+    </code>
+  </div>
+  
+  <div class="column small-12">
+    <h2>Pie Chart</h2>
+    <div id="pie-chart" class="fs-chart"></div>
+    <code>     
+         <p>HTML</p>
+         <span class="code-line">&lt;div id="pie-chart" class="fs-chart">&lt;/div></span>
+    </code>
+  </div>
+      
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+ </div>        
+<!-- /graficos -->
+
+
+
+
+        
+<!-- tolltips -->
+<div class="bloco">
+
+<h2 class="doc-title" id="link-doc-tooltips">
+  Tooltips
+</h2>
+
+<div class="legend">
+  <p>
+     Para mudar a cor basta colocar no atributo "data-tip-bg" a cor correspondente 
+  </p>
+</div>
+
+
+<div class="row">
+    <div class="column small-12  medium-3">   
+      <div class="full">
+        <span data-tooltip aria-haspopup="true" class="has-tip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do iusmod tempor incididunt ut labore et dolore magna aliqua." data-tip-bg="bg-dark55">Passe o mouse</span>
+      </div>
+    </div>
+
+    <div class="column small-12  medium-3">   
+      <div class="full">
+        <span data-tooltip aria-haspopup="true" class="has-tip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do iusmod tempor incididunt ut labore et dolore magna aliqua." data-tip-bg="bg-dark99">Passe o mouse</span>
+      </div>
+    </div>
+
+    <div class="column small-12  medium-3">   
+      <div class="full">
+        <span data-tooltip aria-haspopup="true" class="has-tip font-black" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do iusmod tempor incididunt ut labore et dolore magna aliqua." data-tip-bg="bg-darkDD">Passe o mouse</span>
+      </div>
+    </div>
+
+    <div class="column small-12  medium-3">   
+      <div class="full">
+        <span data-tooltip aria-haspopup="true" class="has-tip  font-black" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do iusmod tempor incididunt ut labore et dolore magna aliqua." data-tip-bg="bg-darkFF">Passe o mouse</span>
+      </div>
+    </div>  
+
+    
+  </div>
+
+  <br><br><br>
+
+  <div class="row">
+    <div class="column small-3">    
+      <div class="full">
+        <span data-tooltip aria-haspopup="true" class="has-tip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do iusmod tempor incididunt ut labore et dolore magna aliqua." data-tip-bg="bg-red-light">Passe o mouse</span>
+      </div>
+    </div>
+    <div class="column small-3 end">    
+      <div class="full">
+        <span data-tooltip aria-haspopup="true" class="has-tip font-black" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do iusmod tempor incididunt ut labore et dolore magna aliqua." data-tip-bg="bg-white">Passe o mouse</span>
+      </div>
+    </div>
+
+    <code>     
+     <span class="code-line">&lt;div class="full"&gt;</span>
+      <span class="indent-10 code-line">&lt;span data-tooltip aria-haspopup="true" class="has-tip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do iusmod tempor incididunt ut labore et dolore magna aliqua." data-tip-bg="<span class="cor-vermelho">bg-dark55</span>"&gt;Passe o mouse&lt;/span&gt;</span>
+      <span class="code-line">&lt;/div&gt;</span>
+   </code>
+    
+  </div>
+
+
+<!-- /tooltips -->
+
+
+
+
+        
+<!-- Popovers -->
+<div class="bloco">
+
+<h2 class="doc-title" id="link-doc-popovers">
+  Popovers
+</h2>
+
+  <div class="row">
+    <div class="column small-12 medium-3">    
+      <div class="full">
+        <span class="has-popover" data-content-html="     
+           
+              <div class='popover-inner'>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore </p>
+              </div>
+              <div class='popover-foot'>
+                <a class='button pull-left btn-medium red-light-medium  href='#'>Botão</a>
+                <a class='button pull-right btn-medium  button btn-large dark-99 href='#'>Botão</a>
+              </div>    
+
+
+        " data-tip-bg="">Branco (2 botões)</span>
+      </div>
+    </div>
+
+    <div class="column small-12 medium-3">    
+      <div class="full">
+        <span  class="has-popover"data-content-html="     
+           
+              <div class='popover-inner'>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore </p>
+              </div>
+              <div class='popover-foot'>
+                <a class='button btn-medium red-light-medium full href='#'>Botão</a>
+                
+              </div>    
+
+
+        " data-tip-bg="">Branco (1 botão)</span>
+      </div>
+    </div>
+
+    <div class="column small-12 medium-3">    
+      <div class="full">
+        <span class="has-popover" data-content-html="     
+           
+              <div class='popover-inner'>
+                <p class='color-white'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore </p>
+              </div>
+              <div class='popover-foot'>
+                <a class='button pull-left btn-medium white  href='#'>Botão</a>
+                <a class='button pull-right btn-medium  button btn-large dark-99 href='#'>Botão</a>
+              </div>    
+
+
+        " data-tip-bg="bg-red-light">Vermelho (2 botões)</span>
+      </div>
+    </div>
+
+    <div class="column small-12 medium-3">    
+      <div class="full">
+        <span class="has-popover" data-content-html="     
+           
+              <div class='popover-inner'>
+                <p class='color-white'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore </p>
+              </div>
+              <div class='popover-foot'>
+                <a class='button btn-medium full  white  href='#'>Botão</a>
+              </div>    
+
+
+        " data-tip-bg="bg-red-light">Vermelho (1 botão)</span>
+      </div>
+    </div>
+
+    
+  </div>
+
+  
+  <code>     
+   <p>Branco (2 botões)</p>
+    <span class="code-line">&lt;span class="has-popover" data-content-html="</span>
+    <span class="indent-10 code-line">&lt;div class='popover-inner'&gt;</span>
+    <span class="indent-20 code-line">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
+    <span class="indent-20 code-line">tempor incididunt ut labore et dolore &lt;/p&gt;</span>
+    <span class="indent-10 code-line">&lt;/div&gt;</span>
+    <span class="indent-10 code-line">&lt;div class='popover-foot'&gt;</span>
+    <span class="indent-20 code-line">&lt;a class='button pull-left btn-medium red-light-medium  href='#'&gt;Botão&lt;/a&gt;</span>
+    <span class="indent-20 code-line">&lt;a class='button pull-right btn-medium  button btn-large dark-99 href='#'&gt;Botão&lt;/a&gt;</span>
+    <span class="indent-10 code-line">&lt;/div&gt;</span>
+    <span class="code-line">" data-tip-bg=""&gt;Branco (2 botões)&lt;/span&gt;</span>
+  </code>
+
+  <code>     
+   <p>Branco (1 botão)</p>
+  <span class="code-line">&lt;span class="has-popover" data-content-html="</span>
+
+  <span class="indent-10 code-line">&lt;div class='popover-inner'&gt;</span>
+  <span class="indent-20 code-line">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
+  <span class="indent-20 code-line">tempor incididunt ut labore et dolore &lt;/p&gt;</span>
+  <span class="indent-10 code-line">&lt;/div&gt;</span>
+  <span class="indent-10 code-line">&lt;div class='popover-foot'&gt;</span>
+  <span class="indent-20 code-line">&lt;a class='button btn-medium red-light-medium full href='#'&gt;Botão&lt;/a&gt;</span>
+  <span class="indent-10 code-line">&lt;/div&gt;</span>
+
+  <span class="code-line">" data-tip-bg=""&gt;Branco (1 botão)&lt;/span&gt;</span>
+  </code>
+
+
+  <code>     
+  <p>Vermelho (2 botões)</p>
+<span class="code-line">&lt;span class="has-popover" data-content-html="</span>
+
+<span class="indent-10 code-line">&lt;div class='popover-inner'&gt;</span>
+<span class="indent-20 code-line">&lt;p class='color-white'&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
+<span class="indent-20 code-line">tempor incididunt ut labore et dolore &lt;/p&gt;</span>
+<span class="indent-10 code-line">&lt;/div&gt;</span>
+<span class="indent-10 code-line">&lt;div class='popover-foot'&gt;</span>
+<span class="indent-20 code-line">&lt;a class='button pull-left btn-medium white  href='#'&gt;Botão&lt;/a&gt;</span>
+<span class="indent-20 code-line">&lt;a class='button pull-right btn-medium  button btn-large dark-99 href='#'&gt;Botão&lt;/a&gt;</span>
+<span class="indent-10 code-line">&lt;/div&gt;</span>
+
+<span class="code-line">" data-tip-bg="<span class="cor-vermelho">bg-red-light</span>"&gt;Vermelho (2 botões)&lt;/span&gt;</span>
+  </code>
+
+
+  <code>     
+<p>Vermelho (1 botão)</p>
+<span class="code-line">&lt;span class="has-popover" data-content-html="</span>
+
+<span class="indent-10 code-line">&lt;div class='popover-inner'&gt;</span>
+<span class="indent-20 code-line">&lt;p class='color-white'&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
+<span class="indent-20 code-line">tempor incididunt ut labore et dolore &lt;/p&gt;</span>
+<span class="indent-10 code-line">&lt;/div&gt;</span>
+<span class="indent-10 code-line">&lt;div class='popover-foot'&gt;</span>
+<span class="indent-20 code-line">&lt;a class='button btn-medium full  white  href='#'&gt;Botão&lt;/a&gt;</span>
+<span class="indent-10 code-line">&lt;/div&gt;</span>
+
+<span class="code-line">" data-tip-bg="<span class="cor-vermelho">bg-red-light</span>"&gt;Vermelho (1 botão)&lt;/span&gt;</span>
+  </code>
+
+ </div>     
+
+ </div>        
+<!-- /popovers -->
+
+
+
+
+        
+<!-- calendario  -->
+<div class="bloco">
+
+<h2 class="doc-title" id="link-doc-calendario">
+  Calendário
+</h2>
+
+
+<div class="legend">
+  <p>
+     O componente de calendário existe para facilitar a seleção de datas nos formulários que necessitam a inserção correta da informação no formato DATA. 
+  </p><br><br>
+  <div>
+    <em><span class="estilo">Para o funcionamento dos calendários são necessários:</span></em><br>
+    "stylesheets/responsive-calendar.css"<br>
+    "js/responsive-calendar.js"<br><br>
+    
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="column small-12 medium-5 ">
+    
+    <!-- calendario -->
+      <div class="responsive-calendar modelo-1">
+        <div class="controls">
+          <div>
+            <a class="pull-left" data-go="prev"><div class="btn btn-primary"><</div></a>
+              <h4><span data-head-month></span> <span data-head-year></span> </h4>
+              <a class="pull-right" data-go="next"><div class="btn btn-primary">></div></a>
+          </div>            
+        </div>
+        <div class="cldr-divider">
+          <span></span>
+        </div>
+        <div class="day-headers">
+          <div class="day header">Seg</div>
+          <div class="day header">Ter</div>
+          <div class="day header">Qua</div>
+          <div class="day header">Qui</div>
+          <div class="day header">Sex</div>
+          <div class="day header">Sáb</div>
+          <div class="day header">Dom</div>
+        </div>
+        <div class="days" data-group="days">
+          
+        </div>
+      </div>
+      <!-- /calendario -->
+  </div>
+
+</div>
+
+
+  <code>     
+
+  <p>HTML</p>
+  <span class="code-line">&lt;div class="responsive-calendar modelo-2"></span>
+<span class="indent-10 code-line">&lt;div class="controls"></span>
+<span class="indent-20 code-line">&lt;div></span>
+<span class="indent-30 code-line">&lt;a class="pull-left" data-go="prev">&lt;div class="btn btn-primary">&lt;&lt;/div>&lt;/a></span>
+<span class="indent-40 code-line">&lt;h4>&lt;span data-head-month>&lt;/span> &lt;span data-head-year>&lt;/span> &lt;/h4></span>
+<span class="indent-40 code-line">&lt;a class="pull-right" data-go="next">&lt;div class="btn btn-primary">>&lt;/div>&lt;/a></span>
+<span class="indent-20 code-line">&lt;/div>  </span>          
+<span class="indent-10 code-line">&lt;/div></span>
+<span class="indent-10 code-line">&lt;div class="cldr-divider"></span>
+<span class="indent-20 code-line">&lt;span>&lt;/span></span>
+<span class="indent-10 code-line">&lt;/div></span>
+<span class="indent-10 code-line">&lt;div class="day-headers"></span>
+<span class="indent-20 code-line">&lt;div class="day header">Seg&lt;/div></span>
+<span class="indent-20 code-line">&lt;div class="day header">Ter&lt;/div></span>
+<span class="indent-20 code-line">&lt;div class="day header">Qua&lt;/div></span>
+<span class="indent-20 code-line">&lt;div class="day header">Qui&lt;/div></span>
+<span class="indent-20 code-line">&lt;div class="day header">Sex&lt;/div></span>
+<span class="indent-20 code-line">&lt;div class="day header">Sáb&lt;/div></span>
+<span class="indent-20 code-line">&lt;div class="day header">Dom&lt;/div></span>
+<span class="indent-10 code-line">&lt;/div></span>
+<span class="indent-10 code-line">&lt;div class="days" data-group="days"></span>
+    
+<span class="indent-10 code-line">&lt;/div></span>
+<span class="code-line">&lt;/div></span>
+<br><br><br><br><br>
+ <p>Javascript</p>
+
+<span class="code-line">$(".responsive-calendar.modelo-2").responsiveCalendar({</span>
+<span class="indent-10 code-line">  time: '2015-05',</span>
+<span class="indent-10 code-line">  events: {</span>
+<span class="indent-10 code-line">  <span class="cor-vermelho">/* Podemos usar links nas datas */</span></span>
+<span class="indent-20 code-line">    "2015-05-30": {"number": 5, "url": "<span class="cor-vermelho">http://urbansummer.com.br/Demo/fw_santander/panels.html</span>"},</span>
+ <span class="indent-20 code-line">   "2015-05-12": {}}</span>
+  <span class="code-line">});</span>
+
+  </code>
+
+
+
+ </div>        
+<!-- /calendario -->
+
+
+
+
+      </div>
+      <!-- / coluna esquerda -->
+
+      <!--  coluna direita -->
+      <div class="medium-3 columns doc-coluna-direita">
+        <nav class="doc-menu">
+  <ul class="nivel-1 mgn-bottom">
+      <a href="#link-doc-forms" class="parent">Forms</a>
+        <ul class="nivel-2 mgn-bottom">
+            <li>
+              <a href="#link-doc-input-text">Inputs</a>
+            </li>
+            <li>
+              <a href="#link-doc-radio-button">Radio Button</a>
+              <ul class="nivel-3">
+                <li>
+                  <a href="#link-doc-radio-button-e-1">Radio Button Estilo 1</a>
+                </li>
+                <li>
+                  <a href="#link-doc-radio-button-e-1-com-borda">Radio Button Estilo 1 com borda</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#link-doc-checkbox">Checkbox</a>
+              <ul class="nivel-3">
+                <li>
+                  <a href="#link-doc-checkbox-e-1">Checkbox 1</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#link-doc-switch">Switch</a>
+            </li>
+        </ul>
+    </ul>
+    
+     <ul class="nivel-1 mgn-bottom">
+        <a href="#link-doc-cores">Cores</a>
+          <ul class="nivel-2 mgn-bottom">
+             <li>
+               <a href="#link-doc-corporate-palette">Corporate Palette</a>
+             </li>
+             <li>
+               <a href="#link-doc-secondary-palette">Secondary Palette</a>
+             </li>
+             <li>
+               <a href="#link-doc-portal-certo-palette">Portal Certo Palette</a>
+             </li>
+             <li>
+               <a href="#link-doc-advanced-palette">Santander Advanced Palette</a>
+             </li>
+             <li>
+               <a href="#link-doc-select-palette">Santander Select Palette</a>
+             </li> 
+          </ul>
+      </ul>
+    
+      <ul class="nivel-1 mgn-bottom">
+        <a href="#link-doc-botao">Botões</a>
+          <ul class="nivel-2 mgn-bottom">
+            <li>
+              <a href="#link-doc-x-large">X Large</a>
+            </li>
+            <li>
+              <a href="#link-doc-large">Large</a>
+            </li>
+            <li>
+              <a href="#link-doc-medium">Medium</a>
+            </li>
+            <li>
+              <a href="#link-doc-small">Small</a>
+            </li>
+          </ul>
+       </ul>
+    
+       <ul class="nivel-1 mgn-bottom">
+        <a href="#link-doc-tags">Tags</a>   
+       </ul>
+    
+       <ul class="nivel-1 mgn-bottom">
+        <a href="#link-doc-grid">Grid</a>
+           <ul class="nivel-2 mgn-bottom">
+             <li>
+              <a href="#link-doc-basico">Básico</a>
+             </li>
+             <li>
+              <a href="#link-doc-small-grid">Small Grid</a>
+             </li>
+             <li>
+              <a href="#link-doc-medium-grid">Medium Grid</a>
+              </li>
+           </ul>
+       </ul>
+        
+       <ul class="nivel-1 mgn-bottom">  
+          <a href="#link-doc-menu">Menu</a>
+          <ul class="nivel-2 mgn-bottom">
+            <li>
+              <a href="#link-doc-submenu">Submenu</a>
+            </li>
+          </ul>
+       </ul>
+    
+        <ul class="nivel-1 mgn-bottom">         
+            <a href="#link-doc-tipografia">Tipografia</a>             
+        </ul>
+    
+        <ul class="nivel-1 mgn-bottom">
+          <a href="#link-doc-tabs">Tabs</a>
+          <ul class="nivel-2 mgn-bottom">
+            <li>
+              <a href="#link-doc-tab-horizontal">Tab Horizaontal</a>
+            </li>
+            <li>
+              <a href="#link-doc-tab-vertical">Tab Vertical</a>
+            </li>
+          </ul>
+        </ul>
+    
+        <ul class="nivel-1 mgn-bottom">
+          <a href="#link-doc-panels">Panels</a>
+          <ul class="nivel-2 mgn-bottom">
+            <li>
+              <a href="#link-doc-panel">Panel</a>
+            </li>
+            <li>
+              <a href="#link-doc-panel-com-botao">Panel com Botão</a>
+            </li>
+          </ul>
+        </ul>
+        <ul class="nivel-1 mgn-bottom">
+          <a href="#link-doc-dropdowns">Dropdowns</a>
+        </ul>
+        <ul class="nivel-1 mgn-bottom">
+          <a href="#link-doc-tabela">Tabela</a>
+        </ul>
+        <ul class="nivel-1 mgn-bottom">
+          <a href="#link-doc-listas">Listas</a>
+        </ul>
+        <ul class="nivel-1 mgn-bottom">
+          <a href="#link-doc-graficos">Gráficos</a> 
+        </ul>
+        <ul class="nivel-1 mgn-bottom">
+          <a href="#link-doc-tooltips">Tooltips</a> 
+        </ul>
+        <ul class="nivel-1 mgn-bottom">
+          <a href="#link-doc-popovers">Popovers</a>
+        </ul>
+        <ul class="nivel-1 mgn-bottom">
+           <a href="#link-doc-calendario">Calendário</a>  
+        </ul>
+     
+</nav>      </div>
+    </div>
+    <!-- / coluna direita -->
+  </div>
+
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/foundation/js/foundation.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.selectBoxIt.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/jquery.dataTables.min.js"></script>
+  <script src="js/dataTables.select.min.js"></script>
+  <script type="text/javascript" src="js/graficos.js"></script>
+  <script src="js/responsive-calendar.js"></script> 
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#tabela').DataTable({
+        //"scrollX": true,
+         columnDefs: [ {
+            orderable: false,
+            className: 'select-checkbox',
+            targets:   0
+        } ],
+        select: {
+            style:    'os',
+            selector: 'td:first-child'
+        },
+        order: [[ 1, 'asc' ]]
+      });
+  } );
+
+
+    $(window).resize(function(){
+      drawChart();
+      drawStuff();
+      areaChart();
+      comboChart();
+    });
+
+    
+    google.charts.load('current', {'packages':['line','bar', 'corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    google.charts.setOnLoadCallback(drawStuff);
+    google.charts.setOnLoadCallback(areaChart);
+    google.charts.setOnLoadCallback(comboChart);
+    google.charts.setOnLoadCallback(pieChart);
+    
+    //line charts 
+    function drawChart() {  
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Dia');
+      data.addColumn('number', 'Item 1');
+      data.addColumn('number', 'Item 2');
+      data.addColumn('number', 'Item 3');
+
+      data.addRows([
+      [1,  37.8, 80.8, 41.8],
+      [2,  30.9, 69.5, 32.4],
+      [3,  25.4,   57, 25.7],
+      [4,  11.7, 18.8, 10.5],
+      [5,  11.9, 17.6, 10.4],
+      [6,   8.8, 13.6,  7.7],
+      [7,   7.6, 12.3,  9.6],
+      [8,  12.3, 29.2, 10.6],
+      [9,  16.9, 42.9, 14.8],
+      [10, 12.8, 30.9, 11.6],
+      [11,  5.3,  7.9,  4.7],
+      [12,  6.6,  8.4,  5.2],
+      [13,  4.8,  6.3,  3.6],
+      [14,  4.2,  6.2,  3.4]
+      ]);
+      var options = {
+      chart: {        
+        title: 'Título',
+        subtitle: 'Subtitulo'       
+      },
+       // width: 1000,
+      height: 500,
+      colors: ['#cc0000', '#191919', '#80715d'],
+      axes: {
+        x: {
+        0: {side: 'top'}
+        }
+      }
+      };
+      var chart = new google.charts.Line(document.getElementById('line_top_x'));
+      chart.draw(data, options);
+    } 
+    
+    //Column Chart
+    function drawStuff() {
+    var data = new google.visualization.arrayToDataTable([
+      ['Cidade', 'Distância', 'População'],
+      ['Cidade 1', 8000, 230.3],
+      ['Cidade 2', 24000, 400.5],
+      ['Cidade 3', 30000, 154.3],
+      ['Cidade 4', 50000, 100.9],
+      ['Cidade 5', 60000, 143.1]
+    ]);
+    var options = {
+      chart: {
+      title: 'Título',
+      subtitle: 'Subtítulo'
+      },
+      series: {
+      0: { axis: 'Distância' }, // Bind series 0 to an axis named 'distance'.
+      1: { axis: 'População' } // Bind series 1 to an axis named 'brightness'.
+      },
+      colors: ['#cc0000', '#191919'],
+      axes: {
+      y: {
+        distance: {label: 'Distância'}, // Left y-axis.
+        brightness: {side: 'right', label: 'Escala'} // Right y-axis.
+      }
+      }
+    };
+    var chart = new google.charts.Bar(document.getElementById('dual_y_div'));
+    chart.draw(data, options);
+    };
+    
+    //Area Chart
+    function areaChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Ano', 'Vendas', 'Despesas'],
+        ['2013',  1000,      400],
+        ['2014',  1170,      460],
+        ['2015',  660,       1120],
+        ['2016',  1030,      540]
+      ]);
+      var options = {
+        title: 'Desempenho empresa',
+        hAxis: {title: 'Ano',  titleTextStyle: {color: '#333'}},
+        vAxis: {minValue: 0},
+        colors: ['#cc0000', '#191919', '#80715d']
+      };
+      var chart = new google.visualization.AreaChart(document.getElementById('area-chart'));
+      chart.draw(data, options);
+     }
+     
+    // Combo chart
+    function comboChart() {
+      // Some raw data (not necessarily accurate)
+      var data = google.visualization.arrayToDataTable([
+       ['Mês', 'Bolivia', 'Equador', 'Canadá', 'China', 'Irlanda', 'Média'],
+       ['2004/05',  165,      938,         522,             998,           450,      614.6],
+       ['2005/06',  135,      1120,        599,             1268,          288,      682],
+       ['2006/07',  157,      1167,        587,             807,           397,      623],
+       ['2007/08',  139,      1110,        615,             968,           215,      609.4],
+       ['2008/09',  136,      691,         629,             1026,          366,      569.6]
+      ]);
+
+    var options = {
+      title : 'Produção de café por país',
+      vAxis: {title: 'Copos'},
+      hAxis: {title: 'Mês'},
+      seriesType: 'bars',
+      colors: ['#cc0000', '#191919', '#80715d', '#abc111', '#800000','#1bb3bc'  ],
+      series: {5: {type: 'line'}}
+    };
+
+    var chart = new google.visualization.ComboChart(document.getElementById('combo-chart'));
+    chart.draw(data, options);
+    }
+    // Pie Chart
+    function pieChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Atividade', 'Horas por dia'],
+          ['Trabalhar',     11],
+          ['Comer',      2],
+          ['Sair',  2],
+          ['Assistir TV', 2],
+          ['Dormir',    7]
+        ]);
+        var options = {
+          title: 'Atividades diárias',
+      colors: ['#cc0000', '#191919', '#80715d', '#f0f0f0', '#000000','#6d6d6d'  ],
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('pie-chart'));
+        chart.draw(data, options);
+      }
+
+      // calendario       
+
+        // modelo 1
+        $(".responsive-calendar.modelo-1").responsiveCalendar({
+          time: '2015-05',
+          events: {
+            "2015-05-30": {"number": 5, "url": "http://urbansummer.com.br/Demo/fw_santander/panels.html"},
+             "2015-05-12": {}}
+        });
+       
+
+
+
+
+     
+    
+
+  </script>
+
+
+
+</body>
+
+</html>

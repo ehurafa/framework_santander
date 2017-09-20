@@ -1,0 +1,410 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+  <!-- HEAD -->
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="stylesheets/fonts.css" />
+<link rel="stylesheet" href="stylesheets/jquery-ui.css" />
+<link rel="stylesheet" href="stylesheets/jquery-ui.structure.min.css" />
+<link rel="stylesheet" href="stylesheets/jquery-ui.theme.min.css" />  
+<link rel="stylesheet" href="stylesheets/jquery.selectBoxIt.css" />
+<link rel="stylesheet" href="stylesheets/app.css" />
+<script src="bower_components/modernizr/modernizr.js"></script>
+  <!-- HEAD -->
+  <!-- Estilos adicionais -->
+  <style>
+  .row.display {
+    font-size: 11px;
+    margin-bottom: 8px;
+    line-height: 2rem;
+  }
+  .row.display > div > div {
+    box-sizing:border-box;
+  }
+  .row.display > div.panels > div {
+    background: #FFF;
+  }
+  </style>
+  <!-- Estilos adicionais -->
+
+  <title>Panels</title>
+</head>
+
+<body>
+
+<!-- TOPBAR -->
+  <!-- <div class="top-bar">
+  <div class="top-bar-left">
+    <div class="icon left">
+      <div class="bg-dark66"></div>
+    </div>
+    <div class="title left">
+      <h1>Portal Certo</h1>
+    </div>
+  </div>
+  <div class="top-bar-right">
+    <div class="avatar right">
+      <img src="img/homem-2.jpg" alt="" ata-toggle="menu-login" data-target="#menu-login">
+      <div class="menu-pessoal hide" id="menu-login">
+        <div class="inner">
+          <figure>
+            <img alt="" class="img-responsive" src="img/avatar-1.jpg">
+          </figure>
+          <article>
+            <h3>Jeffrey Coleman</h3>
+            <p>Gerente de Relacionamentos</p>
+            <a href="#">jeffrey.coleman@santander.com.br</a>
+          </article>
+        </div>
+        <div class="foot">
+          <a href="#">Sair</a>
+        </div>
+      </div>
+    </div>
+    <div class="icon right">
+      <div class="bg-dark66"></div>
+    </div>
+    <div class="icon right">
+      <div class="bg-dark66"></div>
+    </div>
+  </div>
+</div>
+
+
+-->
+
+<div class="work-space-header">
+          
+            <div class="coluna coluna-1">
+              <div class="logo">
+                <a href="#">
+                  <img src="img/workspace/logo-1.png">
+                </a>
+              </div>
+            </div>
+            <div class="coluna coluna-2">
+              <form id="ws-header-form">
+                <p>O que podemos fazer por você hoje?</p>                
+                <div class="ws-header-busca">
+                  <input type="text" name="">
+                    <div class="autocomplete-buscador">
+                      <div class="inner encontrados">
+                        <span>Resultados da busca por "<span></span>".</span>
+                        <ul>
+                          <li><a href="javascript:void(0)">Lorem ipsum dolor sit </a></li>
+                          <li><a href="javascript:void(0)">Lorem ipsum dolor sit </a></li>
+                          <li><a href="javascript:void(0)">Lorem ipsum dolor sit </a></li>
+                          <li><a href="javascript:void(0)">Lorem ipsum dolor sit </a></li>
+                          <li><a href="javascript:void(0)">Lorem ipsum dolor sit </a></li>
+                          <li><a href="javascript:void(0)">Lorem ipsum dolor sit </a></li>                        
+                        </ul>
+                      </div>
+                      
+                      <div class="inner">
+                        <span>Últimas pesquisas feitas.</span>
+                        <ul>
+                          <li><a href="javascript:void(0)">Lorem ipsum dolor sit </a></li>
+                          <li><a href="javascript:void(0)">Lorem ipsum dolor sit </a></li>
+                          <li><a href="javascript:void(0)">Lorem ipsum dolor sit </a></li>
+                          <li><a href="javascript:void(0)">Lorem ipsum dolor sit </a></li>
+                          <li><a href="javascript:void(0)">Lorem ipsum dolor sit </a></li>
+                          <li><a href="javascript:void(0)">Lorem ipsum dolor sit </a></li>                        
+                        </ul>
+                      </div>
+                      <div class="foot">
+                        <a href="#">Sair</a>
+                      </div>
+                    </div>
+                    
+                </div>  
+                <input type="submit" value="" id="buscar">
+                
+              </form>
+            </div>
+            <div class="coluna coluna-3">
+              <div class="alert">
+                <span>5</span>
+              </div>
+              <div class="foto">
+                <img data-target="#menu-login" data-toggle="menu-login" src="img/avatar-2.png">
+                <div id="menu-login" class="menu-pessoal hide">
+                  <div class="inner">
+                    <figure>
+                      <img src="img/avatar-1.jpg" class="img-responsive" alt="">
+                    </figure>
+                    <article>
+                      <h3>Jeffrey Coleman</h3>
+                      <p>Gerente de Relacionamentos</p>
+                      <a href="#">jeffrey.coleman@santander.com.br</a>
+                    </article>
+                  </div>
+                  <div class="foot">
+                    <a href="#">Sair</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="coluna coluna-4">
+              <div class="menu"></div>
+            </div>          
+        </div>  <!-- TOPBAR -->
+
+  <!-- SIDEBAR -->
+  <aside>
+  <ul class="menu icon-left">
+    <li class="active"><a href="javascript:void(0)" class="transition"><span class="transition">Menu Item</span></a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="transition">
+        <span class="transition">Menu Item</span>
+        <span class="notification">3</span>
+      </a>
+      <div class="menu-drop">
+        <ul>
+          <li><a href="javascript:void(0)" class="transition">Submenu item</a></li>
+          <li><a href="javascript:void(0)" class="transition">Submenu item</a></li>
+          <li><a href="javascript:void(0)" class="transition">Submenu item</a></li>
+          <li><a href="javascript:void(0)" class="transition">Submenu item</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="javascript:void(0)" class="transition">
+        <span class="transition">Menu Item</span>
+        <span class="notification">3</span>
+      </a>
+    </li>
+    <li><a href="javascript:void(0)" class="transition"><span class="transition">Menu Item</span></a></li>
+    <li><a href="javascript:void(0)" class="transition"><span class="transition">Menu Item</span></a></li>
+  </ul>
+</aside>
+  <!-- SIDEBAR -->
+
+
+  <div class="row mgn-top-10">
+    <div class="column small-6">
+      
+      <!-- fs-panel -->
+      <div class="fs-panel">
+        <div class="fs-panel-head">
+          <div class="column small-8">
+            <h3>Lorem Ipsum</h3>
+          </div> 
+          <div class="column small-4">
+            <a href="#" class="button active btn-medium red-light-medium right">Botão</a>
+          </div> 
+        </div>
+        <div class="fs-panel-inner"></div>
+        <div class="fs-panel-foot"></div>
+      </div>
+      <!-- /fs-panel -->
+
+    </div>
+
+    <div class="column small-6 end">
+      
+      <!-- fs-panel -->
+      <div class="fs-panel">
+        <div class="fs-panel-head">
+          <div class="column small-8">
+            <h3>Lorem Ipsum</h3>
+          </div> 
+          <div class="column small-4">
+            
+          </div> 
+        </div>
+        <div class="fs-panel-inner"></div>
+        <div class="fs-panel-foot"></div>
+      </div>
+      <!-- /fs-panel -->
+
+    </div>
+  </div>
+
+  <div class="row mgn-top-10">
+    <div class="column small-6">
+      
+      <!-- fs-panel -->
+      <div class="fs-panel">
+        <div class="fs-panel-head">
+          <div class="column small-8">
+            <h3>Lorem Ipsum</h3>
+          </div> 
+          <div class="column small-4">
+             <div class="form-control input-label right full">
+
+              <select>
+                <option value="Selecione">Selecione</option>
+                <option value="opcao1">Opção 1</option>
+                <option value="opcao2">Opção 2</option>
+                <option value="opcao3">Opção 3</option>
+                <option value="opcao1">Opção 1</option>
+                <option value="opcao2">Opção 2</option>
+                <option value="opcao3">Opção 3</option>
+                <option value="opcao1">Opção 1</option>
+                <option value="opcao2">Opção 2</option>
+                <option value="opcao3">Opção 3</option>
+                <option value="opcao1">Opção 1</option>
+                <option value="opcao2">Opção 2</option>
+                <option value="opcao3">Opção 3</option>
+              </select>
+              <span class="false-border"></span>
+            </div>
+          </div> 
+        </div>
+        <div class="fs-panel-inner"></div>
+        <div class="fs-panel-foot"></div>
+      </div>
+      <!-- /fs-panel -->
+
+    </div>
+
+    <div class="column small-6 end">
+      
+      <!-- fs-panel -->
+      <div class="fs-panel panel-accordion">
+        <div class="fs-panel-head">
+          <div class="column small-11">
+            <h3>Lorem Ipsum</h3>
+          </div> 
+          <div class="column small-1">
+            <!-- <span class="seta ativo"></span>  -->
+          </div> 
+        </div>
+        <div class="fs-panel-inner">
+          <div class="accordion">
+          <!-- acordion -->
+          <div class="accordion-inner">
+            <div class="column small-11">
+                <div class="column small-4">
+                  <h4>Lorem Ipsum</h4>
+                </div>
+                <div class="column small-8">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>                
+            </div> 
+            <div class="column small-1">
+              <span class="seta"></span>
+            </div> 
+          </div>
+          <!-- /acordion -->
+
+          <!-- acordion -->
+          <div class="accordion-inner">
+            <div class="column small-11">
+                <div class="column small-4">
+                  <h4>Lorem Ipsum</h4>
+                </div>
+                <div class="column small-8">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>                
+            </div> 
+            <div class="column small-1">
+              <span class="seta"></span>
+            </div> 
+          </div>
+          <!-- /acordion -->
+
+          <!-- acordion -->
+          <div class="accordion-inner">
+            <div class="column small-11">
+                <div class="column small-4">
+                  <h4>Lorem Ipsum</h4>
+                </div>
+                <div class="column small-8">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>                
+            </div> 
+            <div class="column small-1">
+              <span class="seta"></span>
+            </div> 
+          </div>
+          </div>
+          <!-- /acordion -->
+
+
+        </div>
+      </div>
+      <!-- /fs-panel -->
+
+    </div>
+  </div>
+
+  <div class="row mgn-top-10">
+    <div class="column small-12">
+      
+      <!-- fs-panel -->
+      <div class="fs-panel">
+        <div class="fs-panel-head">
+          <div class="column small-8">
+            <h3>Lorem Ipsum</h3>
+          </div> 
+          <div class="column small-4">
+         
+          </div> 
+        </div>
+        <div class="fs-panel-inner"></div>
+        <div class="fs-panel-foot">
+          <a href="#" class="button active btn-medium red-light-medium right  ">Botão</a>
+          <a href="#" class="button disabled btn-medium  right mgn-right-10">Botão</a>
+        </div>
+      </div>
+      <!-- /fs-panel -->
+
+    </div>
+
+  </div>
+ 
+
+
+ <!-- SCRIPTS JS -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.selectBoxIt.min.js"></script>
+          <script>
+            $(function() {
+
+              var selectBox = $("select").selectBoxIt();
+
+            });
+
+
+          </script>
+<script src="js/app.js"></script>
+  <!-- SCRIPTS JS -->
+</body>
+
+</html>

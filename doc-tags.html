@@ -1,0 +1,598 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Inputs</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="stylesheets/app.css" />
+  <link rel="stylesheet" href="stylesheets/fonts.css" />
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <style>
+
+    body {
+      padding-top: 20px;
+      background: #fff;
+    }
+    .form-control {
+      position: relative;
+    }
+    .bloco{
+      width:100%;
+      float:left;
+      border-bottom:1px dotted #999;
+      margin-bottom:50px;
+      padding-bottom:40px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="documentacao">
+   <div class="row">
+
+      <!-- coluna esquerda -->
+      <div class="medium-9 columns doc-coluna-esquerda">
+
+        <h2 class="doc-title" id="link-doc-input-text">
+          Tags
+        </h2>
+
+        <div class="legend">
+          <p>
+            Como usar as tags
+          </p>
+        </div>
+
+        <!-- input text -->
+        <div class="bloco">
+          <h3 class="doc-title" id="link-doc-input-text">
+            Input text
+          </h3>
+          <div class="full">
+             <em>Exemplo de implementação do <span class="estilo">input text</span></em>
+             <p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+
+          <div class="full mgn-zero">
+            <div class="form-control input-label ">
+              <label class="transition" for="">Digite seu nome:</label>
+              <input type="text" placeholder="" id="">
+              <span class="false-border"></span>
+            </div>
+          </div>
+
+          <code>
+
+            <span class="code-line">&lt;div class="form-control input-label"></span>
+
+              <span class="indent-10 code-line">&lt;label class="transition" for="">Digite seu nome:&lt;/label></span>
+
+              <span class="indent-10 code-line">&lt;input type="text" placeholder="" id=""></span>
+
+              <span class="indent-10 code-line">&lt;span class="false-border">&lt;/span></span>
+
+            <span class="code-line">&lt;/div></span>
+
+          </code>
+
+          <div class="full">
+             <em>Exemplo de implementação do campo de <span class="estilo">telefone</span></em>
+             <p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+
+          <div class="full mgn-zero">
+            <div class="form-control input-label">
+              <label class="transition" for="">Telefone:</label>
+              <input type="tel" class="mascara-telefone" placeholder="" id="">
+              <span class="false-border"></span>
+            </div>
+          </div>
+
+          <code>
+
+            <span class="code-line">&lt;div class="form-control input-label"></span>
+              <span class="indent-10 code-line">&lt;label class="transition" for="">Telefone:&lt;/label></span>
+              <span class="indent-10 code-line">&lt;input type="tel" <span class="cor-vermelho">class="mascara-telefone"</span> placeholder="" id=""></span>
+              <span class="indent-10 code-line">&lt;span class="false-border">&lt;/span></span>
+            <span class="code-line">&lt;/div></span>
+
+          </code>
+
+
+        </div>
+        <!-- /input text -->
+
+        <!-- radio -->
+        <div class="bloco">
+          <h3 class="doc-title" id="link-doc-radio-button">
+            Radio Button
+          </h3>
+
+          <div class="full">
+             <em id="link-doc-radio-button-e-1">Exemplo de implementação do <span class="estilo">estilo 1</span></em>
+             <p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+
+          <div class="full">
+            <div class="form-control radio-button-e-1 ">
+              <input  name="radio1" value="" checked  type="radio">
+              <label>Manga</label>
+            </div>
+            <div class="form-control radio-button-e-1 ">
+              <input  name="radio1" value="" checked  type="radio">
+              <label>Laranja</label>
+            </div>
+            <div class="form-control radio-button-e-1 ">
+              <input  name="radio1" value="" checked  type="radio">
+              <label>Morango</label>
+            </div>
+          </div>
+
+          <code>
+
+            <span class=" code-line">&lt;div class="form-control <span class="cor-vermelho">radio-button-e-1</span>"></span>
+              <span class="indent-10 code-line">&lt;input  name="radio1" value="" type="radio"></span>
+              <span class="indent-10 code-line">&lt;label>Manga&lt;/label></span>
+            <span class=" code-line">&lt;/div></span>
+
+            <span class=" code-line">&lt;div class="form-control <span class="cor-vermelho">radio-button-e-1</span>"></span>
+              <span class="indent-10 code-line">&lt;input  name="radio1" value="" type="radio"></span>
+              <span class="indent-10 code-line">&lt;label>Laranja&lt;/label></span>
+            <span class="indent-10 code-line">&lt;/div></span>
+
+            <span class=" code-line">&lt;div class="form-control <span class="cor-vermelho">radio-button-e-1</span>"></span>
+              <span class="indent-10 code-line">&lt;input  name="radio1" value="" type="radio"></span>
+              <span class="indent-10 code-line">&lt;label>Morango&lt;/label></span>
+            <span class=" code-line">&lt;/div></span>
+
+          </code>
+
+          <div class="full">
+            <em >Exemplo de implementação do <span class="estilo">estilo 1</span> em linha (adicionar a classe 'float-left')</em>
+            <p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+
+          <div class="full">
+            <div class="form-control radio-button-e-1 mgn-right-10 float-left">
+              <input  name="radio2" value="" checked  type="radio">
+              <label>Manga</label>
+            </div>
+            <div class="form-control radio-button-e-1 mgn-right-10 float-left">
+              <input  name="radio2" value="" checked  type="radio">
+              <label>Laranja</label>
+            </div>
+            <div class="form-control radio-button-e-1 float-left">
+              <input  name="radio2" value="" checked  type="radio">
+              <label>Morango</label>
+            </div>
+          </div>
+
+          <code>
+
+            <span class="code-line">&lt;div class="form-control radio-button-e-1 mgn-right-10 <span class="cor-vermelho">float-left</span>"></span>
+              <span class="indent-10 code-line">&lt;input  name="radio1" value="" type="radio"></span>
+              <span class="indent-10 code-line">&lt;label>Manga&lt;/label></span>
+            <span class="code-line">&lt;/div></span>
+            <span class="code-line">&lt;div class="form-control radio-button-e-1 mgn-right-10 <span class="cor-vermelho">float-left</span>"></span>
+              <span class="indent-10 code-line">&lt;input  name="radio1" value="" type="radio"></span>
+              <span class="indent-10 code-line">&lt;label>Laranja&lt;/label></span>
+            <span class="code-line">&lt;/div></span>
+            <span class="code-line">&lt;div class="form-control radio-button-e-1 <span class="cor-vermelho">float-left</span>"></span>
+              <span class="indent-10 code-line">&lt;input  name="radio1" value="" type="radio"></span>
+              <span class="indent-10 code-line">&lt;label>Morango&lt;/label></span>
+            <span class="code-line">&lt;/div></span>
+
+          </code>
+
+          <div class="full">
+             <em id="link-doc-radio-button-e-1-com-borda">Exemplo de implementação do estilo 1 <span class="estilo">com borda</span></em>
+             <p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+
+          <div class="full">
+            <!-- box -->
+            <div class="input-boxes">
+
+              <div class="input-boxes-inner">
+                <!-- radio estilo 1 -->
+                <div class=" radio-button-e-1">
+                  <input  name="radio3" value=""  type="radio">
+                  <label>Radio 1</label>
+                </div>
+                <!-- /radio -->
+              </div>
+              <div class="input-boxes-inner">
+                <!-- radio estilo 1 -->
+                <div class=" radio-button-e-1">
+                  <input  name="radio3" value=""   type="radio">
+                  <label>Radio 2</label>
+                </div>
+                <!-- /radio -->
+              </div>
+              <div class="input-boxes-inner">
+                <!-- radio estilo 2 -->
+                <div class="radio-button-e-1 ">
+                    <input  name="radio3" value=""   type="radio">
+                    <label>Radio 3</label>
+                </div>
+                <!-- /radio -->
+              </div>
+
+            </div>
+            <!-- /box -->
+          </div>
+
+          <code>
+
+            <span class=" code-line ">&lt;div <span class="cor-vermelho">class="input-boxes"</span>></span>
+
+              <span class="indent-10 code-line">&lt;div <span class="cor-vermelho">class="input-boxes-inner"></span></span>
+                <span class="indent-20 code-line">&lt;div class=" radio-button-e-1"></span>
+                  <span class="indent-30 code-line">&lt;input  name="radio3" value=""  type="radio"></span>
+                  <span class="indent-30 code-line">&lt;label>Radio 1&lt;/label></span>
+                <span class="indent-20 code-line">&lt;/div></span>
+              <span class="indent-10 code-line">&lt;/div></span>
+
+              <span class="indent-10 code-line">&lt;div class="input-boxes-inner"></span>
+                <span class="indent-20 code-line">&lt;div class=" radio-button-e-1"></span>
+                  <span class="indent-30 code-line">&lt;input  name="radio3" value=""  type="radio"></span>
+                  <span class="indent-30 code-line">&lt;label>Radio 2&lt;/label></span>
+                <span class="indent-20 code-line">&lt;/div></span>
+              <span class="indent-10 code-line">&lt;/div></span>
+
+              <span class="indent-10 code-line">&lt;div class="input-boxes-inner"></span>
+                <span class="indent-20 code-line">&lt;div class=" radio-button-e-1"></span>
+                  <span class="indent-30 code-line">&lt;input  name="radio3" value=""  type="radio"></span>
+                  <span class="indent-30 code-line">&lt;label>Radio 3&lt;/label></span>
+                <span class="indent-20 code-line">&lt;/div></span>
+              <span class="indent-10 code-line">&lt;/div></span>
+
+
+            <span class=" code-line">&lt;/div></span>
+
+          </code>
+
+        </div>
+        <!-- /radio -->
+
+        <!-- checkbox -->
+        <div class="bloco">
+
+          <h3 class="doc-title" id="link-doc-checkbox">
+            Checkbox
+          </h3>
+
+          <!-- estilo 1 -->
+          <div class="full">
+             <em id="link-doc-checkbox-e-1">Exemplo de implementação do <span class="estilo">estilo 1</span></em>
+             <p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+
+          <div class="full">
+             <!-- checkbox estilo 1 -->
+            <div class="form-control checkbox checkbox-e-1 float-left mgn-right-10">
+              <input  name="checkbox1" value=""  type="checkbox">
+              <label>Checkbox 1</label>
+            </div>
+            <!-- /checkbox -->
+            <!-- checkbox estilo 1 -->
+            <div class="form-control checkbox checkbox-e-1 float-left mgn-right-10">
+              <input  name="checkbox1" value=""  type="checkbox">
+              <label>Checkbox 2</label>
+            </div>
+            <!-- /checkbox -->
+            <!-- checkbox estilo 1 -->
+            <div class="form-control checkbox  checkbox-e-1 float-left">
+              <input  name="checkbox1" value=""  type="checkbox">
+              <label>Checkbox 3</label>
+            </div>
+            <!-- /checkbox -->
+          </div>
+
+          <code>
+
+            <span class="code-line">&lt;div class="form-control checkbox <span class="cor-vermelho">checkbox-e-1</span> float-left mgn-right-10"></span>
+              <span class="code-line indent-10">&lt;input  name="checkbox1" value=""  type="checkbox"></span>
+              <span class="code-line indent-10">&lt;label>Checkbox 1&lt;/label></span>
+            <span class="code-line">&lt;/div></span>
+
+            <span class="code-line">&lt;div class="form-control checkbox checkbox-e-1 float-left mgn-right-10"></span>
+              <span class="code-line indent-10">&lt;input  name="checkbox1" value=""  type="checkbox"></span>
+              <span class="code-line indent-10">&lt;label>Checkbox 2&lt;/label></span>
+            <span class="code-line">&lt;/div></span>
+
+            <span class="code-line">&lt;div class="form-control checkbox checkbox-e-1 float-left mgn-right-10"></span>
+              <span class="code-line indent-10">&lt;input  name="checkbox1" value=""  type="checkbox"></span>
+              <span class="code-line indent-10">&lt;label>Checkbox 3&lt;/label></span>
+            <span class="code-line">&lt;/div></span>
+
+          </code>
+          <!-- / estilo 1 -->
+
+          <!-- estilo 2 -->
+          <div class="full">
+             <em id="link-doc-checkbox-e-2">Exemplo de implementação do <span class="estilo">estilo 2</span></em>
+             <p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+
+          <div class="full">
+             <!-- checkbox estilo 2 -->
+            <div class="form-control checkbox checkbox-e-2 float-left mgn-right-10">
+              <input  name="checkbox1" value=""  type="checkbox">
+              <label>Checkbox 1</label>
+            </div>
+            <!-- /checkbox -->
+            <!-- checkbox estilo 2 -->
+            <div class="form-control checkbox checkbox-e-2 float-left mgn-right-10">
+              <input  name="checkbox1" value=""  type="checkbox">
+              <label>Checkbox 2</label>
+            </div>
+            <!-- /checkbox -->
+            <!-- checkbox estilo 2 -->
+            <div class="form-control checkbox  checkbox-e-2 float-left">
+              <input  name="checkbox1" value=""  type="checkbox">
+              <label>Checkbox 3</label>
+            </div>
+            <!-- /checkbox -->
+          </div>
+
+          <code>
+
+            <span class="code-line">&lt;div class="form-control checkbox <span class="cor-vermelho">checkbox-e-2</span> float-left mgn-right-10"></span>
+              <span class="code-line indent-10">&lt;input  name="checkbox1" value=""  type="checkbox"></span>
+              <span class="code-line indent-10">&lt;label>Checkbox 1&lt;/label></span>
+            <span class="code-line">&lt;/div></span>
+
+            <span class="code-line">&lt;div class="form-control checkbox checkbox-e-2 float-left mgn-right-10"></span>
+              <span class="code-line indent-10">&lt;input  name="checkbox1" value=""  type="checkbox"></span>
+              <span class="code-line indent-10">&lt;label>Checkbox 2&lt;/label></span>
+            <span class="code-line">&lt;/div></span>
+
+            <span class="code-line">&lt;div class="form-control checkbox checkbox-e-2 float-left mgn-right-10"></span>
+              <span class="code-line indent-10">&lt;input  name="checkbox1" value=""  type="checkbox"></span>
+              <span class="code-line indent-10">&lt;label>Checkbox 3&lt;/label></span>
+            <span class="code-line">&lt;/div></span>
+
+          </code>
+          <!-- / estilo 2 -->
+
+          <!-- estilo 3 -->
+          <div class="full">
+             <em id="link-doc-checkbox-e-3">Exemplo de implementação do <span class="estilo">estilo 3</span></em>
+             <p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+
+          <div class="full">
+             <!-- checkbox estilo 3 -->
+            <div class="form-control checkbox checkbox-e-3 float-left mgn-right-10">
+              <input  name="checkbox1" value=""  type="checkbox">
+              <label>Checkbox 1</label>
+            </div>
+            <!-- /checkbox -->
+            <!-- checkbox estilo 3 -->
+            <div class="form-control checkbox checkbox-e-3 float-left mgn-right-10">
+              <input  name="checkbox1" value=""  type="checkbox">
+              <label>Checkbox 2</label>
+            </div>
+            <!-- /checkbox -->
+            <!-- checkbox estilo 3 -->
+            <div class="form-control checkbox  checkbox-e-3 float-left">
+              <input  name="checkbox1" value=""  type="checkbox">
+              <label>Checkbox 3</label>
+            </div>
+            <!-- /checkbox -->
+          </div>
+
+          <code>
+
+            <span class="code-line">&lt;div class="form-control checkbox <span class="cor-vermelho">checkbox-e-3</span> float-left mgn-right-10"></span>
+              <span class="code-line indent-10">&lt;input  name="checkbox1" value=""  type="checkbox"></span>
+              <span class="code-line indent-10">&lt;label>Checkbox 1&lt;/label></span>
+            <span class="code-line">&lt;/div></span>
+
+            <span class="code-line">&lt;div class="form-control checkbox checkbox-e-3float-left mgn-right-10"></span>
+              <span class="code-line indent-10">&lt;input  name="checkbox1" value=""  type="checkbox"></span>
+              <span class="code-line indent-10">&lt;label>Checkbox 2&lt;/label></span>
+            <span class="code-line">&lt;/div></span>
+
+            <span class="code-line">&lt;div class="form-control checkbox checkbox-e-3 float-left mgn-right-10"></span>
+              <span class="code-line indent-10">&lt;input  name="checkbox1" value=""  type="checkbox"></span>
+              <span class="code-line indent-10">&lt;label>Checkbox 3&lt;/label></span>
+            <span class="code-line">&lt;/div></span>
+
+          </code>
+          <!-- / estilo 3 -->
+
+          <!-- estilo 4 -->
+          <div class="full">
+             <em id="link-doc-checkbox-e-4">Exemplo de implementação do <span class="estilo">estilo 4</span></em>
+             <p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+
+          <div class="full">
+             <!-- checkbox estilo 4 -->
+            <div class="form-control checkbox checkbox-e-4 float-left mgn-right-10">
+              <input  name="checkbox1" value=""  type="checkbox">
+              <label>Checkbox 1</label>
+            </div>
+            <!-- /checkbox -->
+            <!-- checkbox estilo 4 -->
+            <div class="form-control checkbox checkbox-e-4 float-left mgn-right-10">
+              <input  name="checkbox1" value=""  type="checkbox">
+              <label>Checkbox 2</label>
+            </div>
+            <!-- /checkbox -->
+            <!-- checkbox estilo 4 -->
+            <div class="form-control checkbox  checkbox-e-4 float-left">
+              <input  name="checkbox1" value=""  type="checkbox">
+              <label>Checkbox 3</label>
+            </div>
+            <!-- /checkbox -->
+          </div>
+
+          <code>
+
+            <span class="code-line">&lt;div class="form-control checkbox <span class="cor-vermelho">checkbox-e-4 </span> float-left mgn-right-10"></span>
+              <span class="code-line indent-10">&lt;input  name="checkbox1" value=""  type="checkbox"></span>
+              <span class="code-line indent-10">&lt;label>Checkbox 1&lt;/label></span>
+            <span class="code-line">&lt;/div></span>
+
+            <span class="code-line">&lt;div class="form-control checkbox checkbox-e-4 float-left mgn-right-10"></span>
+              <span class="code-line indent-10">&lt;input  name="checkbox1" value=""  type="checkbox"></span>
+              <span class="code-line indent-10">&lt;label>Checkbox 2&lt;/label></span>
+            <span class="code-line">&lt;/div></span>
+
+            <span class="code-line">&lt;div class="form-control checkbox checkbox-e-4  float-left mgn-right-10"></span>
+              <span class="code-line indent-10">&lt;input  name="checkbox1" value=""  type="checkbox"></span>
+              <span class="code-line indent-10">&lt;label>Checkbox 3&lt;/label></span>
+            <span class="code-line">&lt;/div></span>
+
+          </code>
+          <!-- / estilo 4 -->
+
+          <!-- estilo 5 -->
+          <div class="full">
+             <em id="link-doc-checkbox-e-5">Exemplo de implementação do <span class="estilo">estilo 5</span></em>
+             <p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+
+          <div class="full">
+             <!-- checkbox estilo 5 -->
+            <div class="form-control checkbox checkbox-e-5 float-left mgn-right-10">
+              <input  name="checkbox1" value=""  type="checkbox">
+              <label>Checkbox 1</label>
+            </div>
+            <!-- /checkbox -->
+            <!-- checkbox estilo 5 -->
+            <div class="form-control checkbox checkbox-e-5 float-left mgn-right-10">
+              <input  name="checkbox1" value=""  type="checkbox">
+              <label>Checkbox 2</label>
+            </div>
+            <!-- /checkbox -->
+            <!-- checkbox estilo 5 -->
+            <div class="form-control checkbox  checkbox-e-5 float-left">
+              <input  name="checkbox1" value=""  type="checkbox">
+              <label>Checkbox 3</label>
+            </div>
+            <!-- /checkbox -->
+          </div>
+
+          <code>
+
+            <span class="code-line">&lt;div class="form-control checkbox <span class="cor-vermelho">checkbox-e-5 </span> float-left mgn-right-10"></span>
+              <span class="code-line indent-10">&lt;input  name="checkbox1" value=""  type="checkbox"></span>
+              <span class="code-line indent-10">&lt;label>Checkbox 1&lt;/label></span>
+            <span class="code-line">&lt;/div></span>
+
+            <span class="code-line">&lt;div class="form-control checkbox checkbox-e-5 float-left mgn-right-10"></span>
+              <span class="code-line indent-10">&lt;input  name="checkbox1" value=""  type="checkbox"></span>
+              <span class="code-line indent-10">&lt;label>Checkbox 2&lt;/label></span>
+            <span class="code-line">&lt;/div></span>
+
+            <span class="code-line">&lt;div class="form-control checkbox checkbox-e-5  float-left mgn-right-10"></span>
+              <span class="code-line indent-10">&lt;input  name="checkbox1" value=""  type="checkbox"></span>
+              <span class="code-line indent-10">&lt;label>Checkbox 3&lt;/label></span>
+            <span class="code-line">&lt;/div></span>
+
+          </code>
+          <!-- / estilo 5 -->
+
+        </div>
+        <!-- /checkbox -->
+
+      </div>
+      <!-- / coluna esquerda -->
+
+      <!--  coluna direita -->
+      <div class="medium-3 columns doc-coluna-direita">
+        <nav class="doc-menu">
+          <ul class="nivel-1">
+            <li href="#" >
+
+              <a href="#link-doc-forms" class="parent">Forms</a>
+
+              <ul class="nivel-2">
+                <li>
+                  <a href="#link-doc-input-text">Inputs</a>
+                </li>
+                <li>
+                  <a href="#link-doc-radio-button">Radio Button</a>
+                  <ul class="nivel-3">
+                    <li>
+                      <a href="#link-doc-radio-button-e-1">Radio Button Estilo 1</a>
+                    </li>
+                    <li>
+                      <a href="#link-doc-radio-button-e-1-com-borda">Radio Button Estilo 1 com borda</a>
+                    </li>
+
+                  </ul>
+                </li>
+                <li>
+                  <a href="#link-doc-checkbox">Checkbox</a>
+                  <ul class="nivel-3">
+                    <li>
+                      <a href="#link-doc-checkbox-e-1">Checkbox 1</a>
+                    </li>
+                    <li>
+                      <a href="#link-doc-checkbox-e-2">Checkbox 2</a>
+                    </li>
+                    <li>
+                      <a href="#link-doc-checkbox-e-3">Checkbox 3</a>
+                    </li>
+                    <li>
+                      <a href="#link-doc-checkbox-e-4">Checkbox 4</a>
+                    </li>
+                    <li>
+                      <a href="#link-doc-checkbox-e-5">Checkbox 5</a>
+                    </li>
+                    <li>
+                      <a href="#link-doc-checkbox-e-6">Checkbox 6</a>
+                    </li>
+                    <li>
+                      <a href="#link-doc-checkbox-e-7">Checkbox 7</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+            </li>
+            <li href="#" >
+              <a href="javascript:;" >Lorem Ipsum</a>
+             </li>
+          </ul>
+        </div>
+      </div>
+      <!-- / coluna direita -->
+
+    </div>
+</div>
+
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/foundation/js/foundation.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,395 @@
+input:not([type]), input[type="text"], input[type="password"],
+input[type="date"], input[type="datetime"], input[type="datetime-local"],
+input[type="month"], input[type="week"], input[type="email"],
+input[type="number"], input[type="search"], input[type="tel"],
+input[type="time"], input[type="url"], input[type="color"], textarea {
+  box-shadow: none;
+  border-width: 0 0 1px;
+  border-style:dotted;
+  border-color:#dee1e5;
+  color:rgba(102,153,153,1);
+  font-size:1.3rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+   background-color:transparent;
+}
+input[type="text"]::-webkit-input-placeholder { color:rgba(102,153,153,0.5); }
+input[type="text"]::-moz-placeholder { color:rgba(102,153,153,0.5); } /* firefox 19+ */
+input[type="text"]:-ms-input-placeholder { color:rgba(102,153,153,0.5); } /* ie */
+input[type="text"]:-moz-placeholder { color:rgba(102,153,153,0.5); }
+
+
+input:not([type]):focus, input[type="text"]:focus, input[type="password"]:focus,
+input[type="date"]:focus, input[type="datetime"]:focus,
+input[type="datetime-local"]:focus, input[type="month"]:focus,
+input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus,
+input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus,
+input[type="url"]:focus, input[type="color"]:focus, textarea:focus {
+  background-color:transparent;
+  color:rgba(102,153,153,1);
+}
+select{
+  background:#fff;
+  border:0;
+  box-shadow: 0px 1px 0px #dee1e5;
+  color:#669999;
+  font-size:1rem;
+}
+.form-control {
+  position: relative;
+}
+.form-control>small {
+  bottom:-15px;
+  position:absolute;
+}
+.form-control>.false-border {
+  bottom:0px;
+  position: absolute;
+  height: 1px;
+  background-color:rgb(41, 61, 61);
+  width: 0%;
+  -webkit-transition: width 0.4s ease-in-out;
+  -moz-transition: width 0.4s ease-in-out;
+  -ms-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus ~ .false-border {
+  width: 100%;
+}
+.error-input {
+  font-size:0.8rem;
+  color:#ec0000;
+}
+
+.form-control input[type="text"],
+.form-control input[type="tel"],
+.form-control input[type="email"],
+.form-control textarea{
+  box-shadow: 0px 1px 0px #dee1e5;
+}
+
+
+.form-control input[type="text"].error,
+.form-control input[type="tel"].error,
+.form-control input[type="email"].error,
+.form-control textarea.error{
+  box-shadow: 0px 1px 0px #dee1e5;
+  border-bottom:1px solid red !important;
+  color:red !important;
+}
+/* input com label */
+
+.input-label{
+   position: relative;
+}
+.input-label label{
+  position: absolute;
+  cursor: text;
+  top:0;
+  left:0;
+}
+.input-label label{
+  position: absolute;
+  cursor: text;
+  top:3px;
+  left:10px;
+  font-size:1.2rem;
+  color:#669999;
+  opacity:0.5;
+}
+
+.input-label input[type="text"],
+.input-label input[type="tel"],
+.input-label input[type="email"],
+.input-label textarea,
+.input-label select{
+  margin-top:24px
+}
+
+.input-label.clickado  label{
+  top:-24px;
+  left:0;
+  color:#4d4d4d;
+  opacity:1;
+  font-size:0.9rem;
+}
+
+
+/* /input com label */
+
+/* radio button */
+
+/* estilo 1 */
+.radio-button-e-1{
+  position:relative;
+}
+.radio-button-e-1 input[type='radio']{
+    opacity: 0;
+    float: left;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top:0;
+    left:0;
+    cursor:pointer;
+}
+
+.radio-button-e-1 input[type='radio'] + label{
+    font-size:16px;
+    margin: 0;
+    clear: none;
+    padding: 0 0 4px 30px;
+    cursor: pointer;
+    background: url('../img/icons/radio-button-e-1.png') 0 0 no-repeat;
+    line-height:22px;
+    height:22px;
+}
+
+.radio-button-e-1.error input[type='radio'] + label{
+    color:red;
+    background: url('../img/icons/radio-button-e-1.png') 0 -64px no-repeat;
+}
+.radio-button-e-1 input[type='radio']:checked + label {
+    background: url('../img/icons/radio-button-e-1.png') 0 -32px  no-repeat;
+}
+.radio-button-e-1.error input[type='radio']:checked + label {
+    background: url('../img/icons/radio-button-e-1.png') 0 -96px  no-repeat;
+}
+
+/* /estilo 1 */
+/* com borda */
+.input-boxes{
+  border:1px solid #5b5a5b;
+  float:left;
+  border-radius:7px;
+  background:#fff;
+}
+
+.input-boxes-inner{
+  border-right:1px solid #5b5a5b;
+  float:left;
+  padding:12px;
+}
+.input-boxes-inner:last-child{
+  border-right:0;
+}
+/* /com borda */
+/* /radio button */
+
+
+/* checkbox */
+
+.checkbox{
+  position:relative;
+}
+.checkbox input[type='checkbox']{
+    opacity: 0;
+    float: left;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top:0;
+    left:0;
+    cursor:pointer;
+}
+
+.checkbox input[type='checkbox'] + label{
+    font-size:16px;
+    margin: 0;
+    clear: none;
+    padding: 0 0 4px 30px;
+    cursor: pointer;
+    line-height:22px;
+    height:22px;
+}
+/* estilo 1 */
+
+.checkbox-e-1 input[type='checkbox'] + label{
+    background: url('../img/icons/chcekbox-e1.png') 0 -127px no-repeat;
+}
+.checkbox-e-1 input[type='checkbox']:checked + label {
+    background: url('../img/icons/chcekbox-e1.png') 0 -158px  no-repeat;
+}
+
+/* estilo 2 */
+.checkbox-e-2 input[type='checkbox'] + label{
+    background: url('../img/icons/chcekbox-e1.png') 0 -64px no-repeat;
+}
+.checkbox-e-2 input[type='checkbox']:checked + label {
+    background: url('../img/icons/chcekbox-e1.png') 0 -96px  no-repeat;
+}
+
+/* estilo3 */
+.checkbox-e-3 input[type='checkbox'] + label{
+    background: url('../img/icons/chcekbox-e1.png') 0 0 no-repeat;
+}
+.checkbox-e-3 input[type='checkbox']:checked + label {
+    background: url('../img/icons/chcekbox-e1.png') 0 -32px  no-repeat;
+}
+/* estilo4 */
+.checkbox-e-4 input[type='checkbox'] + label{
+    background: url('../img/icons/chcekbox-e1.png') 0 -190px no-repeat;
+}
+.checkbox-e-4 input[type='checkbox']:checked + label {
+    background: url('../img/icons/chcekbox-e1.png') 0 -222px  no-repeat;
+}
+
+/* estilo 5 */
+.checkbox-e-5 input[type='checkbox'] + label{
+    background: url('../img/icons/chcekbox-e1.png') 0 -252px no-repeat;
+}
+.checkbox-e-5 input[type='checkbox']:checked + label {
+    background: url('../img/icons/chcekbox-e1.png') 0 -284px  no-repeat;
+}
+
+.checkbox-e-1.error input[type='checkbox'] + label{
+    background: url('../img/icons/chcekbox-e1.png') 0  0 no-repeat;
+}
+.checkbox-e-1.error input[type='checkbox']:checked + label {
+    background: url('../img/icons/chcekbox-e1.png') 0 -32px  no-repeat;
+}
+
+/* switch */
+.wrap-switch{
+  float:left;
+}
+.checkbox-switch {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 21px;
+  float:left;
+}
+
+/* Hide default HTML checkbox */
+.checkbox-switch input {display:none;}
+
+/* The slider */
+.checkbox-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.checkbox-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 3px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.checkbox-switch input:checked + .slider {
+  background-color: #2196F3;
+}
+
+.checkbox-switch input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.checkbox-switch input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.checkbox-switch .slider.round {
+  border-radius: 34px;
+}
+
+.checkbox-switch .slider.round:before {
+  border-radius: 50%;
+}
+.wrap-switch span{
+  color:#666;
+  cursor: pointer;
+  font-size: 16px;
+  height: 22px;
+  line-height: 22px;
+  margin: 0 0 0 2px;
+  padding: 0 0 4px 8px;
+  text-align:left;
+  float:left;
+}
+/* /estilo 6 */
+
+
+
+/* /checkbox */
+
+.selectboxit-list{
+  background-color:#d8d8d8;
+  border:0;
+}
+
+
+
+.ui-selectmenu-button{
+  top:25px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+  background:#fff;
+  border:0;
+  box-shadow:0 1px 0 #dee1e5;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br{
+  border-radius:0 !important;
+}
+
+.selectboxit-container .selectboxit-options {
+    width:100%;
+    max-height: 140px;
+    min-width: 100% !important;
+    border-radius:0;
+  }
+
+.selectboxit-container{
+  top:25px;
+  width:100%;
+}
+
+.selectboxit-container .selectboxit{
+  border-radius:0;
+  width:100% !important;
+}
+.selectboxit-container span, .selectboxit-container .selectboxit-options a{
+  height:35px;
+  line-height:35px;
+  font-size:16px;
+  color:#669999;
+}
+.selectboxit-btn{
+  background: #fff;
+  background-image:none;
+  border:0;
+  box-shadow:0 1px 0 #dee1e5;
+}
+
+.form-control {
+  position: relative;
+}
+.bloco{
+  width:100%;
+  float:left;
+  border-bottom:1px dotted #999;
+  margin-bottom:50px;
+  padding-bottom:40px;
+  
+}
